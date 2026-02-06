@@ -98,7 +98,7 @@ export default async function BlogArticlePage({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <div className="flex items-center gap-2 text-sm text-slate-600">
             <Link href="/" className="hover:text-slate-900 transition-colors duration-200">
-              Acas\u0103
+              Acasă
             </Link>
             <ChevronRight className="w-4 h-4" />
             <Link href="/blog" className="hover:text-slate-900 transition-colors duration-200">
@@ -119,7 +119,7 @@ export default async function BlogArticlePage({
           className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors duration-200 mb-8 font-medium"
         >
           <ArrowLeft className="w-4 h-4" />
-          \u00cenapoi la blog
+          Înapoi la blog
         </Link>
       </div>
 
@@ -224,11 +224,11 @@ export default async function BlogArticlePage({
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Desoper\u0103 mai multe unelte AI
+            Descoperă mai multe unelte AI
           </h2>
           <p className="text-blue-100 mb-8 text-lg max-w-2xl mx-auto">
-            Exploreaz\u0103 curatorul nostru de unelte AI de top pentru a g\u0103si solu\u021bia
-            perfect\u0103 pentru nevoile tale.
+            Explorează curatorul nostru de unelte AI de top pentru a găsi soluția
+            perfectă pentru nevoile tale.
           </p>
           <Link
             href="/instrumente"
