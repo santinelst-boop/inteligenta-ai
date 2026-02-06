@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!tool) return {};
 
   return {
-    title: `${tool.name} \u2014 Recenzie \u0219i detalii | inteligenta.ai`,
+    title: `${tool.name} — Recenzie și detalii | inteligenta.ai`,
     description: tool.description,
     openGraph: {
       title: tool.name,
@@ -74,7 +74,7 @@ export default async function InstrumentPage({ params }: Props) {
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
-            <Link href="/" className="hover:text-primary transition-colors">Acas\u0103</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Acasă</Link>
             <span>/</span>
             <Link href="/instrumente" className="hover:text-primary transition-colors">Instrumente</Link>
             <span>/</span>
@@ -124,7 +124,7 @@ export default async function InstrumentPage({ params }: Props) {
                 rel="noopener noreferrer sponsored"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-primary font-semibold hover:bg-white/90 transition-colors"
               >
-                \u00CEncearc\u0103 {tool.name} \u2192
+                Încearcă {tool.name} →
               </a>
             </div>
           </div>
@@ -146,9 +146,9 @@ export default async function InstrumentPage({ params }: Props) {
 
         {/* Affiliate CTA */}
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
-          <h3 className="text-xl font-bold text-text mb-2">\u00CEncearc\u0103 {tool.name} acum</h3>
+          <h3 className="text-xl font-bold text-text mb-2">Încearcă {tool.name} acum</h3>
           <p className="text-text-light mb-4">
-            Acceseaz\u0103 {tool.name} \u0219i descoper\u0103 cum te poate ajuta \u00EEn proiectele tale.
+            Accesează {tool.name} și descoperă cum te poate ajuta în proiectele tale.
           </p>
           <a
             href={tool.affiliateUrl}
@@ -156,12 +156,12 @@ export default async function InstrumentPage({ params }: Props) {
             rel="noopener noreferrer sponsored"
             className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors"
           >
-            Viziteaz\u0103 {tool.name} \u2192
+            Vizitează {tool.name} →
           </a>
           <p className="text-xs text-text-light mt-3">
-            * Link afiliat. Cite\u0219te{" "}
+            * Link afiliat. Citește{" "}
             <Link href="/afiliere" className="underline">
-              declara\u021Bia noastr\u0103
+              declarația noastră
             </Link>
             .
           </p>
