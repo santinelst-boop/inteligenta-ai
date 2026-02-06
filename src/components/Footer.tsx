@@ -10,16 +10,16 @@ const footerLinks = {
   ],
   resurse: [
     { href: "/recenzii", label: "Recenzii" },
-    { href: "/comparatii", label: "Compara\u021bii" },
+    { href: "/comparatii", label: "Comparații" },
     { href: "/blog", label: "Blog" },
     { href: "/despre", label: "Despre noi" },
     { href: "/contact", label: "Contact" },
   ],
   legal: [
-    { href: "/termeni", label: "Termeni \u0219i condi\u021bii" },
-    { href: "/confidentialitate", label: "Politica de confiden\u021bialitate" },
+    { href: "/termeni", label: "Termeni și condiții" },
+    { href: "/confidentialitate", label: "Politica de confidențialitate" },
     { href: "/cookies", label: "Politica de cookies" },
-    { href: "/afiliere", label: "Declara\u021bie afiliere" },
+    { href: "/afiliere", label: "Declarație afiliere" },
   ],
 };
 
@@ -30,10 +30,10 @@ export default function Footer() {
       <div className="hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h3 className="text-2xl font-bold text-white mb-2">
-            R\u0103m\u00e2i la curent cu lumea AI
+            Rămâi la curent cu lumea AI
           </h3>
           <p className="text-white/80 mb-6 max-w-md mx-auto">
-            Prime\u0219ti s\u0103pt\u0103m\u00e2nal cele mai importante nout\u0103\u021bi, recenzii \u0219i ghiduri AI direct \u00een inbox.
+            Primești săptămânal cele mai importante noutăți, recenzii și ghiduri AI direct în inbox.
           </p>
           <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input
@@ -45,11 +45,11 @@ export default function Footer() {
               type="submit"
               className="px-6 py-3 rounded-full bg-white text-primary font-semibold hover:bg-white/90 transition-colors"
             >
-              Aboneaz\u0103-te
+              Abonează-te
             </button>
           </form>
           <p className="text-white/60 text-xs mt-3">
-            F\u0103r\u0103 spam. Te po\u021bi dezabona oric\u00e2nd.
+            Fără spam. Te poți dezabona oricând.
           </p>
         </div>
       </div>
@@ -68,15 +68,15 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-white/60 leading-relaxed">
-              Primul portal de inteligen\u021b\u0103 artificial\u0103 din Rom\u00e2nia. Recenzii oneste, compara\u021bii
-              detaliate \u0219i ghiduri practice.
+              Primul portal de inteligență artificială din România. Recenzii oneste, comparații
+              detaliate și ghiduri practice.
             </p>
             {/* Social */}
             <div className="flex gap-3 mt-4">
               {["facebook", "twitter", "instagram", "linkedin"].map((social) => (
                 <a
                   key={social}
-                  href={\u0060#${social}\u0060}
+                  href={`#${social}`}
                   className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/60 hover:bg-primary hover:text-white transition-colors"
                 >
                   <span className="text-xs font-bold uppercase">
@@ -142,10 +142,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/40">
-            &copy; 2026 inteligenta.ai \u2014 Toate drepturile rezervate.
+            &copy; 2026 inteligenta.ai — Toate drepturile rezervate.
           </p>
           <p className="text-xs text-white/40">
-            Acest site con\u021bine link-uri de afiliere. Putem primi un comision pentru achizi\u021biile
+            Acest site conține link-uri de afiliere. Putem primi un comision pentru achizițiile
             efectuate prin intermediul acestora.
           </p>
         </div>
