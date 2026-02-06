@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact \u2014 inteligenta.ai",
-  description: "Contacteaz\u0103-ne pentru \u00EEntreb\u0103ri, sugestii sau colabor\u0103ri.",
+  title: "Contact — inteligenta.ai",
+  description: "Contactează-ne pentru întrebări, sugestii sau colaborări.",
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
-            <Link href="/" className="hover:text-primary transition-colors">Acas\u0103</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-text font-medium">Contact</span>
           </nav>
@@ -27,7 +27,7 @@ export default function ContactPage() {
             Contact
           </h1>
           <p className="text-white/80 text-lg">
-            Ai o \u00EEntrebare sau sugestie? Scrie-ne \u0219i \u00EE\u021Bi r\u0103spundem c\u00E2t mai cur\u00E2nd.
+            Ai o întrebare sau sugestie? Scrie-ne și îți răspundem cât mai curând.
           </p>
         </div>
       </section>
@@ -37,7 +37,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Info */}
           <div>
-            <h2 className="text-xl font-bold text-text mb-6">Cum ne po\u021Bi contacta</h2>
+            <h2 className="text-xl font-bold text-text mb-6">Cum ne poți contacta</h2>
             <div className="space-y-6">
               <div className="flex gap-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
@@ -60,13 +60,13 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-text mb-1">Loca\u021Bie</h3>
-                  <p className="text-text-light">Bucure\u0219ti, Rom\u00E2nia</p>
+                  <h3 className="font-semibold text-text mb-1">Locație</h3>
+                  <p className="text-text-light">București, România</p>
                 </div>
               </div>
             </div>
             <div className="mt-10">
-              <h3 className="font-semibold text-text mb-3">Urm\u0103re\u0219te-ne</h3>
+              <h3 className="font-semibold text-text mb-3">Urmărește-ne</h3>
               <div className="flex gap-4">
                 <a href="#" className="text-text-light hover:text-primary transition-colors text-sm">Twitter</a>
                 <a href="#" className="text-text-light hover:text-primary transition-colors text-sm">LinkedIn</a>
@@ -81,7 +81,7 @@ export default function ContactPage() {
             <form className="space-y-5">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-text mb-1.5">Nume</label>
-                <input type="text" id="name" name="name" className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="Numele t\u0103u" />
+                <input type="text" id="name" name="name" className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="Numele tău" />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-text mb-1.5">Email</label>
@@ -89,7 +89,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-text mb-1.5">Mesaj</label>
-                <textarea id="message" name="message" rows={5} className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="Scrie mesajul t\u0103u aici..."></textarea>
+                <textarea id="message" name="message" rows={5} className="w-full px-4 py-2.5 rounded-xl border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-primary text-sm" placeholder="Scrie mesajul tău aici..."></textarea>
               </div>
               <button type="submit" className="w-full px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
                 Trimite mesajul
