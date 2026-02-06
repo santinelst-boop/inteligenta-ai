@@ -1,40 +1,10 @@
 import Link from "next/link";
+import { comparisons } from "@/data/comparisons";
 
 export const metadata = {
-  title: "Comparații AI — Cap la cap | inteligenta.ai",
-  description: "Comparații detaliate între cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E și multe altele.",
+  title: "Compara\u021Bii AI \u2014 Cap la cap | inteligenta.ai",
+  description: "Compara\u021Bii detaliate \u00EEntre cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E \u0219i multe altele.",
 };
-
-const comparisons = [
-  {
-    slug: "chatgpt-vs-claude",
-    left: { name: "ChatGPT", emoji: "🟢", color: "bg-green-100" },
-    right: { name: "Claude", emoji: "🟠", color: "bg-orange-100" },
-    description: "Cine câștigă bătălia chatbot-ilor AI în 2026?",
-    category: "AI Text",
-  },
-  {
-    slug: "midjourney-vs-dalle",
-    left: { name: "Midjourney", emoji: "🔵", color: "bg-blue-100" },
-    right: { name: "DALL-E 3", emoji: "🟣", color: "bg-purple-100" },
-    description: "Care generator de imagini merită banii?",
-    category: "AI Imagine",
-  },
-  {
-    slug: "copilot-vs-cursor",
-    left: { name: "GitHub Copilot", emoji: "⚫", color: "bg-gray-100" },
-    right: { name: "Cursor", emoji: "🔵", color: "bg-sky-100" },
-    description: "Cel mai bun asistent de programare AI — care e pentru tine?",
-    category: "AI Cod",
-  },
-  {
-    slug: "elevenlabs-vs-murf",
-    left: { name: "ElevenLabs", emoji: "🟡", color: "bg-yellow-100" },
-    right: { name: "Murf AI", emoji: "🟢", color: "bg-emerald-100" },
-    description: "Sinteză vocală AI: care sună mai natural?",
-    category: "AI Audio",
-  },
-];
 
 export default function ComparatiiPage() {
   return (
@@ -42,10 +12,10 @@ export default function ComparatiiPage() {
       <section className="hero-gradient py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-            Comparații AI
+            Compara\u021Bii AI
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Analize cap la cap pentru a face alegerea corectă
+            Analize cap la cap pentru a face alegerea corect\u0103
           </p>
         </div>
       </section>
