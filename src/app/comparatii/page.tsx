@@ -2,8 +2,8 @@ import Link from "next/link";
 import { comparisons } from "@/data/comparisons";
 
 export const metadata = {
-  title: "Compara\u021Bii AI \u2014 Cap la cap | inteligenta.ai",
-  description: "Compara\u021Bii detaliate \u00EEntre cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E \u0219i multe altele.",
+  title: "Comparații AI — Cap la cap | inteligenta.ai",
+  description: "Comparații detaliate între cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E și multe altele.",
 };
 
 export default function ComparatiiPage() {
@@ -12,10 +12,10 @@ export default function ComparatiiPage() {
       <section className="hero-gradient py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-            Compara\u021Bii AI
+            Comparații AI
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Analize cap la cap pentru a face alegerea corect\u0103
+            Analize cap la cap pentru a face alegerea corectă
           </p>
         </div>
       </section>
