@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
   --color-primary: #4f46e5;
@@ -24,10 +25,12 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
+/* Hero gradient animation */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -39,6 +42,7 @@ html {
   animation: gradient-shift 8s ease infinite;
 }
 
+/* Card hover effect */
 .card-hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -47,6 +51,7 @@ html {
   box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15);
 }
 
+/* Category pill */
 .pill {
   transition: all 0.2s ease;
 }
@@ -56,6 +61,7 @@ html {
   transform: scale(1.05);
 }
 
+/* Rating stars */
 .star-filled {
   color: #f59e0b;
 }
