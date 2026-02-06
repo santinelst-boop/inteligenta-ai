@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const comp = comparisons.find((c) => c.slug === slug);
   if (!comp) return {};
 
-  const title = `${comp.left.name} vs ${comp.right.name} \u2014 Compara\u021Bie | inteligenta.ai`;
+  const title = `${comp.left.name} vs ${comp.right.name} — Comparație | inteligenta.ai`;
   const description = comp.description;
 
   return {
@@ -71,9 +71,9 @@ export default async function ComparatiePage({ params }: Props) {
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
-            <Link href="/" className="hover:text-primary transition-colors">Acas\u0103</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Acasă</Link>
             <span>/</span>
-            <Link href="/comparatii" className="hover:text-primary transition-colors">Compara\u021Bii</Link>
+            <Link href="/comparatii" className="hover:text-primary transition-colors">Comparații</Link>
             <span>/</span>
             <span className="text-text font-medium">{comp.left.name} vs {comp.right.name}</span>
           </nav>
@@ -121,7 +121,7 @@ export default async function ComparatiePage({ params }: Props) {
                   <span className="text-sm text-text font-medium">{toolLeft.rating}</span>
                 </div>
                 <a href={toolLeft.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors">
-                  \u00CEncearc\u0103 {comp.left.name} \u2192
+                  Încearcă {comp.left.name} →
                 </a>
               </>
             )}
@@ -150,7 +150,7 @@ export default async function ComparatiePage({ params }: Props) {
                   <span className="text-sm text-text font-medium">{toolRight.rating}</span>
                 </div>
                 <a href={toolRight.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors">
-                  \u00CEncearc\u0103 {comp.right.name} \u2192
+                  Încearcă {comp.right.name} →
                 </a>
               </>
             )}
@@ -175,7 +175,7 @@ export default async function ComparatiePage({ params }: Props) {
                   <td className="px-6 py-4 text-center text-text font-medium">{toolRight.rating} / 5</td>
                 </tr>
                 <tr className="border-b border-border">
-                  <td className="px-6 py-4 text-text-light">Pre\u021B</td>
+                  <td className="px-6 py-4 text-text-light">Preț</td>
                   <td className="px-6 py-4 text-center text-text font-medium">{toolLeft.pricing}</td>
                   <td className="px-6 py-4 text-center text-text font-medium">{toolRight.pricing}</td>
                 </tr>
@@ -192,22 +192,22 @@ export default async function ComparatiePage({ params }: Props) {
         {/* Affiliate CTA */}
         <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
           <h3 className="text-xl font-bold text-text mb-2">Alege instrumentul potrivit pentru tine</h3>
-          <p className="text-text-light mb-4">Testeaz\u0103 ambele instrumente \u0219i decide care se potrive\u0219te cel mai bine nevoilor tale.</p>
+          <p className="text-text-light mb-4">Testează ambele instrumente și decide care se potrivește cel mai bine nevoilor tale.</p>
           <div className="flex flex-wrap gap-3">
             {toolLeft && (
               <a href={toolLeft.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
-                Viziteaz\u0103 {comp.left.name} \u2192
+                Vizitează {comp.left.name} →
               </a>
             )}
             {toolRight && (
               <a href={toolRight.affiliateUrl} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
-                Viziteaz\u0103 {comp.right.name} \u2192
+                Vizitează {comp.right.name} →
               </a>
             )}
           </div>
           <p className="text-xs text-text-light mt-3">
-            * Link afiliat. Cite\u0219te{" "}
-            <Link href="/afiliere" className="underline">declara\u021Bia noastr\u0103</Link>.
+            * Link afiliat. Citește{" "}
+            <Link href="/afiliere" className="underline">declarația noastră</Link>.
           </p>
         </div>
       </section>
@@ -215,7 +215,7 @@ export default async function ComparatiePage({ params }: Props) {
       {/* Other Comparisons */}
       {comparisons.filter((c) => c.slug !== slug).length > 0 && (
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
-          <h2 className="text-xl font-bold text-text mb-6">Alte compara\u021Bii</h2>
+          <h2 className="text-xl font-bold text-text mb-6">Alte comparații</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {comparisons.filter((c) => c.slug !== slug).slice(0, 4).map((c) => (
               <Link key={c.slug} href={`/comparatii/${c.slug}`} className="card-hover flex items-center gap-4 bg-card rounded-xl border border-border p-4">
