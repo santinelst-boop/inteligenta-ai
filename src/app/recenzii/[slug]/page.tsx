@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { latestArticles, featuredTools } from "@/data/tools";
-import { getArticleContent } from "@/data/article-content";
+import { articleContent } from "@/data/article-content";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -40,7 +40,7 @@ export default async function ArticlePage({ params }: Props) {
   const article = latestArticles.find((a) => a.slug === slug);
   if (!article) notFound();
 
-  const content = getArticleContent(slug);
+  const content = articleContent[slug]?.content;
   if (!content) notFound();
 
   const relatedTools = featuredTools
@@ -87,7 +87,7 @@ export default async function ArticlePage({ params }: Props) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
             <Link href="/" className="hover:text-primary transition-colors">
-              Acas\u0103
+              Acasă
             </Link>
             <span>/</span>
             <Link
@@ -119,7 +119,7 @@ export default async function ArticlePage({ params }: Props) {
               })}
             </time>
             <span className="text-sm text-text-light">
-              {article.readTime} lectur\u0103
+              {article.readTime} lectură
             </span>
           </div>
 
@@ -142,7 +142,7 @@ export default async function ArticlePage({ params }: Props) {
         {relatedTools.length > 0 && (
           <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
             <h3 className="text-xl font-bold text-text mb-4">
-              Instrumente men\u021bionate \u00een acest articol
+              Instrumente menționate în acest articol
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {relatedTools.map((tool) => (
@@ -168,7 +168,7 @@ export default async function ArticlePage({ params }: Props) {
             <p className="text-xs text-text-light mt-4">
               * Unele linkuri sunt linkuri afiliate. Citeste{" "}
               <Link href="/despre" className="underline">
-                politica noastr\u0103
+                politica noastră
               </Link>
               .
             </p>
