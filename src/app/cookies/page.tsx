@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politica de Cookie-uri \u2014 inteligenta.ai",
+  title: "Politica de Cookie-uri — inteligenta.ai",
   description: "Politica de cookie-uri a site-ului inteligenta.ai.",
 };
 
@@ -12,7 +12,7 @@ export default function CookiesPage() {
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
-            <Link href="/" className="hover:text-primary transition-colors">Acas\u0103</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Acasă</Link>
             <span>/</span>
             <span className="text-text font-medium">Cookie-uri</span>
           </nav>
@@ -23,15 +23,15 @@ export default function CookiesPage() {
         <div className="prose max-w-none space-y-8 text-text-light">
           <section>
             <h2 className="text-xl font-bold text-text mb-3">1. Ce sunt cookie-urile?</h2>
-            <p>Cookie-urile sunt fi\u0219iere text mici plasate pe dispozitivul t\u0103u atunci c\u00E2nd vizitezi un site web. Sunt utilizate pe scar\u0103 larg\u0103 pentru a face site-urile s\u0103 func\u021Bioneze mai eficient.</p>
+            <p>Cookie-urile sunt fișiere text mici plasate pe dispozitivul tău atunci când vizitezi un site web. Sunt utilizate pe scară largă pentru a face site-urile să funcționeze mai eficient.</p>
           </section>
           <section>
-            <h2 className="text-xl font-bold text-text mb-3">2. Cum utiliz\u0103m cookie-urile</h2>
+            <h2 className="text-xl font-bold text-text mb-3">2. Cum utilizăm cookie-urile</h2>
             <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
-              <li><strong>Cookie-uri esen\u021Biale:</strong> Necesare pentru func\u021Bionarea corect\u0103 a site-ului</li>
-              <li><strong>Cookie-uri analitice:</strong> Ne ajut\u0103 s\u0103 \u00EEn\u021Belegem cum utilizeaz\u0103 vizitatorii site-ul</li>
-              <li><strong>Cookie-uri de preferin\u021B\u0103:</strong> Re\u021Bin preferin\u021Bele \u0219i set\u0103rile tale</li>
-              <li><strong>Cookie-uri de marketing:</strong> Folosite pentru a m\u0103sura eficien\u021Ba publicit\u0103\u021Bii</li>
+              <li><strong>Cookie-uri esențiale:</strong> Necesare pentru funcționarea corectă a site-ului</li>
+              <li><strong>Cookie-uri analitice:</strong> Ne ajută să înțelegem cum utilizează vizitatorii site-ul</li>
+              <li><strong>Cookie-uri de preferință:</strong> Rețin preferințele și setările tale</li>
+              <li><strong>Cookie-uri de marketing:</strong> Folosite pentru a măsura eficiența publicității</li>
             </ul>
           </section>
           <section>
@@ -39,25 +39,25 @@ export default function CookiesPage() {
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold text-text mb-1">Cookie-uri de sesiune</h3>
-                <p>Expir\u0103 c\u00E2nd \u00EEnchizi browserul \u0219i sunt folosite pentru a men\u021Bine sesiunea ta.</p>
+                <p>Expiră când închizi browserul și sunt folosite pentru a menține sesiunea ta.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-text mb-1">Cookie-uri persistente</h3>
-                <p>R\u0103m\u00E2n pe dispozitivul t\u0103u p\u00E2n\u0103 expir\u0103 sau le \u0219tergi manual.</p>
+                <p>Rămân pe dispozitivul tău până expiră sau le ștergi manual.</p>
               </div>
               <div>
-                <h3 className="font-semibold text-text mb-1">Cookie-uri ter\u021B\u0103</h3>
+                <h3 className="font-semibold text-text mb-1">Cookie-uri terță</h3>
                 <p>Setate de servicii externe precum Google Analytics.</p>
               </div>
             </div>
           </section>
           <section>
             <h2 className="text-xl font-bold text-text mb-3">4. Gestionarea cookie-urilor</h2>
-            <p>Po\u021Bi controla \u0219i gestiona cookie-urile din set\u0103rile browserului t\u0103u.</p>
+            <p>Poți controla și gestiona cookie-urile din setările browserului tău.</p>
           </section>
           <section>
-            <h2 className="text-xl font-bold text-text mb-3">5. Confiden\u021Bialitate</h2>
-            <p>Pentru mai multe informa\u021Bii, consulta\u021Bi{" "}<Link href="/confidentialitate" className="text-primary hover:underline">politica de confiden\u021Bialitate</Link>.</p>
+            <h2 className="text-xl font-bold text-text mb-3">5. Confidențialitate</h2>
+            <p>Pentru mai multe informații, consultați{" "}<Link href="/confidentialitate" className="text-primary hover:underline">politica de confidențialitate</Link>.</p>
           </section>
         </div>
         <div className="mt-10 pt-6 border-t border-border text-sm text-text-light">
