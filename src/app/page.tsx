@@ -1,14 +1,20 @@
 import Link from "next/link";
 import ToolCard from "@/components/ToolCard";
 import ArticleCard from "@/components/ArticleCard";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import ComparisonTable from "@/components/ComparisonTable";
 import { categories, featuredTools, latestArticles } from "@/data/tools";
 
 export default function Home() {
   const featuredArticles = latestArticles.filter((a) => a.featured);
   const recentArticles = latestArticles.slice(0, 4);
+  const top10Tools = featuredTools.sort((a, b) => b.rating - a.rating).slice(0, 10);
 
   return (
     <>
+      {/* ===== AFFILIATE DISCLOSURE ===== */}
+      <AffiliateDisclosure />
+
       {/* ===== HERO SECTION ===== */}
       <section className="hero-gradient relative overflow-hidden">
         {/* Decorative elements */}
@@ -93,7 +99,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredTools.map((tool) => (
+          {featuredTools.slice(0, 6).map((tool) => (
             <ToolCard key={tool.id} tool={tool} />
           ))}
         </div>
@@ -105,6 +111,24 @@ export default function Home() {
           >
             Vezi toate instrumentele →
           </Link>
+        </div>
+      </section>
+
+      {/* ===== COMPARISON TABLE SECTION ===== */}
+      <section className="bg-white border-y border-border">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-text">
+                Tabel Comparativ Prețuri
+              </h2>
+              <p className="text-text-light mt-1">
+                Compară top 10 instrumente AI pe baza rating-ului, prețului și funcționalități
+              </p>
+            </div>
+          </div>
+
+          <ComparisonTable tools={top10Tools} maxTools={10} />
         </div>
       </section>
 
@@ -186,6 +210,8 @@ export default function Home() {
                   {cat.id === "ai-cod" && "💻"}
                   {cat.id === "ai-audio" && "🎵"}
                   {cat.id === "ai-productivitate" && "⚡"}
+                  {cat.id === "ai-cautare" && "🔍"}
+                  {cat.id === "ai-email" && "✉️"}
                 </div>
                 <h3 className="font-semibold text-white text-sm">
                   {cat.name}
@@ -196,7 +222,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== COMPARISON TEASER ===== */}
+      {/* ===== NEWSLETTER SECTION ===== */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              Primește recenzii și ghiduri în inbox
+            </h2>
+            <p className="text-white/80 mb-6">
+              Abonează-te la newsletter-ul nostru și fii printre primii care află despre noile instrumente AI și analysele noastre detaliate.
+            </p>
+
+            <form className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                placeholder="Introdu adresa de email..."
+                required
+                className="flex-1 px-5 py-3 rounded-lg bg-white text-text placeholder-text-light focus:outline-none focus:ring-2 focus:ring-white"
+              />
+              <button
+                type="submit"
+                className="px-6 py-3 rounded-lg bg-white text-primary font-bold hover:bg-white/90 transition-colors whitespace-nowrap"
+              >
+                Abonează-te
+              </button>
+            </form>
+
+            <p className="text-xs text-white/60 mt-4">
+              Nu trimitem spam. Te poți dezabona oricând.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== COMPARISON TEASEP ===== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -222,7 +281,7 @@ export default function Home() {
             className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
           >
             <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center text-2xl shrink-0">
-              🟢
+              🟡
             </div>
             <div className="flex-1">
               <span className="text-xs font-bold text-primary uppercase tracking-wide">
@@ -270,7 +329,7 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "150+", label: "Instrumente analizate" },
+              { number: "200+", label: "Instrumente analizate" },
               { number: "50+", label: "Recenzii detaliate" },
               { number: "Zilnic", label: "Conținut actualizat" },
               { number: "100%", label: "Opinii oneste" },
