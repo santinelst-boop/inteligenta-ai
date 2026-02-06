@@ -23,7 +23,7 @@ function PricingBadge({ pricing }: { pricing: string }) {
   const colors: Record<string, string> = {
     Gratuit: "bg-green-100 text-green-700",
     Freemium: "bg-blue-100 text-blue-700",
-    "Pl\u0103tit": "bg-amber-100 text-amber-700",
+    "Plătit": "bg-amber-100 text-amber-700",
     "Open Source": "bg-purple-100 text-purple-700",
   };
 
@@ -73,7 +73,7 @@ export default function ToolCard({ tool }: { tool: AITool }) {
         target="_blank"
         rel="noopener noreferrer sponsored"
       >
-        \u00cencearcă {tool.name} \u2192
+        Încearcă {tool.name} →
       </Link>
     </div>
   );

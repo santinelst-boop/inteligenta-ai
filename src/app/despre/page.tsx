@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Despre noi | inteligenta.ai",
-  description: "Echipa din spatele inteligenta.ai \u2014 primul portal de inteligen\u021b\u0103 artificial\u0103 din Rom\u00e2nia.",
+  description: "Echipa din spatele inteligenta.ai — primul portal de inteligență artificială din România.",
 };
 
 export default function DesprePage() {
@@ -12,7 +12,7 @@ export default function DesprePage() {
             Despre inteligenta.ai
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Primul portal de inteligen\u021b\u0103 artificial\u0103 din Rom\u00e2nia
+            Primul portal de inteligență artificială din România
           </p>
         </div>
       </section>
@@ -20,16 +20,16 @@ export default function DesprePage() {
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="prose prose-lg max-w-none">
           <div className="bg-card rounded-2xl border border-border p-8 mb-8">
-            <h2 className="text-2xl font-bold text-text mb-4">Misiunea noastr\u0103</h2>
+            <h2 className="text-2xl font-bold text-text mb-4">Misiunea noastră</h2>
             <p className="text-text-light leading-relaxed mb-4">
-              inteligenta.ai s-a n\u0103scut din dorin\u021ba de a face inteligen\u021ba artificial\u0103 accesibil\u0103
-              tuturor rom\u00e2nilor. \u00centr-o lume \u00een care AI-ul evolueaz\u0103 zilnic, ne-am propus s\u0103 fim
-              ghidul t\u0103u de \u00eencredere \u2014 oferindu-\u021bi recenzii oneste, compara\u021bii obiective \u0219i ghiduri
-              practice pe care le po\u021bi folosi imediat.
+              inteligenta.ai s-a născut din dorința de a face inteligența artificială accesibilă
+              tuturor românilor. Într-o lume în care AI-ul evoluează zilnic, ne-am propus să fim
+              ghidul tău de încredere — oferindu-ți recenzii oneste, comparații obiective și ghiduri
+              practice pe care le poți folosi imediat.
             </p>
             <p className="text-text-light leading-relaxed">
-              Nu suntem sponsoriza\u021bi de nicio companie AI. Test\u0103m fiecare instrument personal \u0219i
-              scriem recenzii bazate pe experien\u021b\u0103 real\u0103, nu pe comunicate de pres\u0103.
+              Nu suntem sponsorizați de nicio companie AI. Testăm fiecare instrument personal și
+              scriem recenzii bazate pe experiență reală, nu pe comunicate de presă.
             </p>
           </div>
 
@@ -37,10 +37,10 @@ export default function DesprePage() {
             <h2 className="text-2xl font-bold text-text mb-4">Ce oferim</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { title: "Recenzii detaliate", desc: "Teste practice cu pro, contra \u0219i verdict clar" },
-                { title: "Compara\u021bii obiective", desc: "Analize cap la cap pentru alegerea corect\u0103" },
-                { title: "Ghiduri practice", desc: "Tutoriale pas cu pas pentru \u00eencep\u0103tori \u0219i avansa\u021bi" },
-                { title: "Actualiz\u0103ri zilnice", desc: "Cele mai noi instrumente AI, testate \u0219i recenzate" },
+                { title: "Recenzii detaliate", desc: "Teste practice cu pro, contra și verdict clar" },
+                { title: "Comparații obiective", desc: "Analize cap la cap pentru alegerea corectă" },
+                { title: "Ghiduri practice", desc: "Tutoriale pas cu pas pentru începători și avansați" },
+                { title: "Actualizări zilnice", desc: "Cele mai noi instrumente AI, testate și recenzate" },
               ].map((item) => (
                 <div key={item.title} className="p-4 bg-surface rounded-xl">
                   <h3 className="font-semibold text-text mb-1">{item.title}</h3>
@@ -51,12 +51,12 @@ export default function DesprePage() {
           </div>
 
           <div className="bg-card rounded-2xl border border-border p-8">
-            <h2 className="text-2xl font-bold text-text mb-4">Transparen\u021b\u0103</h2>
+            <h2 className="text-2xl font-bold text-text mb-4">Transparență</h2>
             <p className="text-text-light leading-relaxed">
-              Acest site con\u021bine link-uri de afiliere. Asta \u00eenseamn\u0103 c\u0103 putem primi un mic comision
-              atunci c\u00e2nd achizi\u021bionezi un produs prin intermediul link-urilor noastre, f\u0103r\u0103 niciun
-              cost suplimentar pentru tine. Acest model ne permite s\u0103 men\u021binem site-ul gratuit \u0219i s\u0103
-              continu\u0103m s\u0103 producem con\u021binut de calitate.
+              Acest site conține link-uri de afiliere. Asta înseamnă că putem primi un mic comision
+              atunci când achiziționezi un produs prin intermediul link-urilor noastre, fără niciun
+              cost suplimentar pentru tine. Acest model ne permite să menținem site-ul gratuit și să
+              continuăm să producem conținut de calitate.
             </p>
           </div>
         </div>

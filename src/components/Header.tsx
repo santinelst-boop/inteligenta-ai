@@ -3,10 +3,10 @@ import { useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Acas\u0103" },
+  { href: "/", label: "Acasă" },
   { href: "/instrumente", label: "Instrumente AI" },
   { href: "/recenzii", label: "Recenzii" },
-  { href: "/comparatii", label: "Compara\u021bii" },
+  { href: "/comparatii", label: "Comparații" },
   { href: "/blog", label: "Blog" },
   { href: "/despre", label: "Despre" },
 ];
@@ -52,7 +52,7 @@ export default function Header() {
               href="/instrumente"
               className="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors"
             >
-              Exploreaz\u0103 AI
+              Explorează AI
             </Link>
           </div>
 
@@ -93,7 +93,7 @@ export default function Header() {
               className="block mt-2 px-4 py-2 rounded-full bg-primary text-white text-sm font-medium text-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              Exploreaz\u0103 AI
+              Explorează AI
             </Link>
           </nav>
         </div>

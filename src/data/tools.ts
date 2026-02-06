@@ -36,7 +36,7 @@ export const featuredTools: AITool[] = [
     id: "chatgpt",
     name: "ChatGPT",
     description:
-      "Cel mai popular chatbot AI. Genereaz\u0103 text, r\u0103spunde la \u00eentreb\u0103ri, scrie cod \u0219i multe altele.",
+      "Cel mai popular chatbot AI. Generează text, răspunde la întrebări, scrie cod și multe altele.",
     category: "ai-text",
     rating: 4.8,
     pricing: "Freemium",
@@ -49,33 +49,33 @@ export const featuredTools: AITool[] = [
     id: "claude",
     name: "Claude",
     description:
-      "Asistentul AI de la Anthropic. Excelent la analiz\u0103, scriere \u0219i programare cu context extins.",
+      "Asistentul AI de la Anthropic. Excelent la analiză, scriere și programare cu context extins.",
     category: "ai-text",
     rating: 4.9,
     pricing: "Freemium",
     affiliateUrl: "#",
     imageUrl: "/images/tools/claude.svg",
-    tags: ["chatbot", "analiz\u0103", "cod"],
+    tags: ["chatbot", "analiză", "cod"],
     featured: true,
   },
   {
     id: "midjourney",
     name: "Midjourney",
     description:
-      "Generator de imagini AI premium. Creeaz\u0103 art\u0103 digital\u0103 uluitoare din descrieri text.",
+      "Generator de imagini AI premium. Creează artă digitală uluitoare din descrieri text.",
     category: "ai-imagine",
     rating: 4.7,
-    pricing: "Pl\u0103tit",
+    pricing: "Plătit",
     affiliateUrl: "#",
     imageUrl: "/images/tools/midjourney.svg",
-    tags: ["imagine", "art\u0103", "design"],
+    tags: ["imagine", "artă", "design"],
     featured: true,
   },
   {
     id: "runway",
     name: "Runway ML",
     description:
-      "Platform\u0103 de editare video cu AI. Genereaz\u0103 \u0219i editeaz\u0103 clipuri video cu inteligen\u021b\u0103 artificial\u0103.",
+      "Platformă de editare video cu AI. Generează și editează clipuri video cu inteligență artificială.",
     category: "ai-video",
     rating: 4.6,
     pricing: "Freemium",
@@ -88,10 +88,10 @@ export const featuredTools: AITool[] = [
     id: "github-copilot",
     name: "GitHub Copilot",
     description:
-      "Asistent de programare AI. Sugereaz\u0103 cod \u00een timp real direct \u00een editorul t\u0103u preferat.",
+      "Asistent de programare AI. Sugerează cod în timp real direct în editorul tău preferat.",
     category: "ai-cod",
     rating: 4.7,
-    pricing: "Pl\u0103tit",
+    pricing: "Plătit",
     affiliateUrl: "#",
     imageUrl: "/images/tools/copilot.svg",
     tags: ["cod", "programare", "IDE"],
@@ -101,7 +101,7 @@ export const featuredTools: AITool[] = [
     id: "elevenlabs",
     name: "ElevenLabs",
     description:
-      "Sintez\u0103 vocal\u0103 AI realist\u0103. Transform\u0103 textul \u00een voce natural\u0103 \u00een zeci de limbi.",
+      "Sinteză vocală AI realistă. Transformă textul în voce naturală în zeci de limbi.",
     category: "ai-audio",
     rating: 4.8,
     pricing: "Freemium",
@@ -115,9 +115,9 @@ export const featuredTools: AITool[] = [
 export const latestArticles: Article[] = [
   {
     slug: "chatgpt-vs-claude-comparatie-2026",
-    title: "ChatGPT vs Claude: Care este mai bun \u00een 2026?",
+    title: "ChatGPT vs Claude: Care este mai bun în 2026?",
     excerpt:
-      "Compara\u021bie detaliat\u0103 \u00eentre cei doi gigan\u021bi AI. Analiz\u0103m performan\u021ba, pre\u021bul \u0219i cazurile de utilizare.",
+      "Comparație detaliată între cei doi giganți AI. Analizăm performanța, prețul și cazurile de utilizare.",
     category: "ai-text",
     date: "6 Februarie 2026",
     readTime: "8 min",
@@ -126,9 +126,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "top-10-generatoare-imagini-ai",
-    title: "Top 10 Generatoare de Imagini AI \u00een 2026",
+    title: "Top 10 Generatoare de Imagini AI în 2026",
     excerpt:
-      "De la Midjourney la DALL-E 3 \u0219i Stable Diffusion. Ghid complet cu exemple \u0219i pre\u021buri.",
+      "De la Midjourney la DALL-E 3 și Stable Diffusion. Ghid complet cu exemple și prețuri.",
     category: "ai-imagine",
     date: "5 Februarie 2026",
     readTime: "12 min",
@@ -137,9 +137,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "cum-sa-folosesti-ai-productivitate",
-    title: "Cum s\u0103 folose\u0219ti AI pentru productivitate maxim\u0103",
+    title: "Cum să folosești AI pentru productivitate maximă",
     excerpt:
-      "10 instrumente AI care \u00ee\u021bi vor transforma modul de lucru. Ghid practic cu exemple reale.",
+      "10 instrumente AI care îți vor transforma modul de lucru. Ghid practic cu exemple reale.",
     category: "ai-productivitate",
     date: "4 Februarie 2026",
     readTime: "10 min",
@@ -148,9 +148,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "ghid-complet-github-copilot",
-    title: "Ghid complet GitHub Copilot: Merit\u0103 investi\u021bia?",
+    title: "Ghid complet GitHub Copilot: Merită investiția?",
     excerpt:
-      "Recenzie detaliat\u0103 cu teste practice. C\u00e2t de bun e la programare real\u0103 vs. marketing?",
+      "Recenzie detaliată cu teste practice. Cât de bun e la programare reală vs. marketing?",
     category: "ai-cod",
     date: "3 Februarie 2026",
     readTime: "15 min",

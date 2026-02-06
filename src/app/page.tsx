@@ -24,14 +24,14 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
-            Descoper\u0103 cele mai bune
+            Descoperă cele mai bune
             <br />
             <span className="text-white/90">instrumente AI</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8">
-            Recenzii oneste, compara\u021bii detaliate \u0219i ghiduri practice.
-            Primul portal de inteligen\u021b\u0103 artificial\u0103 din Rom\u00e2nia.
+            Recenzii oneste, comparații detaliate și ghiduri practice.
+            Primul portal de inteligență artificială din România.
           </p>
 
           {/* Search Bar */}
@@ -52,7 +52,7 @@ export default function Home() {
               </svg>
               <input
                 type="text"
-                placeholder="Caut\u0103 instrumente AI... (ex: ChatGPT, Midjourney, Copilot)"
+                placeholder="Caută instrumente AI... (ex: ChatGPT, Midjourney, Copilot)"
                 className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white text-text text-base shadow-lg focus:outline-none focus:ring-4 focus:ring-white/30"
               />
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
             href="/instrumente"
             className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
           >
-            Vezi toate \u2192
+            Vezi toate →
           </Link>
         </div>
 
@@ -103,7 +103,7 @@ export default function Home() {
             href="/instrumente"
             className="inline-flex items-center gap-1 text-sm font-medium text-primary"
           >
-            Vezi toate instrumentele \u2192
+            Vezi toate instrumentele →
           </Link>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function Home() {
               href="/recenzii"
               className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
             >
-              Toate recenziile \u2192
+              Toate recenziile →
             </Link>
           </div>
 
@@ -143,7 +143,7 @@ export default function Home() {
             {/* Sidebar - Popular */}
             <div className="bg-surface rounded-2xl p-5">
               <h3 className="font-bold text-text mb-4 flex items-center gap-2">
-                <span className="text-lg">\ud83d\udd25</span> Populare
+                <span className="text-lg">🔥</span> Populare
               </h3>
               <div className="space-y-4">
                 {recentArticles.map((article) => (
@@ -163,10 +163,10 @@ export default function Home() {
       <section className="hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-3">
-            Exploreaz\u0103 pe categorii
+            Explorează pe categorii
           </h2>
           <p className="text-white/70 text-center mb-10 max-w-lg mx-auto">
-            De la generatoare de text la editoare video \u2014 g\u0103se\u0219te instrumentul AI perfect pentru tine
+            De la generatoare de text la editoare video — găsește instrumentul AI perfect pentru tine
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -180,12 +180,12 @@ export default function Home() {
                   className="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
                   style={{ backgroundColor: `${cat.color}30` }}
                 >
-                  {cat.id === "ai-text" && "\u270f\ufe0f"}
-                  {cat.id === "ai-imagine" && "\ud83c\udfa8"}
-                  {cat.id === "ai-video" && "\ud83c\udfac"}
-                  {cat.id === "ai-cod" && "\ud83d\udcbb"}
-                  {cat.id === "ai-audio" && "\ud83c\udfb5"}
-                  {cat.id === "ai-productivitate" && "\u26a1"}
+                  {cat.id === "ai-text" && "✏️"}
+                  {cat.id === "ai-imagine" && "🎨"}
+                  {cat.id === "ai-video" && "🎬"}
+                  {cat.id === "ai-cod" && "💻"}
+                  {cat.id === "ai-audio" && "🎵"}
+                  {cat.id === "ai-productivitate" && "⚡"}
                 </div>
                 <h3 className="font-semibold text-white text-sm">
                   {cat.name}
@@ -201,17 +201,17 @@ export default function Home() {
         <div className="flex items-end justify-between mb-8">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-text">
-              Compara\u021bii
+              Comparații
             </h2>
             <p className="text-text-light mt-1">
-              Analize cap la cap pentru a face alegerea corect\u0103
+              Analize cap la cap pentru a face alegerea corectă
             </p>
           </div>
           <Link
             href="/comparatii"
             className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
           >
-            Toate compara\u021biile \u2192
+            Toate comparațiile →
           </Link>
         </div>
 
@@ -222,7 +222,7 @@ export default function Home() {
             className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
           >
             <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center text-2xl shrink-0">
-              \ud83d\udfe2
+              🟢
             </div>
             <div className="flex-1">
               <span className="text-xs font-bold text-primary uppercase tracking-wide">
@@ -230,11 +230,11 @@ export default function Home() {
               </span>
               <h3 className="font-bold text-text">ChatGPT vs Claude</h3>
               <p className="text-sm text-text-light">
-                Cine c\u00e2\u0219tig\u0103 b\u0103t\u0103lia chatbot-ilor AI \u00een 2026?
+                Cine câștigă bătălia chatbot-ilor AI în 2026?
               </p>
             </div>
             <div className="w-14 h-14 rounded-xl bg-orange-100 flex items-center justify-center text-2xl shrink-0">
-              \ud83d\udfe0
+              🟠
             </div>
           </Link>
 
@@ -244,7 +244,7 @@ export default function Home() {
             className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
           >
             <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">
-              \ud83d\udd35
+              🔵
             </div>
             <div className="flex-1">
               <span className="text-xs font-bold text-primary uppercase tracking-wide">
@@ -252,11 +252,11 @@ export default function Home() {
               </span>
               <h3 className="font-bold text-text">Midjourney vs DALL-E 3</h3>
               <p className="text-sm text-text-light">
-                Care generator de imagini merit\u0103 banii?
+                Care generator de imagini merită banii?
               </p>
             </div>
             <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-2xl shrink-0">
-              \ud83d\udfe3
+              🟣
             </div>
           </Link>
         </div>
@@ -266,13 +266,13 @@ export default function Home() {
       <section className="bg-white border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           <p className="text-sm text-text-light uppercase tracking-wide font-medium mb-6">
-            De ce ne citesc mii de rom\u00e2ni
+            De ce ne citesc mii de români
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
               { number: "150+", label: "Instrumente analizate" },
               { number: "50+", label: "Recenzii detaliate" },
-              { number: "Zilnic", label: "Con\u021binut actualizat" },
+              { number: "Zilnic", label: "Conținut actualizat" },
               { number: "100%", label: "Opinii oneste" },
             ].map((stat) => (
               <div key={stat.label}>

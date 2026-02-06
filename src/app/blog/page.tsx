@@ -2,8 +2,8 @@ import ArticleCard from "@/components/ArticleCard";
 import { latestArticles } from "@/data/tools";
 
 export const metadata = {
-  title: "Blog AI \u2014 Ghiduri \u0219i tutoriale | inteligenta.ai",
-  description: "Ghiduri practice, tutoriale \u0219i nout\u0103\u021bi din lumea inteligen\u021bei artificiale.",
+  title: "Blog AI — Ghiduri și tutoriale | inteligenta.ai",
+  description: "Ghiduri practice, tutoriale și noutăți din lumea inteligenței artificiale.",
 };
 
 export default function BlogPage() {
@@ -15,7 +15,7 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Ghiduri practice, tutoriale \u0219i nout\u0103\u021bi din lumea inteligen\u021bei artificiale
+            Ghiduri practice, tutoriale și noutăți din lumea inteligenței artificiale
           </p>
         </div>
       </section>

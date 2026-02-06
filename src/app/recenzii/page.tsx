@@ -2,8 +2,8 @@ import ArticleCard from "@/components/ArticleCard";
 import { latestArticles } from "@/data/tools";
 
 export const metadata = {
-  title: "Recenzii AI \u2014 Analize detaliate | inteligenta.ai",
-  description: "Recenzii oneste \u0219i detaliate ale celor mai populare instrumente de inteligen\u021b\u0103 artificial\u0103.",
+  title: "Recenzii AI — Analize detaliate | inteligenta.ai",
+  description: "Recenzii oneste și detaliate ale celor mai populare instrumente de inteligență artificială.",
 };
 
 export default function RecenziiPage() {
@@ -15,7 +15,7 @@ export default function RecenziiPage() {
             Recenzii AI
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Analize detaliate, oneste \u0219i actualizate ale instrumentelor de inteligen\u021b\u0103 artificial\u0103
+            Analize detaliate, oneste și actualizate ale instrumentelor de inteligență artificială
           </p>
         </div>
       </section>

@@ -1,37 +1,37 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Compara\u021bii AI \u2014 Cap la cap | inteligenta.ai",
-  description: "Compara\u021bii detaliate \u00eentre cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E \u0219i multe altele.",
+  title: "Comparații AI — Cap la cap | inteligenta.ai",
+  description: "Comparații detaliate între cele mai populare instrumente AI. ChatGPT vs Claude, Midjourney vs DALL-E și multe altele.",
 };
 
 const comparisons = [
   {
     slug: "chatgpt-vs-claude",
-    left: { name: "ChatGPT", emoji: "\ud83d\udfe2", color: "bg-green-100" },
-    right: { name: "Claude", emoji: "\ud83d\udfe0", color: "bg-orange-100" },
-    description: "Cine c\u00e2\u0219tig\u0103 b\u0103t\u0103lia chatbot-ilor AI \u00een 2026?",
+    left: { name: "ChatGPT", emoji: "🟢", color: "bg-green-100" },
+    right: { name: "Claude", emoji: "🟠", color: "bg-orange-100" },
+    description: "Cine câștigă bătălia chatbot-ilor AI în 2026?",
     category: "AI Text",
   },
   {
     slug: "midjourney-vs-dalle",
-    left: { name: "Midjourney", emoji: "\ud83d\udd35", color: "bg-blue-100" },
-    right: { name: "DALL-E 3", emoji: "\ud83d\udfe3", color: "bg-purple-100" },
-    description: "Care generator de imagini merit\u0103 banii?",
+    left: { name: "Midjourney", emoji: "🔵", color: "bg-blue-100" },
+    right: { name: "DALL-E 3", emoji: "🟣", color: "bg-purple-100" },
+    description: "Care generator de imagini merită banii?",
     category: "AI Imagine",
   },
   {
     slug: "copilot-vs-cursor",
-    left: { name: "GitHub Copilot", emoji: "\u26ab", color: "bg-gray-100" },
-    right: { name: "Cursor", emoji: "\ud83d\udd35", color: "bg-sky-100" },
-    description: "Cel mai bun asistent de programare AI \u2014 care e pentru tine?",
+    left: { name: "GitHub Copilot", emoji: "⚫", color: "bg-gray-100" },
+    right: { name: "Cursor", emoji: "🔵", color: "bg-sky-100" },
+    description: "Cel mai bun asistent de programare AI — care e pentru tine?",
     category: "AI Cod",
   },
   {
     slug: "elevenlabs-vs-murf",
-    left: { name: "ElevenLabs", emoji: "\ud83d\udfe1", color: "bg-yellow-100" },
-    right: { name: "Murf AI", emoji: "\ud83d\udfe2", color: "bg-emerald-100" },
-    description: "Sintez\u0103 vocal\u0103 AI: care sun\u0103 mai natural?",
+    left: { name: "ElevenLabs", emoji: "🟡", color: "bg-yellow-100" },
+    right: { name: "Murf AI", emoji: "🟢", color: "bg-emerald-100" },
+    description: "Sinteză vocală AI: care sună mai natural?",
     category: "AI Audio",
   },
 ];
@@ -42,10 +42,10 @@ export default function ComparatiiPage() {
       <section className="hero-gradient py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-            Compara\u021bii AI
+            Comparații AI
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Analize cap la cap pentru a face alegerea corect\u0103
+            Analize cap la cap pentru a face alegerea corectă
           </p>
         </div>
       </section>
