@@ -1,12 +1,13 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 
-export default function robots(): MetadataRoute.Robots {
+const robots: MetadataRoute["robots"] = () => {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/admin/", "/_next/"],
     },
     sitemap: "https://inteligenta-ai.vercel.app/sitemap.xml",
   };
-}
+};
+
+export default robots;
