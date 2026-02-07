@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ToolIconProps {
   name: string;
   toolId: string;
@@ -5,6 +7,7 @@ interface ToolIconProps {
   size?: "sm" | "md" | "lg";
   className?: string;
 }
+
 const brandColors: Record<string, { bg: string; text: string }> = {
   chatgpt: { bg: "bg-[#10a37f]/10", text: "text-[#10a37f]" },
   claude: { bg: "bg-[#d4a574]/10", text: "text-[#d4a574]" },
@@ -27,7 +30,11 @@ const brandColors: Record<string, { bg: string; text: string }> = {
   getresponse: { bg: "bg-[#00baff]/10", text: "text-[#00baff]" },
   writesonic: { bg: "bg-[#6366f1]/10", text: "text-[#6366f1]" },
 };
+
 const defaultColors = { bg: "bg-primary/10", text: "text-primary" };
+
+const sizePx: Record<string, number> = { sm: 32, md: 48, lg: 64 };
+
 export default function ToolIcon({
   name, toolId, logoUrl, size = "md", className = "",
 }: ToolIconProps) {
@@ -37,13 +44,22 @@ export default function ToolIcon({
     md: "w-12 h-12 text-lg rounded-xl",
     lg: "w-16 h-16 text-2xl rounded-2xl",
   };
+
   if (logoUrl) {
     return (
       <div className={`${sizeClasses[size]} overflow-hidden ${className}`}>
-        <img src={logoUrl} alt={name} className="w-full h-full object-cover" />
+        <Image
+          src={logoUrl}
+          alt={`Logo ${name}`}
+          width={sizePx[size]}
+          height={sizePx[size]}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
       </div>
     );
   }
+
   return (
     <div className={`${sizeClasses[size]} ${colors.bg} flex items-center justify-center font-bold shrink-0 ${className}`}>
       <span className={colors.text}>{name.charAt(0)}</span>
