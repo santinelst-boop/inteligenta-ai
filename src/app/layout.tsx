@@ -3,43 +3,51 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
-
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 export const metadata: Metadata = {
-  title: "inteligenta.ai — Descoperă cele mai bune instrumente AI",
+  metadataBase: new URL("https://inteligenta.ai"),
+  title: {
+    default: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    template: "%s | inteligenta.ai",
+  },
   description:
-    "Recenzii, comparații și ghiduri complete despre cele mai bune instrumente de inteligență artificială. Primul portal AI din România.",
+    "Recenzii, comparatii si ghiduri complete despre cele mai bune instrumente de inteligenta artificiala. Primul portal AI din Romania.",
   keywords:
-    "inteligență artificială, instrumente AI, recenzii AI, comparații AI, ChatGPT, Claude, Midjourney, România",
+    "inteligenta artificiala, instrumente AI, recenzii AI, comparatii AI, ChatGPT, Claude, Midjourney, Romania",
   openGraph: {
-    title: "inteligenta.ai — Descoperă cele mai bune instrumente AI",
-    description:
-      "Primul portal de inteligență artificială din România. Recenzii, comparații și ghiduri.",
+    title: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    description: "Primul portal de inteligenta artificiala din Romania. Recenzii, comparatii si ghiduri.",
     url: "https://inteligenta.ai",
     siteName: "inteligenta.ai",
     locale: "ro_RO",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    description: "Primul portal de inteligenta artificiala din Romania.",
+  },
   alternates: {
     canonical: "https://inteligenta.ai",
   },
-  other: {
-    "impact-site-verification": "f913f1b6-985c-4075-b0c8-bee824e4def7",
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
   },
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const structuredData = {
+}: Readonly<{ children: React.ReactNode }>) {
+  const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "inteligenta.ai",
     url: "https://inteligenta.ai",
-    logo: "https://inteligenta.ai/logo.png",
-    description:
-      "Primul portal de inteligență artificială din România. Recenzii, comparații și ghiduri complete.",
+    logo: "https://inteligenta.ai/icon-512.png",
+    description: "Primul portal de inteligenta artificiala din Romania. Recenzii, comparatii si ghiduri complete.",
     sameAs: [
       "https://www.facebook.com/inteligentaai",
       "https://www.twitter.com/inteligentaai",
@@ -50,28 +58,32 @@ export default function RootLayout({
       email: "contact@inteligenta.ai",
     },
   };
-
+  const websiteData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "inteligenta.ai",
+    url: "https://inteligenta.ai",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://inteligenta.ai/cauta?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
   return (
     <html lang="ro">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#1f2937" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#4f46e5" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="ro_RO" />
-
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }} />
       </head>
       <body className="antialiased">
+        <GoogleAnalytics />
         <Header />
         <main>{children}</main>
         <Footer />

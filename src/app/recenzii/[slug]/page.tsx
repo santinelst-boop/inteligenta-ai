@@ -1,8 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { latestArticles, featuredTools } from "@/data/tools";
+import { latestArticles, featuredTools, categories } from "@/data/tools";
 import { articleContent } from "@/data/article-content";
+import AffiliateCTA from "@/components/AffiliateCTA";
+import ArticleHeroImage from "@/components/ArticleHeroImage";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -21,10 +23,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: article.excerpt,
       type: "article",
       publishedTime: article.date,
-      url: `https://inteligenta-ai.vercel.app/recenzii/${slug}`,
+      url: `https://inteligenta.ai/recenzii/${slug}`,
+      siteName: "inteligenta.ai",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
     },
     alternates: {
-      canonical: `https://inteligenta-ai.vercel.app/recenzii/${slug}`,
+      canonical: `https://inteligenta.ai/recenzii/${slug}`,
     },
   };
 }
@@ -51,6 +59,9 @@ export default async function ArticlePage({ params }: Props) {
     .filter((a) => a.slug !== slug && a.category === article.category)
     .slice(0, 3);
 
+  const categoryName =
+    categories.find((c) => c.id === article.category)?.name || article.category;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -65,11 +76,11 @@ export default async function ArticlePage({ params }: Props) {
     publisher: {
       "@type": "Organization",
       name: "inteligenta.ai",
-      url: "https://inteligenta-ai.vercel.app",
+      url: "https://inteligenta.ai",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://inteligenta-ai.vercel.app/recenzii/${slug}`,
+      "@id": `https://inteligenta.ai/recenzii/${slug}`,
     },
   };
 
@@ -82,12 +93,11 @@ export default async function ArticlePage({ params }: Props) {
         }}
       />
 
-      {/* Breadcrumb */}
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
             <Link href="/" className="hover:text-primary transition-colors">
-              Acasă
+              Acasa
             </Link>
             <span>/</span>
             <Link
@@ -104,12 +114,15 @@ export default async function ArticlePage({ params }: Props) {
         </div>
       </div>
 
-      {/* Article Header */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+        <ArticleHeroImage category={article.category} size="lg" className="w-full rounded-2xl" />
+      </div>
+
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <header className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase">
-              {article.category.replace("ai-", "AI ")}
+              {categoryName}
             </span>
             <time className="text-sm text-text-light" dateTime={article.date}>
               {new Date(article.date).toLocaleDateString("ro-RO", {
@@ -119,7 +132,7 @@ export default async function ArticlePage({ params }: Props) {
               })}
             </time>
             <span className="text-sm text-text-light">
-              {article.readTime} lectură
+              {article.readTime} lectura
             </span>
           </div>
 
@@ -132,25 +145,31 @@ export default async function ArticlePage({ params }: Props) {
           </p>
         </header>
 
-        {/* Article Body */}
+        {relatedTools.length > 0 && (
+          <AffiliateCTA tool={relatedTools[0]} variant="inline" />
+        )}
+
         <div
           className="prose prose-lg max-w-none prose-headings:text-text prose-p:text-text-light prose-a:text-primary prose-strong:text-text prose-li:text-text-light"
           dangerouslySetInnerHTML={{ __html: content }}
         />
 
-        {/* Affiliate CTA Box */}
+        {relatedTools.length > 0 && (
+          <AffiliateCTA tool={relatedTools[0]} variant="box" />
+        )}
+
         {relatedTools.length > 0 && (
           <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
             <h3 className="text-xl font-bold text-text mb-4">
-              Instrumente menționate în acest articol
+              Instrumente mentionate in acest articol
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {relatedTools.map((tool) => (
                 <a
                   key={tool.id}
-                  href={tool.affiliateUrl}
+                  href={`/go/${tool.id}`}
                   target="_blank"
-                  rel="noopener noreferrer sponsored"
+                  rel="nofollow sponsored"
                   className="flex items-center gap-3 bg-white rounded-xl p-4 border border-border hover:shadow-md transition-shadow"
                 >
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
@@ -167,15 +186,14 @@ export default async function ArticlePage({ params }: Props) {
             </div>
             <p className="text-xs text-text-light mt-4">
               * Unele linkuri sunt linkuri afiliate. Citeste{" "}
-              <Link href="/despre" className="underline">
-                politica noastră
+              <Link href="/afiliere" className="underline">
+                politica noastra
               </Link>
               .
             </p>
           </div>
         )}
 
-        {/* Related Articles */}
         {relatedArticles.length > 0 && (
           <div className="mt-12">
             <h3 className="text-xl font-bold text-text mb-6">
@@ -189,7 +207,7 @@ export default async function ArticlePage({ params }: Props) {
                   className="group bg-card rounded-xl border border-border p-5 hover:shadow-md transition-shadow"
                 >
                   <span className="text-xs font-bold text-primary uppercase">
-                    {a.category.replace("ai-", "AI ")}
+                    {categories.find((c) => c.id === a.category)?.name || a.category}
                   </span>
                   <h4 className="font-bold text-text mt-1 group-hover:text-primary transition-colors line-clamp-2">
                     {a.title}
