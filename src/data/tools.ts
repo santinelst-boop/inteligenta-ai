@@ -103,7 +103,7 @@ export const featuredTools: AITool[] = [
     id: "elevenlabs",
     name: "ElevenLabs",
     description:
-      "Sinteză vocală AI de calitate profesională cu voici naturale. ElevenLabs transformă textul în vorbire realistă în zeci de limbi, perfectă pentru podcasting și videouri.",
+      "Sinteză vocală AI de calitate profesională cu voci naturale. ElevenLabs transformă textul în vorbire realistă în zeci de limbi, perfectă pentru podcasting și videouri.",
     category: "ai-audio",
     rating: 4.8,
     pricing: "Freemium",
@@ -116,7 +116,7 @@ export const featuredTools: AITool[] = [
     id: "jasper",
     name: "Jasper AI",
     description:
-      "Platform de scriere AI pentru marketing și content. Jasper AI generează copy pentru publicități, email-uri și articole cu personalitate și adaptabilă la ton și stil.",
+      "Platformă de scriere AI pentru marketing și content. Jasper AI generează copy pentru publicități, email-uri și articole cu personalitate și adaptabilă la ton și stil.",
     category: "ai-text",
     rating: 4.6,
     pricing: "Plătit",
@@ -129,7 +129,7 @@ export const featuredTools: AITool[] = [
     id: "grammarly",
     name: "Grammarly",
     description:
-      "Asistant inteligent de scriere și corectură pentru orice platformă. Grammarly verifică gramatică, stil și ton, oferind sugestii de îmbunătățire în timp real pentru texte mai bune.",
+      "Asistent inteligent de scriere și corectură pentru orice platformă. Grammarly verifică gramatică, stil și ton, oferind sugestii de îmbunătățire în timp real pentru texte mai bune.",
     category: "ai-text",
     rating: 4.7,
     pricing: "Freemium",
@@ -168,7 +168,7 @@ export const featuredTools: AITool[] = [
     id: "synthesia",
     name: "Synthesia",
     description:
-      "Creează videoclipuri cu avatar AI personalizat fără cameră video. Synthesia generează videoclipuri profesionale cu vorbitori AI în peste 120 limbi și dialecte.",
+      "Creează videoclipuri cu avatar AI personalizat fără cameră video. Synthesia generează videoclipuri profesionale cu vorbitori AI în peste 120 de limbi și dialecte.",
     category: "ai-video",
     rating: 4.5,
     pricing: "Plătit",
@@ -181,7 +181,7 @@ export const featuredTools: AITool[] = [
     id: "notion-ai",
     name: "Notion AI",
     description:
-      "Asistent AI integrat în workspace-ul Notion pentru productivitate. Notion AI generează texte, rezume și tabele direct în Notion, îmbunătățind flux de lucru.",
+      "Asistent AI integrat în workspace-ul Notion pentru productivitate. Notion AI generează texte, rezumate și tabele direct în Notion, îmbunătățind fluxul de lucru.",
     category: "ai-productivitate",
     rating: 4.6,
     pricing: "Freemium",
@@ -233,7 +233,7 @@ export const featuredTools: AITool[] = [
     id: "cursor",
     name: "Cursor",
     description:
-      "Editor de cod AI cu autocomplete și refactoring inteligent. Cursor accelerează programarea cu sugestii context-aware și abilitate de a rescrie cod complet.",
+      "Editor de cod AI cu autocomplete și refactoring inteligent. Cursor accelerează programarea cu sugestii context-aware și abilitatea de a rescrie cod complet.",
     category: "ai-cod",
     rating: 4.7,
     pricing: "Freemium",
@@ -246,7 +246,7 @@ export const featuredTools: AITool[] = [
     id: "perplexity",
     name: "Perplexity",
     description:
-      "Motor de căutare AI cu răspunsuri surse-citate în timp real. Perplexity combină puterea AI cu informații actuale, oferind răspunsuri verificate și contextualizate.",
+      "Motor de căutare AI cu răspunsuri cu surse citate în timp real. Perplexity combină puterea AI cu informații actuale, oferind răspunsuri verificate și contextualizate.",
     category: "ai-cautare",
     rating: 4.5,
     pricing: "Freemium",
@@ -259,7 +259,7 @@ export const featuredTools: AITool[] = [
     id: "gemini",
     name: "Gemini",
     description:
-      "Asistentul AI multimodal de la Google cu integrare ecosistem. Gemini accesează Gmail, Drive și alte servicii Google, oferind productivitate în mediul Google.",
+      "Asistentul AI multimodal de la Google cu integrare în ecosistem. Gemini accesează Gmail, Drive și alte servicii Google, oferind productivitate în mediul Google.",
     category: "ai-productivitate",
     rating: 4.4,
     pricing: "Freemium",
@@ -272,7 +272,7 @@ export const featuredTools: AITool[] = [
     id: "getresponse",
     name: "GetResponse AI",
     description:
-      "Platform email marketing AI cu automatizare inteligentă. GetResponse AI generează campaign-uri, segmentează audiență și optimizează rata de conversie automat.",
+      "Platformă de email marketing AI cu automatizare inteligentă. GetResponse AI generează campanii, segmentează audiența și optimizează rata de conversie automat.",
     category: "ai-email",
     rating: 4.2,
     pricing: "Plătit",
@@ -285,7 +285,7 @@ export const featuredTools: AITool[] = [
     id: "writesonic",
     name: "Writesonic",
     description:
-      "Generator de conținut AI pentru SEO și marketing. Writesonic creează articole optimizate pentru Google, descrieri produse și copy-uri marketing de înaltă calitate.",
+      "Generator de conținut AI pentru SEO și marketing. Writesonic creează articole optimizate pentru Google, descrieri de produse și copy-uri marketing de înaltă calitate.",
     category: "ai-text",
     rating: 4.4,
     pricing: "Freemium",
@@ -387,9 +387,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "chatgpt-romana-ghid-complet",
-    title: "ChatGPT \u00een Rom\u00e2n\u0103: Ghid Complet 2026 (+ Versiunea Gratuit\u0103)",
+    title: "ChatGPT în Română: Ghid Complet 2026 (+ Versiunea Gratuită)",
     excerpt:
-      "Ghid complet ChatGPT \u00een rom\u00e2n\u0103: cum s\u0103-l folo\u015fe\u015fti, sfaturi practice, versiunea gratuit\u0103 vs Plus \u015fi alternative pentru utilizatorii din Rom\u00e2nia.",
+      "Ghid complet ChatGPT în română: cum să-l folosești, sfaturi practice, versiunea gratuită vs Plus și alternative pentru utilizatorii din România.",
     category: "ai-text",
     date: "2026-02-06",
     readTime: "10 min",
@@ -398,35 +398,6 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "cele-mai-bune-chatbot-uri-ai",
-    title: "Top 10 Chatbot AI \u00een 2026: Cele Mai Bune Alternative ChatGPT",
+    title: "Top 10 Chatbot AI în 2026: Cele Mai Bune Alternative ChatGPT",
     excerpt:
-      "Compara\u021bie detaliat\u0103 \u00eentre cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity \u015fi altele. Pre\u021buri, func\u021bii \u015fi recomand\u0103ri.",
-    category: "ai-text",
-    date: "2026-02-05",
-    readTime: "12 min",
-    imageUrl: "/articles/chatbot-ai.png",
-    featured: true,
-  },
-  {
-    slug: "ai-detector-verificare-text",
-    title: "AI Detector 2026: Top Instrumente de Verificare Text AI",
-    excerpt:
-      "Cele mai bune instrumente AI detector pentru verificarea textelor generate de AI. Compara\u021bie Originality.ai, GPTZero, Turnitin.",
-    category: "ai-text",
-    date: "2026-02-04",
-    readTime: "9 min",
-    imageUrl: "/articles/ai-detector.png",
-    featured: false,
-  },
-  {
-    slug: "ai-foto-editor-editare-imagini",
-    title: "AI Foto Editor: Top 10 Instrumente de Editare Imagini cu AI (2026)",
-    excerpt:
-      "De la eliminarea fundalului la \u00eembun\u0103t\u0103\u021birea fotografiilor \u2014 cele mai bune instrumente AI foto editor comparate.",
-    category: "ai-imagine",
-    date: "2026-02-03",
-    readTime: "11 min",
-    imageUrl: "/articles/ai-foto-editor.png",
-    featured: false,
-  },
-];
+      "
