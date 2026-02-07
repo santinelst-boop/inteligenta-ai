@@ -55,7 +55,8 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Support",
-      email: "contact@inteligenta.ai",
+      // TODO: înlocuiește cu contact@inteligenta.ai după configurare email hosting
+      email: "santinel.st@gmail.com",
     },
   };
   const websiteData = {

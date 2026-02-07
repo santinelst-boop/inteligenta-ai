@@ -50,13 +50,28 @@ export default function DesprePage() {
             </div>
           </div>
 
-          <div className="bg-card rounded-2xl border border-border p-8">
+          <div className="bg-card rounded-2xl border border-border p-8 mb-8">
             <h2 className="text-2xl font-bold text-text mb-4">Transparență</h2>
             <p className="text-text-light leading-relaxed">
               Acest site conține link-uri de afiliere. Asta înseamnă că putem primi un mic comision
               atunci când achiziționezi un produs prin intermediul link-urilor noastre, fără niciun
               cost suplimentar pentru tine. Acest model ne permite să menținem site-ul gratuit și să
               continuăm să producem conținut de calitate.
+            </p>
+          </div>
+
+          <div className="bg-card rounded-2xl border border-border p-8">
+            <h2 className="text-2xl font-bold text-text mb-4">Colaborări</h2>
+            <p className="text-text-light leading-relaxed mb-3">
+              Ești brand sau agenție? Suntem deschiși la colaborări cu furnizori de instrumente AI care
+              își doresc recenzii oneste și expunere către audiența românească.
+            </p>
+            <p className="text-text-light leading-relaxed">
+              {/* TODO: înlocuiește cu publicitate@inteligenta.ai după configurare email hosting */}
+              Scrie-ne la{" "}
+              <a href="mailto:santinel.st@gmail.com" className="text-primary hover:underline">
+                santinel.st@gmail.com
+              </a>
             </p>
           </div>
         </div>

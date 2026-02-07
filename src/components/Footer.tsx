@@ -139,6 +139,32 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Publicitate & Contact */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-white/60">
+            <div>
+              <h4 className="font-semibold text-white mb-2">Publicitate</h4>
+              <p>
+                Pentru colaborări și publicitate:{" "}
+                {/* TODO: înlocuiește cu publicitate@inteligenta.ai după configurare email hosting */}
+                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
+                  santinel.st@gmail.com
+                </a>
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-white mb-2">Redacție</h4>
+              <p>
+                Propuneri articole sau corectări:{" "}
+                {/* TODO: înlocuiește cu redactie@inteligenta.ai după configurare email hosting */}
+                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
+                  santinel.st@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/40">
