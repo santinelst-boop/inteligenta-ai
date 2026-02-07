@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "./NewsletterForm";
 
 const footerLinks = {
   instrumente: [
@@ -35,19 +36,7 @@ export default function Footer() {
           <p className="text-white/80 mb-6 max-w-md mx-auto">
             Primești săptămânal cele mai importante noutăți, recenzii și ghiduri AI direct în inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="adresa@email.com"
-              className="flex-1 px-4 py-3 rounded-full text-text bg-white focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 rounded-full bg-white text-primary font-semibold hover:bg-white/90 transition-colors"
-            >
-              Abonează-te
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="text-white/60 text-xs mt-3">
             Fără spam. Te poți dezabona oricând.
           </p>
