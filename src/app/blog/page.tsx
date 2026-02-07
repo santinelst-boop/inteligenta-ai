@@ -1,9 +1,18 @@
 import ArticleCard from "@/components/ArticleCard";
 import { latestArticles } from "@/data/tools";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Blog AI — Ghiduri și tutoriale | inteligenta.ai",
-  description: "Ghiduri practice, tutoriale și noutăți din lumea inteligenței artificiale.",
+export const metadata: Metadata = {
+  title: "Blog AI — Ghiduri, tutoriale și noutăți",
+  description:
+    "Ghiduri practice, tutoriale pas cu pas și cele mai recente noutăți din lumea inteligenței artificiale.",
+  alternates: { canonical: "https://inteligenta.ai/blog" },
+  openGraph: {
+    title: "Blog AI — inteligenta.ai",
+    description:
+      "Ghiduri practice și tutoriale din lumea inteligenței artificiale.",
+    url: "https://inteligenta.ai/blog",
+  },
 };
 
 export default function BlogPage() {
