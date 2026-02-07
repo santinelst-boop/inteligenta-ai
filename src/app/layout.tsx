@@ -1,3 +1,4 @@
+typescript
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Recenzii, comparații și ghiduri complete despre cele mai bune instrumente de inteligență artificială. Primul portal AI din România.",
   keywords:
-    "inteligenta artificiala, instrumente AI, recenzii AI, comparatii AI, ChatGPT, Claude, Midjourney, Romania",
+    "inteligență artificială, instrumente AI, recenzii AI, comparații AI, ChatGPT, Claude, Midjourney, România",
   openGraph: {
     title: "inteligenta.ai — Descoperă cele mai bune instrumente AI",
     description:
@@ -59,6 +60,9 @@ export default function RootLayout({
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO" />
+
+        {/* Impact.com Affiliate Verification */}
+        <meta name="impact-site-verification" content="f913f1b6-985c-4075-b0c8-bee824e4def7" />
 
         {/* JSON-LD Structured Data */}
         <script
