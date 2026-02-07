@@ -1,3 +1,4 @@
+typescript
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Recenzii, comparații și ghiduri complete despre cele mai bune instrumente de inteligență artificială. Primul portal AI din România.",
   keywords:
-    "inteligenta artificiala, instrumente AI, recenzii AI, comparatii AI, ChatGPT, Claude, Midjourney, Romania",
+    "inteligență artificială, instrumente AI, recenzii AI, comparații AI, ChatGPT, Claude, Midjourney, România",
   openGraph: {
     title: "inteligenta.ai — Descoperă cele mai bune instrumente AI",
     description:
