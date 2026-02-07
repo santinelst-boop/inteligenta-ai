@@ -7,11 +7,11 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <p>Cauți cel mai bun chatbot AI care funcționează în <strong>limba română</strong>? În 2026, <strong>ChatGPT</strong> și <strong>Claude</strong> sunt cei doi lideri incontestabili. Am testat ambele extensiv pentru utilizatorii din România — iată verdictul nostru complet.</p>
 
       <h3>ChatGPT în Română — Cum Funcționează?</h3>
-      <p><strong>ChatGPT</strong>, dezvoltat de OpenAI, supportă limba română atât în versiunea gratuită, cât și în cea plătită. Poți scrie prompt-uri în română și primești răspunsuri naturale, coerente și detaliate. Cu GPT-4o, calitatea traducerilor și a textelor generate în română s-a îmbunătățit semnificativ față de versiunile anterioare.</p>
+      <p><strong>ChatGPT</strong>, dezvoltat de OpenAI, suportă limba română atât în versiunea gratuită, cât și în cea plătită. Poți scrie prompt-uri în română și primești răspunsuri naturale, coerente și detaliate. Cu GPT-4o, calitatea traducerilor și a textelor generate în română s-a îmbunătățit semnificativ față de versiunile anterioare.</p>
       <p>Funcții cheie disponibile în română:</p>
       <ul>
         <li>Conversații complete în limba română</li>
-        <li>Generare de texte, articole și emailuri în română</li>
+        <li>Generare de texte, articole și e-mailuri în română</li>
         <li>Traduceri precise din și în română</li>
         <li>Asistență pentru programare cu explicații în română</li>
         <li>Generare de imagini cu DALL-E (prompt-uri în română)</li>
@@ -23,7 +23,7 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <ul>
         <li>Răspunsuri mai detaliate și mai nuanțate în română</li>
         <li>Context extins — poți analiza documente întregi</li>
-        <li>Scriere mai naturală și mai puțin "robotică"</li>
+        <li>Scriere mai naturală și mai puțin „robotică"</li>
         <li>Atenție deosebită la corectitudinea informațiilor</li>
       </ul>
 
@@ -35,7 +35,7 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
         <li>Generare de text, rezumate și traduceri</li>
         <li>Ajutor cu programarea și depanarea codului</li>
       </ul>
-      <p>Limitări ale versiunii gratuite: nu ai acces la GPT-4o complet, generarea de imagini DALL-E este limitată, și în perioadele aglomerate poți avea timpi de așteptare.</p>
+      <p>Limitări ale versiunii gratuite: nu ai acces la GPT-4o complet, generarea de imagini DALL-E este limitată, iar în perioadele aglomerate poți avea timpi de așteptare.</p>
 
       <h3>Comparație Detaliată: ChatGPT vs Claude</h3>
       <p><strong>Performanță:</strong> ChatGPT (GPT-4o) și Claude (Sonnet 4.5) sunt foarte aproape ca performanță generală. ChatGPT excelează la sarcini creative și codare, în timp ce Claude e mai bun la analiză profundă și texte lungi.</p>
@@ -43,13 +43,13 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <p><strong>Securitate:</strong> Claude se distinge prin angajamentul Anthropic pentru siguranța AI. ChatGPT oferă opțiuni enterprise cu garanții de confidențialitate.</p>
 
       <h3>Când să Alegi ChatGPT?</h3>
-      <p>ChatGPT este ideal dacă ai nevoie de: scriere creativă variată, generare de imagini cu DALL-E, ecosistem vast de plugin-uri, integrări cu aplicații terțe, sau asistență vocală.</p>
+      <p>ChatGPT este ideal dacă ai nevoie de: scriere creativă variată, generare de imagini cu DALL-E, ecosistem vast de plugin-uri, integrări cu aplicații terțe sau asistență vocală.</p>
 
       <h3>Când să Alegi Claude?</h3>
-      <p>Claude este mai potrivit dacă vrei: analiză de documente lungi, răspunsuri mai detaliate și structurate, o experiență focusată pe acuratețe, sau programare complexă cu context larg.</p>
+      <p>Claude este mai potrivit dacă vrei: analiză de documente lungi, răspunsuri mai detaliate și structurate, o experiență focusată pe acuratețe sau programare complexă cu context larg.</p>
 
       <h3>Verdictul Nostru</h3>
-      <p>Pentru <strong>utilizatorii din România</strong>, ambele sunt excelente. Recomandarea noastră: începe cu versiunile gratuite ale ambelor, testează-le pe sarcinile tale specifice, și investește într-un abonament doar când vezi valoare concretă. Mulți profesioniști români folosesc ambele instrumente complementar.</p>
+      <p>Pentru <strong>utilizatorii din România</strong>, ambele sunt excelente. Recomandarea noastră: începe cu versiunile gratuite ale ambelor, testează-le pe sarcinile tale specifice și investește într-un abonament doar când vezi valoare concretă. Mulți profesioniști români folosesc ambele instrumente complementar.</p>
     </article>`
   },
 
@@ -93,15 +93,15 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <p><strong>Preț:</strong> Gratuit. <strong>Ideal pentru:</strong> Utilizare ocazională, testare rapidă a ideilor.</p>
 
       <h3>9. NightCafe — Multiple Modele AI</h3>
-      <p>Supportă mai multe motoare de generare (DALL-E, Stable Diffusion, modele proprii) — oferind flexibilitate maximă într-o singură platformă.</p>
-      <p><strong>Preț:</strong> Credit-uri gratuite zilnice, planuri de la $6/lună. <strong>Ideal pentru:</strong> Experimentare cu stiluri diferite.</p>
+      <p>Suportă mai multe motoare de generare (DALL-E, Stable Diffusion, modele proprii) — oferind flexibilitate maximă într-o singură platformă.</p>
+      <p><strong>Preț:</strong> Credite gratuite zilnice, planuri de la $6/lună. <strong>Ideal pentru:</strong> Experimentare cu stiluri diferite.</p>
 
       <h3>10. Canva AI — Generator de Imagini pentru Non-Designeri</h3>
       <p>Integrat în Canva, permite oricui să creeze imagini AI fără cunoștințe de design. Perfect pentru social media și materiale marketing rapide.</p>
       <p><strong>Preț:</strong> Plan gratuit disponibil, Canva Pro de la $13/lună. <strong>Ideal pentru:</strong> Social media, marketing, prezentări.</p>
 
       <h3>Tabel Comparativ: Generatoare de Imagini AI</h3>
-      <p>Criteriile cheie la alegere: <strong>calitate vs cost</strong> (DALL-E și Midjourney au cea mai bună calitate dar sunt plătite), <strong>flexibilitate</strong> (Stable Diffusion oferă cel mai mare control), <strong>ușurința de utilizare</strong> (Canva și Bing sunt cele mai accesibile), și <strong>integrări</strong> (Adobe Firefly pentru designeri, Microsoft Designer pentru Office).</p>
+      <p>Criteriile cheie la alegere: <strong>calitate vs cost</strong> (DALL-E și Midjourney au cea mai bună calitate, dar sunt plătite), <strong>flexibilitate</strong> (Stable Diffusion oferă cel mai mare control), <strong>ușurința de utilizare</strong> (Canva și Bing sunt cele mai accesibile) și <strong>integrări</strong> (Adobe Firefly pentru designeri, Microsoft Designer pentru Office).</p>
 
       <h3>Concluzie</h3>
       <p>Indiferent de buget sau nivel de experiență, există un <strong>generator de imagini AI</strong> potrivit pentru tine. Recomandarea noastră: începe cu Bing Image Creator (gratuit) pentru a testa, apoi investește în Midjourney sau DALL-E dacă ai nevoie de calitate premium.</p>
@@ -118,14 +118,14 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <h3>Aplicații AI pentru Scriere și Comunicare</h3>
       <p>Cele mai populare aplicații AI pentru text:</p>
       <ul>
-        <li><strong>ChatGPT:</strong> Generare de email-uri, rapoarte, note de follow-up — funcționează excelent în română</li>
+        <li><strong>ChatGPT:</strong> Generare de e-mailuri, rapoarte, note de follow-up — funcționează excelent în română</li>
         <li><strong>Claude:</strong> Sumarizări ale documentelor lungi, analiză detaliată, scriere tehnică</li>
         <li><strong>Grammarly:</strong> Corectare gramaticală și îmbunătățirea tonului (engleză)</li>
         <li><strong>Jasper AI:</strong> Conținut marketing optimizat SEO</li>
       </ul>
 
       <h3>Aplicații AI pentru Brainstorming și Planificare</h3>
-      <p>Când ești blocat în creativitate sau planificare, AI-ul poate genera idei în secunde. Cere-i lui Claude sau ChatGPT să genereze 5-10 idei noi pentru un proiect, structura unui plan strategic, sau perspective diferite asupra unei probleme.</p>
+      <p>Când ești blocat în creativitate sau planificare, AI-ul poate genera idei în secunde. Cere-i lui Claude sau ChatGPT să genereze 5-10 idei noi pentru un proiect, structura unui plan strategic sau perspective diferite asupra unei probleme.</p>
 
       <h3>Aplicații AI pentru Programare</h3>
       <p>Pentru developeri, acestea sunt aplicațiile AI esențiale:</p>
@@ -140,7 +140,7 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <p>Creează imagini profesionale în secunde cu <strong>DALL-E</strong>, <strong>Midjourney</strong> sau <strong>Canva AI</strong>. Ideal pentru imagini articole, grafice prezentări și concepte vizuale rapide.</p>
 
       <h3>Aplicații AI pentru Cercetare</h3>
-      <p>Folosește AI pentru a rezuma articole și studii lungi, extrage informații cheie din documente voluminoase, și compara diferite perspective pe un subiect. <strong>Perplexity AI</strong> este deosebit de util pentru cercetare cu surse verificate.</p>
+      <p>Folosește AI pentru a rezuma articole și studii lungi, extrage informații cheie din documente voluminoase și compara diferite perspective pe un subiect. <strong>Perplexity AI</strong> este deosebit de util pentru cercetare cu surse verificate.</p>
 
       <h3>Flux de Lucru AI Recomandat</h3>
       <ul>
@@ -186,28 +186,4 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
 
       <h3>Avantaje Majore</h3>
       <p><strong>Viteză de Codare:</strong> Sugestiile pot completa 35-50% din codul tău. Economii de 2-3 ore zilnic pentru proiecte repetitive.</p>
-      <p><strong>Învățare Rapidă:</strong> Copilot îți arată cum se scrie cod în limbaje noi — util pentru polyglot developers.</p>
-      <p><strong>Testare Automată:</strong> Generează teste unitare rapid, crescând code coverage.</p>
-
-      <h3>Dezavantaje și Limitări</h3>
-      <p>Nu înțelege întotdeauna contextul larg al proiectului. Sugestii incomplete uneori — aproximativ 80% corecte, necesitând editare. Costul anual ($120) poate fi semnificativ pentru freelanceri.</p>
-
-      <h3>Alternative AI pentru Programare</h3>
-      <p>Copilot nu este singura opțiune. Iată cele mai bune alternative:</p>
-      <ul>
-        <li><strong>Cursor Editor:</strong> Editor de cod complet cu AI integrat. Supportă Claude și GPT-4. Oferă refactorizare inteligentă și navigare contextuală. Plan gratuit disponibil.</li>
-        <li><strong>ChatGPT / Claude:</strong> Ideale pentru depanare, explicații de cod, și generare de snippets. Versiunile gratuite sunt suficiente pentru codare ocazională.</li>
-        <li><strong>Amazon CodeWhisperer:</strong> Alternativă gratuită de la AWS, optimizată pentru servicii Amazon. Ideală pentru developeri AWS.</li>
-        <li><strong>Codeium:</strong> Extensie gratuită pentru VS Code cu autocomplete AI. Opțiune excelentă cu buget zero.</li>
-      </ul>
-
-      <h3>Merită Investiția? Verdict Onest</h3>
-      <p><strong>DA, dacă:</strong> Ești developer full-time, lucrezi pe proiecte cu cod repetitiv, vrei să înveți limbaje noi mai rapid.</p>
-      <p><strong>NU, dacă:</strong> Ești developer cu timp parțial, lucrezi pe algoritmi foarte complecși, sau ești la început și trebuie să înveți fundamentele.</p>
-      <p><strong>Alternativă recomandată:</strong> Dacă bugetul e o preocupare, începe cu Cursor (plan gratuit) + ChatGPT gratuit. Trecerea la Copilot are sens când productivitatea ta crește demonstrabil.</p>
-
-      <h3>Concluzie</h3>
-      <p>GitHub Copilot rămâne liderul pentru asistență AI în programare în 2026, dar alternativele gratuite sunt din ce în ce mai competitive. Încearcă versiunea de probă gratuită și compară cu Cursor sau Codeium înainte de a decide.</p>
-    </article>`
-  }
-};
+      <p><strong>Învățare Rapidă:</strong
