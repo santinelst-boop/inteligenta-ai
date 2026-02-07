@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://inteligenta.ai",
   },
   other: {
-    "impact-site-verification": "f913f1b6-985c-4075-b0c8-bee824e4def7",
+    "impact-site-verification": "125cf3ca-9565-40c0-8176-3a574adcd08f",
   },
 };
 
