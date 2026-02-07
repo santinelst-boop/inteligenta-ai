@@ -1,4 +1,3 @@
-typescript
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -15,13 +14,16 @@ export const metadata: Metadata = {
     title: "inteligenta.ai — Descoperă cele mai bune instrumente AI",
     description:
       "Primul portal de inteligență artificială din România. Recenzii, comparații și ghiduri.",
-    url: "https://inteligenta-ai.vercel.app",
+    url: "https://inteligenta.ai",
     siteName: "inteligenta.ai",
     locale: "ro_RO",
     type: "website",
   },
   alternates: {
-    canonical: "https://inteligenta-ai.vercel.app",
+    canonical: "https://inteligenta.ai",
+  },
+  other: {
+    "impact-site-verification": "f913f1b6-985c-4075-b0c8-bee824e4def7",
   },
 };
 
@@ -34,8 +36,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "inteligenta.ai",
-    url: "https://inteligenta-ai.vercel.app",
-    logo: "https://inteligenta-ai.vercel.app/logo.png",
+    url: "https://inteligenta.ai",
+    logo: "https://inteligenta.ai/logo.png",
     description:
       "Primul portal de inteligență artificială din România. Recenzii, comparații și ghiduri complete.",
     sameAs: [
@@ -60,9 +62,6 @@ export default function RootLayout({
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO" />
-
-        {/* Impact.com Affiliate Verification */}
-        <meta name="impact-site-verification" content="f913f1b6-985c-4075-b0c8-bee824e4def7" />
 
         {/* JSON-LD Structured Data */}
         <script
