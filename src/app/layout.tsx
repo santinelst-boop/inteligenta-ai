@@ -60,6 +60,9 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ro_RO" />
 
+        {/* Impact.com Affiliate Verification */}
+        <meta name="impact-site-verification" content="f913f1b6-985c-4075-b0c8-bee824e4def7" />
+
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
