@@ -16,11 +16,14 @@ export default function CookieConsent() {
   const handleAcceptAll = () => {
     localStorage.setItem("cookieConsent", "all");
     setIsVisible(false);
+    // Dispatch event for GoogleAnalytics component to update consent
+    window.dispatchEvent(new Event("cookieConsentUpdate"));
   };
 
   const handleEssentialOnly = () => {
     localStorage.setItem("cookieConsent", "essential");
     setIsVisible(false);
+    window.dispatchEvent(new Event("cookieConsentUpdate"));
   };
 
   if (!isVisible) return null;
@@ -37,16 +40,16 @@ export default function CookieConsent() {
             {/* Text content */}
             <div className="flex-1">
               <h3 className="font-bold text-text mb-2">
-                Preferințele tale de confidențialitate
+                Preferintele tale de confidentialitate
               </h3>
               <p className="text-sm text-text-light">
-                Folosim module cookie pentru a îmbunătăți experiența ta pe site.
-                Acceptând, consimți la folosirea tuturor categoriilor de cookies.{" "}
+                Folosim module cookie pentru a imbunatati experienta ta pe site.
+                Acceptand, consimti la folosirea tuturor categoriilor de cookies.{" "}
                 <Link
                   href="/politica-confidentialitate"
                   className="underline text-primary font-medium hover:text-primary-dark transition-colors"
                 >
-                  Citește politica noastră de confidențialitate
+                  Citeste politica noastra de confidentialitate
                 </Link>
                 .
               </p>
@@ -64,7 +67,7 @@ export default function CookieConsent() {
                 onClick={handleAcceptAll}
                 className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:from-blue-700 hover:to-purple-700 transition-colors text-sm"
               >
-                Acceptă tot
+                Accepta tot
               </button>
             </div>
           </div>

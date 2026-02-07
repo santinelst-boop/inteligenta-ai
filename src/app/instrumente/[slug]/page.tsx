@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { featuredTools, categories } from "@/data/tools";
+import ToolIcon from "@/components/ToolIcon";
+import AffiliateCTA from "@/components/AffiliateCTA";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -13,16 +15,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!tool) return {};
 
   return {
-    title: `${tool.name} — Recenzie și detalii | inteligenta.ai`,
+    title: `${tool.name} - Recenzie Completa 2026 | inteligenta.ai`,
     description: tool.description,
     openGraph: {
-      title: tool.name,
+      title: `${tool.name} - Recenzie Completa 2026`,
       description: tool.description,
       type: "website",
-      url: `https://inteligenta-ai.vercel.app/instrumente/${slug}`,
+      url: `https://inteligenta.ai/instrumente/${slug}`,
+      siteName: "inteligenta.ai",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${tool.name} - Recenzie Completa 2026`,
+      description: tool.description,
     },
     alternates: {
-      canonical: `https://inteligenta-ai.vercel.app/instrumente/${slug}`,
+      canonical: `https://inteligenta.ai/instrumente/${slug}`,
     },
   };
 }
@@ -44,7 +52,7 @@ export default async function InstrumentPage({ params }: Props) {
     .filter((t) => t.category === tool.category && t.id !== tool.id)
     .slice(0, 3);
 
-  const structuredData = {
+  const softwareData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: tool.name,
@@ -63,18 +71,39 @@ export default async function InstrumentPage({ params }: Props) {
     },
   };
 
+  const reviewData = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    itemReviewed: {
+      "@type": "SoftwareApplication",
+      name: tool.name,
+    },
+    author: {
+      "@type": "Organization",
+      name: "inteligenta.ai",
+    },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: tool.rating,
+      bestRating: "5",
+    },
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewData) }}
       />
 
-      {/* Breadcrumb */}
       <div className="bg-surface border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
           <nav className="flex items-center gap-2 text-sm text-text-light">
-            <Link href="/" className="hover:text-primary transition-colors">Acasă</Link>
+            <Link href="/" className="hover:text-primary transition-colors">Acasa</Link>
             <span>/</span>
             <Link href="/instrumente" className="hover:text-primary transition-colors">Instrumente</Link>
             <span>/</span>
@@ -83,12 +112,11 @@ export default async function InstrumentPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Hero */}
       <section className="hero-gradient py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-5">
-            <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-white font-bold text-2xl shrink-0">
-              {tool.name[0]}
+            <div className="shrink-0">
+              <ToolIcon name={tool.name} toolId={tool.id} size="lg" className="bg-white/10" />
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
@@ -119,19 +147,18 @@ export default async function InstrumentPage({ params }: Props) {
                 <span className="text-white font-medium ml-1">{tool.rating}</span>
               </div>
               <a
-                href={tool.affiliateUrl}
+                href={`/go/${tool.id}`}
                 target="_blank"
-                rel="noopener noreferrer sponsored"
+                rel="nofollow sponsored"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-primary font-semibold hover:bg-white/90 transition-colors"
               >
-                Încearcă {tool.name} →
+                Incearca {tool.name} \u2192
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Tags */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-wrap gap-2 mb-8">
           {tool.tags.map((tag) => (
@@ -143,32 +170,9 @@ export default async function InstrumentPage({ params }: Props) {
             </span>
           ))}
         </div>
-
-        {/* Affiliate CTA */}
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
-          <h3 className="text-xl font-bold text-text mb-2">Încearcă {tool.name} acum</h3>
-          <p className="text-text-light mb-4">
-            Accesează {tool.name} și descoperă cum te poate ajuta în proiectele tale.
-          </p>
-          <a
-            href={tool.affiliateUrl}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors"
-          >
-            Vizitează {tool.name} →
-          </a>
-          <p className="text-xs text-text-light mt-3">
-            * Link afiliat. Citește{" "}
-            <Link href="/afiliere" className="underline">
-              declarația noastră
-            </Link>
-            .
-          </p>
-        </div>
+        <AffiliateCTA tool={tool} variant="box" />
       </section>
 
-      {/* Related Tools */}
       {relatedTools.length > 0 && (
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
           <h2 className="text-xl font-bold text-text mb-6">
@@ -181,9 +185,7 @@ export default async function InstrumentPage({ params }: Props) {
                 href={`/instrumente/${t.id}`}
                 className="bg-card rounded-xl border border-border p-4 hover:shadow-md transition-shadow"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm mb-2">
-                  {t.name.charAt(0)}
-                </div>
+                <ToolIcon name={t.name} toolId={t.id} size="sm" className="mb-2" />
                 <p className="font-semibold text-text text-sm">{t.name}</p>
                 <p className="text-xs text-text-light">{t.pricing}</p>
               </Link>
