@@ -7,7 +7,7 @@ export default async function Image() {
   return new ImageResponse(
     (
       <div style={{
-        background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 30%, #4f46e5 60%, #7c3aed 100%)",
+        background: "linear-gradient(135deg, #001d4a 0%, #003380 30%, #0055EE 60%, #0088FF 100%)",
         width: "100%", height: "100%",
         display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
@@ -20,7 +20,7 @@ export default async function Image() {
         <div style={{ fontSize: 28, color: "rgba(255,255,255,0.8)", maxWidth: 700, textAlign: "center", lineHeight: 1.4 }}>
           Descopera cele mai bune instrumente AI din Romania
         </div>
-        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 6, background: "linear-gradient(90deg, #818cf8, #a78bfa, #c084fc)" }} />
+        <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 6, background: "linear-gradient(90deg, #3399FF, #a78bfa, #c084fc)" }} />
       </div>
     ),
     { ...size }
