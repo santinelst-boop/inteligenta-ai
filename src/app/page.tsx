@@ -237,7 +237,7 @@ export default function Home() {
 
       {/* ===== NEWSLETTER SECTION ===== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl p-8 md:p-12">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               Primește recenzii și ghiduri în inbox
@@ -327,7 +327,7 @@ export default function Home() {
                 Care generator de imagini merită banii?
               </p>
             </div>
-            <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-2xl shrink-0">
+            <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">
               🟣
             </div>
           </Link>
