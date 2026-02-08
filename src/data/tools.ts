@@ -682,4 +682,59 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/prompt-engineering.png",
     featured: true,
   },
+  {
+    slug: "ai-detector-text-verificare-continut",
+    title: "AI Detector Text: Cum Verifici dacă Un Text E Scris de AI (2026)",
+    excerpt:
+      "Am testat 6 detectoare AI pe 20 de texte. Rezultatele ne-au surprins. Niciun instrument nu e infailibil.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-detector.png",
+    featured: false,
+  },
+  {
+    slug: "ai-automatizare-workflow-fara-cod",
+    title: "AI Automatizare: Creează Workflow-uri Inteligente Fără Cod (2026)",
+    excerpt:
+      "Cum am eliminat 15 ore de muncă repetitivă pe săptămână cu Zapier AI, Make și n8n.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-automatizare.png",
+    featured: false,
+  },
+  {
+    slug: "ai-fotografie-editare-imbunatatire",
+    title: "AI Fotografie: Editare și Îmbunătățire Automată (2026)",
+    excerpt:
+      "Am dat 10 poze proaste la 7 instrumente AI. Câteva au făcut magie. Teste reale pe fotografii reale.",
+    category: "ai-imagine",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-fotografie.png",
+    featured: false,
+  },
+  {
+    slug: "ai-invatare-limbi-straine-aplicatii",
+    title: "AI Învățare Limbi Străine: Cele Mai Bune Aplicații în 2026",
+    excerpt:
+      "Am studiat spaniolă 30 de zile exclusiv cu AI. Iată ce instrumente au funcționat și ce am învățat.",
+    category: "ai-educatie",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-limbi.png",
+    featured: false,
+  },
+  {
+    slug: "ai-business-plan-antreprenori",
+    title: "AI Business Plan: Strategii pentru Antreprenori (2026)",
+    excerpt:
+      "Cum să construiești un business plan solid cu AI în 2-3 zile. Ghid practic pentru antreprenori din România.",
+    category: "ai-business",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-business.png",
+    featured: false,
+  },
 ];
