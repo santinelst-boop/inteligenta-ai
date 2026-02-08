@@ -36,6 +36,7 @@ export const categories = [
 export const featuredTools: AITool[] = [
   {
     id: "chatgpt",
+    logoUrl: "/logos/chatgpt.png",
     name: "ChatGPT",
     description:
       "Cel mai popular chatbot AI din lume. ChatGPT generează text de înaltă calitate, răspunde la întrebări complexe, scrie cod și asistă în multiple domenii. Disponibil în versiune gratuită și premium cu funcții avansate.",
@@ -49,6 +50,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "claude",
+    logoUrl: "/logos/claude.png",
     name: "Claude",
     description:
       "Asistentul AI de la Anthropic cu performanțe excepționale. Claude excelează la analiză detaliată, scriere lungă și programare complexă, cu un context foarte extins de 200K tokens.",
@@ -62,6 +64,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "midjourney",
+    logoUrl: "/logos/midjourney.png",
     name: "Midjourney",
     description:
       "Generator de imagini AI premium cu calitate artistică remarcabilă. Midjourney creează artă digitală uluitoare din descrieri text, cu control detaliat și rezultate de calitate profesională.",
@@ -75,6 +78,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "runway",
+    logoUrl: "/logos/runway.png",
     name: "Runway ML",
     description:
       "Platformă completă de editare video cu inteligență artificială. Runway ML generează și editează clipuri video cu AI, oferind instrumente avansate pentru creatori de conținut.",
@@ -88,6 +92,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "github-copilot",
+    logoUrl: "/logos/github-copilot.png",
     name: "GitHub Copilot",
     description:
       "Asistent inteligent de programare direct în editorul tău favorit. GitHub Copilot sugerează cod completat, funcții și corectări în timp real, accelerând dezvoltarea.",
@@ -101,6 +106,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "elevenlabs",
+    logoUrl: "/logos/elevenlabs.png",
     name: "ElevenLabs",
     description:
       "Sinteză vocală AI de calitate profesională cu voici naturale. ElevenLabs transformă textul în vorbire realistă în zeci de limbi, perfectă pentru podcasting și videouri.",
@@ -114,6 +120,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "jasper",
+    logoUrl: "/logos/jasper.png",
     name: "Jasper AI",
     description:
       "Platform de scriere AI pentru marketing și content. Jasper AI generează copy pentru publicități, email-uri și articole cu personalitate și adaptabilă la ton și stil.",
@@ -127,6 +134,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "grammarly",
+    logoUrl: "/logos/grammarly.png",
     name: "Grammarly",
     description:
       "Asistant inteligent de scriere și corectură pentru orice platformă. Grammarly verifică gramatică, stil și ton, oferind sugestii de îmbunătățire în timp real pentru texte mai bune.",
@@ -140,6 +148,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "canva",
+    logoUrl: "/logos/canva.png",
     name: "Canva AI",
     description:
       "Designer grafic AI cu mii de șabloane profesionale. Canva AI permite crearea de designuri, postări social media și materiale marketing fără experiență de design.",
@@ -153,6 +162,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "pictory",
+    logoUrl: "/logos/pictory.png",
     name: "Pictory",
     description:
       "Transformă texte și articole în videoclipuri AI în minute. Pictory creează videoclipuri profesionale din scripturi, perfecte pentru social media și marketing video.",
@@ -166,6 +176,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "synthesia",
+    logoUrl: "/logos/synthesia.png",
     name: "Synthesia",
     description:
       "Creează videoclipuri cu avatar AI personalizat fără cameră video. Synthesia generează videoclipuri profesionale cu vorbitori AI în peste 120 limbi și dialecte.",
@@ -179,6 +190,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "notion-ai",
+    logoUrl: "/logos/notion-ai.png",
     name: "Notion AI",
     description:
       "Asistent AI integrat în workspace-ul Notion pentru productivitate. Notion AI generează texte, rezume și tabele direct în Notion, îmbunătățind flux de lucru.",
@@ -192,6 +204,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "copy-ai",
+    logoUrl: "/logos/copy-ai.png",
     name: "Copy.ai",
     description:
       "Generator de copy AI rapid și ușor de folosit pentru marketing. Copy.ai creează titluri, descrieri și copy-uri persuasive pentru publicități și email marketing.",
@@ -205,6 +218,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "dalle-3",
+    logoUrl: "/logos/dalle-3.png",
     name: "DALL-E 3",
     description:
       "Generator de imagini AI OpenAI cu interpretare excelentă a textului. DALL-E 3 creează imagini detaliate și corecte din descrieri, cu control fin al compoziției.",
@@ -218,6 +232,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "stable-diffusion",
+    logoUrl: "/logos/stable-diffusion.png",
     name: "Stable Diffusion",
     description:
       "Generator de imagini open-source și gratuit cu comunitate activă. Stable Diffusion poate rula local și oferă control total, fiind preferat de dezvoltatori și entuziaști.",
@@ -231,6 +246,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "cursor",
+    logoUrl: "/logos/cursor.png",
     name: "Cursor",
     description:
       "Editor de cod AI cu autocomplete și refactoring inteligent. Cursor accelerează programarea cu sugestii context-aware și abilitate de a rescrie cod complet.",
@@ -244,6 +260,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "perplexity",
+    logoUrl: "/logos/perplexity.png",
     name: "Perplexity",
     description:
       "Motor de căutare AI cu răspunsuri surse-citate în timp real. Perplexity combină puterea AI cu informații actuale, oferind răspunsuri verificate și contextualizate.",
@@ -257,6 +274,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "gemini",
+    logoUrl: "/logos/gemini.png",
     name: "Gemini",
     description:
       "Asistentul AI multimodal de la Google cu integrare ecosistem. Gemini accesează Gmail, Drive și alte servicii Google, oferind productivitate în mediul Google.",
@@ -270,6 +288,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "getresponse",
+    logoUrl: "/logos/getresponse.png",
     name: "GetResponse AI",
     description:
       "Platform email marketing AI cu automatizare inteligentă. GetResponse AI generează campaign-uri, segmentează audiență și optimizează rata de conversie automat.",
@@ -283,6 +302,7 @@ export const featuredTools: AITool[] = [
   },
   {
     id: "writesonic",
+    logoUrl: "/logos/writesonic.png",
     name: "Writesonic",
     description:
       "Generator de conținut AI pentru SEO și marketing. Writesonic creează articole optimizate pentru Google, descrieri produse și copy-uri marketing de înaltă calitate.",
