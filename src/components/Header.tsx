@@ -20,9 +20,40 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-white font-bold text-sm">ia</span>
-            </div>
+            <svg width="32" height="32" viewBox="0 0 200 190" fill="none" className="flex-shrink-0">
+              <defs>
+                <linearGradient id="logoGrad" x1="30" y1="0" x2="170" y2="190" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#0077FF"/>
+                  <stop offset="100%" stopColor="#0055DD"/>
+                </linearGradient>
+              </defs>
+              {/* A outer chevron */}
+              <path d="M100 10 L190 170 L170 170 L100 42 L30 170 L10 170 Z" fill="url(#logoGrad)"/>
+              {/* A middle chevron */}
+              <path d="M100 58 L155 170 L135 170 L100 90 L65 170 L45 170 Z" fill="url(#logoGrad)"/>
+              {/* I central pillar */}
+              <rect x="94" y="100" width="12" height="70" rx="3" fill="url(#logoGrad)"/>
+              {/* I dot */}
+              <circle cx="100" cy="92" r="6" fill="#00CCFF"/>
+              {/* Data pulse particles */}
+              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
+                <animate attributeName="cy" values="160;90" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
+                <animate attributeName="cy" values="160;90" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+              </circle>
+              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
+                <animate attributeName="cy" values="160;90" dur="2s" begin="1s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+              </circle>
+              {/* Top glow pulse */}
+              <circle cx="100" cy="92" r="8" fill="none" stroke="#00CCFF" strokeWidth="2" opacity="0.3">
+                <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
             <span className="text-xl font-bold text-text">
               inteligenta<span className="text-primary">.ai</span>
             </span>
