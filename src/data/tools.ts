@@ -462,4 +462,59 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/aplicatii-ai.png",
     featured: false,
   },
+  {
+    slug: "ai-muzica-generatoare-instrumente",
+    title: "AI Muzică: Top 10 Generatoare de Muzică cu Inteligență Artificială (2026)",
+    excerpt:
+      "Cele mai bune generatoare de muzică AI: Suno, Udio, AIVA și altele. Creează melodii originale gratuit. Comparație completă.",
+    category: "ai-audio",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-muzica.png",
+    featured: false,
+  },
+  {
+    slug: "ai-prezentari-slide-uri-automate",
+    title: "AI Prezentări: Cum să Faci Slide-uri Profesionale în Minute",
+    excerpt:
+      "Cele mai bune instrumente AI pentru prezentări: Gamma, Tome, Beautiful.ai. Creează slide-uri profesionale automat.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "8 min",
+    imageUrl: "/articles/ai-prezentari.png",
+    featured: false,
+  },
+  {
+    slug: "ai-pentru-studenti-ghid-complet",
+    title: "AI pentru Studenți: Ghid Complet cu Instrumente Gratuite (2026)",
+    excerpt:
+      "Cele mai bune instrumente AI gratuite pentru studenți: pentru teme, proiecte, cercetare și învățare. Cu sfaturi practice și atenționări.",
+    category: "ai-educatie",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-studenti.png",
+    featured: true,
+  },
+  {
+    slug: "cele-mai-bune-instrumente-ai-2026",
+    title: "Cele Mai Bune Instrumente AI în 2026: Top 25 Testate și Clasate",
+    excerpt:
+      "Top 25 cele mai bune instrumente AI testate și clasate: chatboți, imagini, video, muzică și productivitate. Cu prețuri și note.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "14 min",
+    imageUrl: "/articles/top-ai-2026.png",
+    featured: true,
+  },
+  {
+    slug: "ai-parafrazare-top-instrumente",
+    title: "AI Parafrazare: Top 8 Instrumente de Reformulare Text (2026)",
+    excerpt:
+      "Cele mai bune instrumente AI de parafrazare: Quillbot, Wordtune, Grammarly. Reformulează texte instant. Comparație cu prețuri.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-parafrazare.png",
+    featured: false,
+  },
 ];
