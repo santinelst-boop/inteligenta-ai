@@ -184,8 +184,8 @@ export default function Home() {
       </section>
 
       {/* ===== CATEGORIES SHOWCASE ===== */}
-      <section className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="categories-gradient">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-3">
             Explorează pe categorii
           </h2>
@@ -193,27 +193,40 @@ export default function Home() {
             De la generatoare de text la editoare video — găsește instrumentul AI perfect pentru tine
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {categories.map((cat) => (
               <Link
                 key={cat.id}
                 href={`/instrumente?cat=${cat.id}`}
-                className="group bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/10 hover:bg-white/20 transition-all"
+                className="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center border border-white/15 hover:bg-white/20 hover:-translate-y-1 transition-all"
               >
-                <div
-                  className="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
-                  style={{ backgroundColor: `${cat.color}30` }}
-                >
-                  {cat.id === "ai-text" && "✏️"}
-                  {cat.id === "ai-imagine" && "🎨"}
-                  {cat.id === "ai-video" && "🎬"}
-                  {cat.id === "ai-cod" && "💻"}
-                  {cat.id === "ai-audio" && "🎵"}
-                  {cat.id === "ai-productivitate" && "⚡"}
-                  {cat.id === "ai-cautare" && "🔍"}
-                  {cat.id === "ai-email" && "✉️"}
+                <div className="w-14 h-14 rounded-xl mx-auto mb-4 flex items-center justify-center bg-white/15">
+                  {cat.id === "ai-text" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  )}
+                  {cat.id === "ai-imagine" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                  )}
+                  {cat.id === "ai-video" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m10 9 5 3-5 3V9z"/></svg>
+                  )}
+                  {cat.id === "ai-cod" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                  )}
+                  {cat.id === "ai-audio" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  )}
+                  {cat.id === "ai-productivitate" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  )}
+                  {cat.id === "ai-cautare" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="m11 8-2 4h4l-2 4"/></svg>
+                  )}
+                  {cat.id === "ai-email" && (
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.95)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  )}
                 </div>
-                <h3 className="font-semibold text-white text-sm">
+                <h3 className="font-bold text-white text-base">
                   {cat.name}
                 </h3>
               </Link>
