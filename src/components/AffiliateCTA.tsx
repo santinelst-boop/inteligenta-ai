@@ -24,7 +24,7 @@ export default function AffiliateCTA({ tool, variant = "box" }: AffiliateCTAProp
 
   if (variant === "inline") {
     return (
-      <div className="my-6 flex items-center gap-4 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4 border border-indigo-100">
+      <div className="my-6 flex items-center gap-4 bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-4 border border-blue-100">
         <ToolIcon name={tool.name} toolId={tool.id} size="md" />
         <div className="flex-1 min-w-0">
           <p className="font-semibold text-text text-sm">{tool.name}</p>
@@ -44,7 +44,7 @@ export default function AffiliateCTA({ tool, variant = "box" }: AffiliateCTAProp
   }
 
   return (
-    <div className="my-8 bg-gradient-to-r from-indigo-50 via-purple-50 to-indigo-50 rounded-2xl p-6 md:p-8 border border-indigo-100 shadow-sm">
+    <div className="my-8 bg-gradient-to-r from-blue-50 via-sky-50 to-blue-50 rounded-2xl p-6 md:p-8 border border-blue-100 shadow-sm">
       <div className="flex items-start gap-4 mb-4">
         <ToolIcon name={tool.name} toolId={tool.id} size="lg" />
         <div className="flex-1">
@@ -60,7 +60,7 @@ export default function AffiliateCTA({ tool, variant = "box" }: AffiliateCTAProp
           target="_blank"
           rel="nofollow sponsored"
           onClick={handleClick}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all shadow-md hover:shadow-lg"
         >
           Încearcă {tool.name} Gratuit →
         </a>
