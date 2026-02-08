@@ -40,8 +40,12 @@ export default function ToolCard({ tool }: { tool: AITool }) {
     <div className="card-hover bg-card rounded-2xl border border-border p-5 flex flex-col">
       {/* Header */}
       <div className="flex items-start gap-3 mb-3">
-        <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center text-primary font-bold text-lg shrink-0">
-          {tool.name[0]}
+        <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center text-primary font-bold text-lg shrink-0">
+          {tool.logoUrl ? (
+            <Image src={tool.logoUrl} alt={tool.name} width={48} height={48} className="w-full h-full object-contain" />
+          ) : (
+            tool.name[0]
+          )}
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold text-text truncate">{tool.name}</h3>
