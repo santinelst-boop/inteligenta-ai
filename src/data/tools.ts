@@ -517,4 +517,59 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/ai-parafrazare.png",
     featured: false,
   },
+  {
+    slug: "ai-marketing-strategii-instrumente",
+    title: "AI Marketing: Strategii și Instrumente care Chiar Funcționează (2026)",
+    excerpt:
+      "Cele mai bune instrumente AI pentru marketing: strategii testate pentru SEO, social media, email și ads.",
+    category: "ai-marketing",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-marketing.png",
+    featured: false,
+  },
+  {
+    slug: "ai-traducere-top-instrumente-2026",
+    title: "AI Traducere: Top 10 Instrumente de Traducere Automată în 2026",
+    excerpt:
+      "Cele mai bune instrumente AI de traducere: DeepL, Google Translate, ChatGPT. Comparație cu teste în limba română.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-traducere.png",
+    featured: false,
+  },
+  {
+    slug: "ai-rezumate-sumarizare-automata",
+    title: "AI Rezumate: Cele Mai Bune Instrumente de Sumarizare Automată (2026)",
+    excerpt:
+      "Top instrumente AI pentru rezumate: pentru articole, PDF-uri, cărți și întâlniri. Ghid complet cu teste și prețuri.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "8 min",
+    imageUrl: "/articles/ai-rezumate.png",
+    featured: false,
+  },
+  {
+    slug: "ai-chatbot-business-ghid-implementare",
+    title: "AI Chatbot pentru Business: Ghid Complet de Implementare (2026)",
+    excerpt:
+      "Cum să implementezi un chatbot AI pentru afacerea ta: platforme, costuri și pași practici pentru IMM-uri din România.",
+    category: "ai-business",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-chatbot.png",
+    featured: false,
+  },
+  {
+    slug: "ai-scris-articole-generare-continut",
+    title: "AI Scris Articole: Cum să Generezi Conținut de Calitate în 2026",
+    excerpt:
+      "Cum să scrii articole cu AI: instrumente, strategii și flux de lucru practic. Ghid pentru bloggeri și marketeri.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-scris.png",
+    featured: false,
+  },
 ];
