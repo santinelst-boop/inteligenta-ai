@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AITool } from "@/data/tools";
 
 interface ComparisonTableProps {
@@ -106,8 +107,12 @@ export default function ComparisonTable({
               >
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-sky-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                      {tool.name.charAt(0)}
+                    <div className="w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-br from-blue-500 to-sky-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                      {tool.logoUrl ? (
+                        <Image src={tool.logoUrl} alt={tool.name} width={40} height={40} className="w-full h-full object-contain" />
+                      ) : (
+                        tool.name.charAt(0)
+                      )}
                     </div>
                     <div className="min-w-0">
                       <p className="font-semibold text-text text-sm">
