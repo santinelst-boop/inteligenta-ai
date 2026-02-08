@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ToolIcon from "@/components/ToolIcon";
 import ToolCard from "@/components/ToolCard";
 import ArticleCard from "@/components/ArticleCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
@@ -293,9 +294,7 @@ export default function Home() {
             href="/comparatii/chatgpt-vs-claude"
             className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
           >
-            <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center text-2xl shrink-0">
-              🟡
-            </div>
+            <ToolIcon name="ChatGPT" toolId="chatgpt" size="lg" />
             <div className="flex-1">
               <span className="text-xs font-bold text-primary uppercase tracking-wide">
                 VS
@@ -305,9 +304,7 @@ export default function Home() {
                 Cine câștigă bătălia chatbot-ilor AI în 2026?
               </p>
             </div>
-            <div className="w-14 h-14 rounded-xl bg-orange-100 flex items-center justify-center text-2xl shrink-0">
-              🟠
-            </div>
+            <ToolIcon name="Claude" toolId="claude" size="lg" />
           </Link>
 
           {/* Comparison Card 2 */}
@@ -315,9 +312,7 @@ export default function Home() {
             href="/comparatii/midjourney-vs-dalle"
             className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
           >
-            <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">
-              🔵
-            </div>
+            <ToolIcon name="Midjourney" toolId="midjourney" size="lg" />
             <div className="flex-1">
               <span className="text-xs font-bold text-primary uppercase tracking-wide">
                 VS
@@ -327,9 +322,7 @@ export default function Home() {
                 Care generator de imagini merită banii?
               </p>
             </div>
-            <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">
-              🟣
-            </div>
+            <ToolIcon name="DALL-E 3" toolId="dalle-3" size="lg" />
           </Link>
         </div>
       </section>
