@@ -2,20 +2,20 @@
 @plugin "@tailwindcss/typography";
 
 @theme inline {
-  --color-primary: #4f46e5;
-  --color-primary-light: #6366f1;
-  --color-primary-dark: #3730a3;
-  --color-accent: #7c3aed;
+  --color-primary: #0066FF;
+  --color-primary-light: #3399FF;
+  --color-primary-dark: #0044CC;
+  --color-accent: #00AAFF;
   --color-surface: #f8fafc;
-  --color-surface-dark: #0f172a;
+  --color-surface-dark: #0a1628;
   --color-card: #ffffff;
   --color-text: #1e293b;
   --color-text-light: #64748b;
   --color-text-inverse: #f8fafc;
   --color-border: #e2e8f0;
-  --color-hero-from: #4f46e5;
-  --color-hero-via: #6366f1;
-  --color-hero-to: #7c3aed;
+  --color-hero-from: #0044CC;
+  --color-hero-via: #0066FF;
+  --color-hero-to: #3399FF;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
@@ -63,7 +63,7 @@ html {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(79, 70, 229, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.15);
 }
 
 /* Category pill */
@@ -71,9 +71,20 @@ html {
   transition: all 0.2s ease;
 }
 .pill:hover {
-  background: #4f46e5;
+  background: #0066FF;
   color: white;
   transform: scale(1.05);
+}
+
+/* Button glow animation on hover */
+@keyframes btn-glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(0, 102, 255, 0.3); }
+  50% { box-shadow: 0 0 24px rgba(0, 170, 255, 0.5); }
+}
+
+.btn-glow:hover {
+  animation: btn-glow 1.5s ease infinite;
+  transform: translateY(-1px);
 }
 
 /* Rating stars */
