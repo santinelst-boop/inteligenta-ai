@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import FacebookPixel from "@/components/FacebookPixel";
 export const metadata: Metadata = {
   metadataBase: new URL("https://inteligenta.ai"),
   title: {
@@ -55,7 +56,7 @@ export default function RootLayout({
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Support",
-      // TODO: înlocuiește cu contact@inteligenta.ai după configurare email hosting
+      // TODO: \u00eenlocuie\u0219te cu contact@inteligenta.ai dup\u0103 configurare email hosting
       email: "santinel.st@gmail.com",
     },
   };
@@ -85,6 +86,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <GoogleAnalytics />
+        <FacebookPixel />
         <Header />
         <main>{children}</main>
         <Footer />
