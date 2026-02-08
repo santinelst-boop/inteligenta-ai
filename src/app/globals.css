@@ -37,9 +37,24 @@ html {
 }
 
 .hero-gradient {
-  background: linear-gradient(-45deg, #4f46e5, #6366f1, #7c3aed, #4f46e5);
+  background: linear-gradient(-45deg, #0044CC, #0055EE, #0066FF, #0044CC);
   background-size: 300% 300%;
   animation: gradient-shift 8s ease infinite;
+}
+
+.categories-gradient {
+  background: linear-gradient(135deg, #0044CC, #0066FF, #3399FF);
+  position: relative;
+}
+.categories-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.03) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 /* Card hover effect */
