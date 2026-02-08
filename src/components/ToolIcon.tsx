@@ -8,6 +8,29 @@ interface ToolIconProps {
   className?: string;
 }
 
+const toolLogos: Record<string, string> = {
+  "chatgpt": "/logos/chatgpt.png",
+  "claude": "/logos/claude.png",
+  "midjourney": "/logos/midjourney.png",
+  "runway": "/logos/runway.png",
+  "github-copilot": "/logos/github-copilot.png",
+  "elevenlabs": "/logos/elevenlabs.png",
+  "jasper": "/logos/jasper.png",
+  "grammarly": "/logos/grammarly.png",
+  "canva": "/logos/canva.png",
+  "pictory": "/logos/pictory.png",
+  "synthesia": "/logos/synthesia.png",
+  "notion-ai": "/logos/notion-ai.png",
+  "copy-ai": "/logos/copy-ai.png",
+  "dalle-3": "/logos/dalle-3.png",
+  "stable-diffusion": "/logos/stable-diffusion.png",
+  "cursor": "/logos/cursor.png",
+  "perplexity": "/logos/perplexity.png",
+  "gemini": "/logos/gemini.png",
+  "getresponse": "/logos/getresponse.png",
+  "writesonic": "/logos/writesonic.png",
+};
+
 const brandColors: Record<string, { bg: string; text: string }> = {
   chatgpt: { bg: "bg-[#10a37f]/10", text: "text-[#10a37f]" },
   claude: { bg: "bg-[#d4a574]/10", text: "text-[#d4a574]" },
@@ -38,6 +61,7 @@ const sizePx: Record<string, number> = { sm: 32, md: 48, lg: 64 };
 export default function ToolIcon({
   name, toolId, logoUrl, size = "md", className = "",
 }: ToolIconProps) {
+  const resolvedLogo = logoUrl || toolLogos[toolId];
   const colors = brandColors[toolId] || defaultColors;
   const sizeClasses = {
     sm: "w-8 h-8 text-xs rounded-lg",
@@ -45,15 +69,15 @@ export default function ToolIcon({
     lg: "w-16 h-16 text-2xl rounded-2xl",
   };
 
-  if (logoUrl) {
+  if (resolvedLogo) {
     return (
       <div className={`${sizeClasses[size]} overflow-hidden ${className}`}>
         <Image
-          src={logoUrl}
+          src={resolvedLogo}
           alt={`Logo ${name}`}
           width={sizePx[size]}
           height={sizePx[size]}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
           loading="lazy"
         />
       </div>
