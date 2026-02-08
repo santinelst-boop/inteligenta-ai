@@ -572,4 +572,59 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/ai-scris.png",
     featured: false,
   },
+  {
+    slug: "cum-functioneaza-inteligenta-artificiala",
+    title: "Cum Funcționează Inteligența Artificială? Explicat Pe Înțelesul Tuturor",
+    excerpt:
+      "Cum funcționează AI-ul: rețele neuronale, machine learning și GPT explicat simplu, fără jargon, cu exemple din viața reală.",
+    category: "ai-educatie",
+    date: "2026-02-08",
+    readTime: "12 min",
+    imageUrl: "/articles/cum-functioneaza-ai.png",
+    featured: true,
+  },
+  {
+    slug: "ai-video-generator-creare-clipuri",
+    title: "AI Video Generator: Creează Clipuri Video din Text în 2026",
+    excerpt:
+      "Am testat toate generatoarele video AI: Runway, Sora, Kling, HeyGen. Teste reale, nu demo-uri — iată verdictul.",
+    category: "ai-video",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-video.png",
+    featured: false,
+  },
+  {
+    slug: "ai-programare-asistent-cod-2026",
+    title: "AI Programare: Cele Mai Bune Instrumente de Asistare Cod în 2026",
+    excerpt:
+      "GitHub Copilot, Cursor, Claude Code: teste reale pe proiecte reale. Ce funcționează și ce e doar hype.",
+    category: "ai-cod",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-programare.png",
+    featured: false,
+  },
+  {
+    slug: "ai-voce-sinteza-vocala-clonare",
+    title: "AI Voce: Sinteză Vocală și Clonare — Ce E Posibil în 2026",
+    excerpt:
+      "Am clonat o voce în 30 de secunde cu ElevenLabs. Teste, prețuri și implicațiile etice ale sintezei vocale AI.",
+    category: "ai-audio",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-voce.png",
+    featured: false,
+  },
+  {
+    slug: "openai-vs-anthropic-doua-viziuni-ai",
+    title: "OpenAI vs Anthropic: Două Viziuni pentru Viitorul Inteligenței Artificiale",
+    excerpt:
+      "Analiză editorială: filozofii diferite, produse diferite, viziuni opuse. Ce înseamnă pentru tine ca utilizator.",
+    category: "ai-opinie",
+    date: "2026-02-08",
+    readTime: "12 min",
+    imageUrl: "/articles/openai-vs-anthropic.png",
+    featured: true,
+  },
 ];
