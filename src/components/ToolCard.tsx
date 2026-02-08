@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { AITool } from "@/data/tools";
 
 function StarRating({ rating }: { rating: number }) {
