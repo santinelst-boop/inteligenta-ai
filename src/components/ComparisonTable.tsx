@@ -48,7 +48,7 @@ export default function ComparisonTable({
       case "Plătit":
         return "bg-amber-100 text-amber-800";
       case "Open Source":
-        return "bg-purple-100 text-purple-800";
+        return "bg-blue-100 text-blue-800";
       default:
         return "bg-gray-100 text-gray-800";
     }
@@ -78,7 +78,7 @@ export default function ComparisonTable({
       <div className="overflow-x-auto rounded-2xl border border-gray-200">
         <table className="w-full">
           <thead>
-            <tr className="bg-gradient-to-r from-blue-50 to-purple-50 border-b border-gray-200">
+            <tr className="bg-gradient-to-r from-blue-50 to-sky-50 border-b border-gray-200">
               <th className="px-6 py-4 text-left text-sm font-bold text-text">
                 Instrument
               </th>
@@ -106,7 +106,7 @@ export default function ComparisonTable({
               >
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-sky-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                       {tool.name.charAt(0)}
                     </div>
                     <div className="min-w-0">
@@ -145,7 +145,7 @@ export default function ComparisonTable({
                       href={tool.affiliateUrl}
                       rel="noopener noreferrer sponsored"
                       target="_blank"
-                      className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-bold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
+                      className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xs font-bold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105"
                     >
                       Verifică Prețul
                     </Link>
