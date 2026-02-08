@@ -6,6 +6,7 @@ import { articlesPart5 } from "./articles-part5";
 import { articlesPart6 } from "./articles-part6";
 import { articlesPart7 } from "./articles-part7";
 import { articlesPart8 } from "./articles-part8";
+import { articlesPart9 } from "./articles-part9";
 
 export const articleContent: Record<string, { title: string; metaDescription: string; content: string }> = {
   ...articlesPart1,
@@ -16,4 +17,5 @@ export const articleContent: Record<string, { title: string; metaDescription: st
   ...articlesPart6,
   ...articlesPart7,
   ...articlesPart8,
+  ...articlesPart9,
 };
