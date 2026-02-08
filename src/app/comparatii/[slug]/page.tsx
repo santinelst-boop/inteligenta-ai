@@ -187,7 +187,7 @@ export default async function ComparatiePage({ params }: Props) {
           </div>
         )}
 
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
+        <div className="bg-gradient-to-r from-blue-50 to-blue-50 rounded-2xl p-6 md:p-8 border border-blue-100">
           <h3 className="text-xl font-bold text-text mb-2">Alege instrumentul potrivit pentru tine</h3>
           <p className="text-text-light mb-4">Testeaza ambele instrumente si decide care se potriveste cel mai bine nevoilor tale.</p>
           <div className="flex flex-wrap gap-3">
