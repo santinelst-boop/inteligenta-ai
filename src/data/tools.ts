@@ -387,9 +387,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "chatgpt-romana-ghid-complet",
-    title: "ChatGPT \u00een Rom\u00e2n\u0103: Ghid Complet 2026 (+ Versiunea Gratuit\u0103)",
+    title: "ChatGPT în Română: Ghid Complet 2026 (+ Versiunea Gratuită)",
     excerpt:
-      "Ghid complet ChatGPT \u00een rom\u00e2n\u0103: cum s\u0103-l folo\u015fe\u015fti, sfaturi practice, versiunea gratuit\u0103 vs Plus \u015fi alternative pentru utilizatorii din Rom\u00e2nia.",
+      "Ghid complet ChatGPT în română: cum să-l foloşeşti, sfaturi practice, versiunea gratuită vs Plus şi alternative pentru utilizatorii din România.",
     category: "ai-text",
     date: "2026-02-06",
     readTime: "10 min",
@@ -398,9 +398,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "cele-mai-bune-chatbot-uri-ai",
-    title: "Top 10 Chatbot AI \u00een 2026: Cele Mai Bune Alternative ChatGPT",
+    title: "Top 10 Chatbot AI în 2026: Cele Mai Bune Alternative ChatGPT",
     excerpt:
-      "Compara\u021bie detaliat\u0103 \u00eentre cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity \u015fi altele. Pre\u021buri, func\u021bii \u015fi recomand\u0103ri.",
+      "Comparație detaliată între cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity şi altele. Prețuri, funcții şi recomandări.",
     category: "ai-text",
     date: "2026-02-05",
     readTime: "12 min",
@@ -411,7 +411,7 @@ export const latestArticles: Article[] = [
     slug: "ai-detector-verificare-text",
     title: "AI Detector 2026: Top Instrumente de Verificare Text AI",
     excerpt:
-      "Cele mai bune instrumente AI detector pentru verificarea textelor generate de AI. Compara\u021bie Originality.ai, GPTZero, Turnitin.",
+      "Cele mai bune instrumente AI detector pentru verificarea textelor generate de AI. Comparație Originality.ai, GPTZero, Turnitin.",
     category: "ai-text",
     date: "2026-02-04",
     readTime: "9 min",
@@ -422,7 +422,7 @@ export const latestArticles: Article[] = [
     slug: "ai-foto-editor-editare-imagini",
     title: "AI Foto Editor: Top 10 Instrumente de Editare Imagini cu AI (2026)",
     excerpt:
-      "De la eliminarea fundalului la \u00eembun\u0103t\u0103\u021birea fotografiilor \u2014 cele mai bune instrumente AI foto editor comparate.",
+      "De la eliminarea fundalului la îmbunătățirea fotografiilor — cele mai bune instrumente AI foto editor comparate.",
     category: "ai-imagine",
     date: "2026-02-03",
     readTime: "11 min",
