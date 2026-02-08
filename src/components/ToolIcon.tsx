@@ -28,7 +28,7 @@ const brandColors: Record<string, { bg: string; text: string }> = {
   perplexity: { bg: "bg-[#20808d]/10", text: "text-[#20808d]" },
   gemini: { bg: "bg-[#4285f4]/10", text: "text-[#4285f4]" },
   getresponse: { bg: "bg-[#00baff]/10", text: "text-[#00baff]" },
-  writesonic: { bg: "bg-[#6366f1]/10", text: "text-[#6366f1]" },
+  writesonic: { bg: "bg-[#0066FF]/10", text: "text-[#0066FF]" },
 };
 
 const defaultColors = { bg: "bg-primary/10", text: "text-primary" };
