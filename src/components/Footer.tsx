@@ -49,9 +49,18 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-sm">ia</span>
-              </div>
+              <svg width="32" height="32" viewBox="0 0 200 190" fill="none" className="flex-shrink-0">
+                <defs>
+                  <linearGradient id="footerLogoGrad" x1="30" y1="0" x2="170" y2="190" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stopColor="#0077FF"/>
+                    <stop offset="100%" stopColor="#0055DD"/>
+                  </linearGradient>
+                </defs>
+                <path d="M100 10 L190 170 L170 170 L100 42 L30 170 L10 170 Z" fill="url(#footerLogoGrad)"/>
+                <path d="M100 58 L155 170 L135 170 L100 90 L65 170 L45 170 Z" fill="url(#footerLogoGrad)"/>
+                <rect x="94" y="100" width="12" height="70" rx="3" fill="url(#footerLogoGrad)"/>
+                <circle cx="100" cy="92" r="6" fill="#00CCFF"/>
+              </svg>
               <span className="text-xl font-bold text-white">
                 inteligenta<span className="text-primary-light">.ai</span>
               </span>
