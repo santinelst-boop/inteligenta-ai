@@ -125,7 +125,7 @@ export default async function ComparatiePage({ params }: Props) {
               <>
                 <p className="text-text-light text-sm mb-4">{toolLeft.description}</p>
                 <a href={`/go/${toolLeft.id}`} target="_blank" rel="nofollow sponsored" className="inline-block px-5 py-2 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors">
-                  Incearca {comp.left.name} \u2192
+                  Încearcă {comp.left.name} →
                 </a>
               </>
             )}
@@ -149,7 +149,7 @@ export default async function ComparatiePage({ params }: Props) {
               <>
                 <p className="text-text-light text-sm mb-4">{toolRight.description}</p>
                 <a href={`/go/${toolRight.id}`} target="_blank" rel="nofollow sponsored" className="inline-block px-5 py-2 rounded-xl bg-primary text-white text-sm font-semibold hover:bg-primary-dark transition-colors">
-                  Incearca {comp.right.name} \u2192
+                  Încearcă {comp.right.name} →
                 </a>
               </>
             )}
@@ -189,16 +189,16 @@ export default async function ComparatiePage({ params }: Props) {
 
         <div className="bg-gradient-to-r from-blue-50 to-blue-50 rounded-2xl p-6 md:p-8 border border-blue-100">
           <h3 className="text-xl font-bold text-text mb-2">Alege instrumentul potrivit pentru tine</h3>
-          <p className="text-text-light mb-4">Testeaza ambele instrumente si decide care se potriveste cel mai bine nevoilor tale.</p>
+          <p className="text-text-light mb-4">Testează ambele instrumente si decide care se potriveste cel mai bine nevoilor tale.</p>
           <div className="flex flex-wrap gap-3">
             {toolLeft && (
               <a href={`/go/${toolLeft.id}`} target="_blank" rel="nofollow sponsored" className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
-                Viziteaza {comp.left.name} \u2192
+                Vizitează {comp.left.name} →
               </a>
             )}
             {toolRight && (
               <a href={`/go/${toolRight.id}`} target="_blank" rel="nofollow sponsored" className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
-                Viziteaza {comp.right.name} \u2192
+                Vizitează {comp.right.name} →
               </a>
             )}
           </div>
