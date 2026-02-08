@@ -159,7 +159,7 @@ export default async function ArticlePage({ params }: Props) {
         )}
 
         {relatedTools.length > 0 && (
-          <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-6 md:p-8 border border-blue-100">
+          <div className="mt-12 bg-gradient-to-r from-blue-50 to-blue-50 rounded-2xl p-6 md:p-8 border border-blue-100">
             <h3 className="text-xl font-bold text-text mb-4">
               Instrumente mentionate in acest articol
             </h3>
