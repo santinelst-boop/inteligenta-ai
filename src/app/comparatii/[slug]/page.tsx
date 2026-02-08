@@ -215,12 +215,20 @@ export default async function ComparatiePage({ params }: Props) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {comparisons.filter((c) => c.slug !== slug).slice(0, 4).map((c) => (
               <Link key={c.slug} href={`/comparatii/${c.slug}`} className="card-hover flex items-center gap-4 bg-card rounded-xl border border-border p-4">
-                <span className="text-xl">{c.left.emoji}</span>
+                {c.left.toolId ? (
+                  <ToolIcon name={c.left.name} toolId={c.left.toolId} size="sm" />
+                ) : (
+                  <span className="text-xl">{c.left.emoji}</span>
+                )}
                 <div className="flex-1">
                   <p className="font-semibold text-text text-sm">{c.left.name} vs {c.right.name}</p>
                   <p className="text-xs text-text-light">{c.category}</p>
                 </div>
-                <span className="text-xl">{c.right.emoji}</span>
+                {c.right.toolId ? (
+                  <ToolIcon name={c.right.name} toolId={c.right.toolId} size="sm" />
+                ) : (
+                  <span className="text-xl">{c.right.emoji}</span>
+                )}
               </Link>
             ))}
           </div>
