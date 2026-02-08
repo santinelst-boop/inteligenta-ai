@@ -49,17 +49,20 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <svg width="32" height="32" viewBox="0 0 200 190" fill="none" className="flex-shrink-0">
+              <svg width="32" height="32" viewBox="0 0 128 128" fill="none" className="flex-shrink-0">
                 <defs>
-                  <linearGradient id="footerLogoGrad" x1="30" y1="0" x2="170" y2="190" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stopColor="#0077FF"/>
-                    <stop offset="100%" stopColor="#0055DD"/>
+                  <linearGradient id="fLogo" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stopColor="#0070FF"/>
+                    <stop offset="100%" stopColor="#0042CC"/>
                   </linearGradient>
+                  <filter id="fGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
                 </defs>
-                <path d="M100 10 L190 170 L170 170 L100 42 L30 170 L10 170 Z" fill="url(#footerLogoGrad)"/>
-                <path d="M100 58 L155 170 L135 170 L100 90 L65 170 L45 170 Z" fill="url(#footerLogoGrad)"/>
-                <rect x="94" y="100" width="12" height="70" rx="3" fill="url(#footerLogoGrad)"/>
-                <circle cx="100" cy="92" r="6" fill="#00CCFF"/>
+                <rect width="128" height="128" rx="30" fill="url(#fLogo)"/>
+                <rect x="6" y="6" width="116" height="58" rx="24" fill="white" opacity="0.04"/>
+                <text x="64" y="82" textAnchor="middle" fontFamily="DM Sans, sans-serif" fontWeight="700" fontSize="62" fill="white" letterSpacing="-2" filter="url(#fGlow)">iA</text>
               </svg>
               <span className="text-xl font-bold text-white">
                 inteligenta<span className="text-primary-light">.ai</span>
