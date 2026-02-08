@@ -429,4 +429,37 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/ai-foto-editor.png",
     featured: false,
   },
+  {
+    slug: "chatgpt-gratuit-ce-poti-face",
+    title: "ChatGPT Gratuit: Ce Poți Face Fără să Plătești în 2026?",
+    excerpt:
+      "Tot ce poți face cu ChatGPT gratuit: funcții disponibile, limitări, trucuri pentru utilizare maximă și când merită să treci pe Plus.",
+    category: "ai-text",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/chatgpt-gratuit.png",
+    featured: false,
+  },
+  {
+    slug: "inteligenta-artificiala-gratuita-instrumente",
+    title: "Inteligență Artificială Gratuită: 15 Instrumente pe care să le Încerci în 2026",
+    excerpt:
+      "Cele mai bune instrumente de inteligență artificială gratuită: chatboți, generatoare de imagini, editoare video AI și mai mult.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "8 min",
+    imageUrl: "/articles/ai-gratuit.png",
+    featured: true,
+  },
+  {
+    slug: "aplicatii-inteligenta-artificiala-top-2026",
+    title: "Top 20 Aplicații cu Inteligență Artificială în 2026: Ghid Complet",
+    excerpt:
+      "Cele mai bune aplicații cu inteligență artificială: pentru productivitate, creativitate, învățare și business.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "12 min",
+    imageUrl: "/articles/aplicatii-ai.png",
+    featured: false,
+  },
 ];
