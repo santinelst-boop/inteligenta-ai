@@ -11,13 +11,13 @@ interface CategoryConfig {
 const categoryConfigs: Record<string, CategoryConfig> = {
   "ai-text": {
     icon: Pencil,
-    gradient: "from-indigo-600 via-indigo-500 to-blue-500",
+    gradient: "from-blue-700 via-blue-500 to-cyan-400",
     pattern: "radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.06) 0%, transparent 50%)",
     label: "Scriere AI",
   },
   "ai-imagine": {
     icon: Image,
-    gradient: "from-violet-600 via-purple-500 to-fuchsia-500",
+    gradient: "from-blue-600 via-cyan-500 to-sky-400",
     pattern: "radial-gradient(circle at 30% 70%, rgba(255,255,255,0.08) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(255,255,255,0.06) 0%, transparent 50%)",
     label: "Generare Imagini",
   },
