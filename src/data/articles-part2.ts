@@ -1,226 +1,143 @@
 export const articlesPart2: Record<string, { title: string; metaDescription: string; content: string }> = {
   "ai-pentru-content-creators": {
-    title: "Generare Text AI: Cele Mai Bune Instrumente pentru Creatori de Con\u021Binut",
-    metaDescription: "Top instrumente AI pentru generare text, imagini \u0219i video \u00EEn 2026. Ghid complet pentru creatorii de con\u021Binut: ChatGPT, Claude, Midjourney \u0219i altele.",
+    title: "AI pentru Content Creators: Instrumente care Chiar Fac Diferența (2026)",
+    metaDescription: "Cele mai bune instrumente AI pentru content creators în 2026: de la idei la producție, editare și distribuție. Ghid practic cu workflow real.",
     content: `<article>
-      <h2>Generare Text AI \u0219i Instrumente Esen\u021Biale pentru Creatori de Con\u021Binut</h2>
-      <p>E\u0219ti creator de con\u021Binut \u0219i vrei s\u0103 produci mai mult, mai rapid, f\u0103r\u0103 s\u0103 sacrifici calitatea? \u00CEn 2026, <strong>generarea de text cu AI</strong> \u0219i instrumentele de inteligen\u021B\u0103 artificial\u0103 au transformat complet industria. Iat\u0103 ghidul nostru complet.</p>
+      <h2>AI pentru Creatori de Conținut: Workflow-ul Nostru Complet, Pas cu Pas</h2>
+      <p>Să fim sinceri: a fi <strong>content creator</strong> în 2026 fără AI e ca și cum ai merge pe jos când toți ceilalți au mașină. Nu e imposibil, dar e enervant de lent. Noi producem zilnic conținut pentru mai multe platforme, și fiecare etapă — de la idee la publicare — implică cel puțin un instrument AI. Iată exact cum arată fluxul nostru.</p>
 
-      <h3>Generare Text AI: ChatGPT vs Claude</h3>
-      <p>Cele mai puternice instrumente de <strong>generare text AI</strong> \u00EEn 2026:</p>
-      <ul>
-        <li><strong>ChatGPT:</strong> Generare de idei pentru video-uri, scripturi YouTube, headline-uri optimizate pentru engagement, con\u021Binut social media (Instagram, LinkedIn, TikTok), \u0219i optimizare SEO</li>
-        <li><strong>Claude:</strong> Texte mai lungi \u0219i mai detaliate, analiz\u0103 de competi\u021Bie, cercetare aprofundat\u0103, \u0219i scriere tehnic\u0103 de \u00EEnalt\u0103 calitate</li>
-        <li><strong>Jasper AI:</strong> Specializat \u00EEn con\u021Binut marketing \u2014 email-uri, landing pages, copywriting</li>
-      </ul>
+      <h3>Faza 1: Idei și Cercetare (AI Salvează Blank Page Syndrome)</h3>
+      <p>Cea mai frustrată etapă a creației: pagina goală. AI-ul o rezolvă elegant. Noi folosim un prompt simplu în Claude: „Dă-mi 20 de idei de articole pe tema [X] pentru un public din România interesat de [Y]. Amestecă: 5 ghiduri practice, 5 listicle, 5 opinii controversate, 5 tutoriale pas cu pas." Din cele 20, 3-4 sunt mereu bune. Iar cele care nu sunt direct utilizabile inspiră alte idei.</p>
+      <p><strong>Perplexity AI</strong> e excelent pentru cercetare rapidă: „ce întrebări pune lumea despre [subiect] pe forumuri românești?" și primești insight-uri despre ce caută publicul — fără să petreci ore pe Reddit și Quora.</p>
 
-      <h3>Instrumente AI pentru Imagini \u0219i Design</h3>
-      <p><strong>DALL-E:</strong> Genereaz\u0103 imagini pentru articole \u0219i post\u0103ri \u00EEn 30 de secunde. Perfect pentru blogeri \u0219i social media managers.</p>
-      <p><strong>Midjourney:</strong> Pentru imagini artistice de \u00EEnalt\u0103 calitate \u2014 thumbnails YouTube, art digital, ilustra\u021Bii premium.</p>
-      <p><strong>Canva AI:</strong> Integrat \u00EEn Canva, permite crearea de design-uri profesionale f\u0103r\u0103 cuno\u0219tin\u021Be tehnice de design.</p>
+      <h3>Faza 2: Scriere și Producție</h3>
+      <p><strong>Articole text:</strong> Claude pentru prima versiune (5-10 minute), editare umană substanțială (20-30 minute), verificare fapte manual. Am încercat să publicăm fără editare — calitatea era vizibil mai proastă și engagement-ul a scăzut. Pașul de editare nu e opțional.</p>
+      <p><strong>Video:</strong> ChatGPT pentru script, HeyGen sau Runway pentru secvențe vizuale, CapCut pentru editare finală. Un video de 5 minute care dura 8 ore acum durează 2-3 ore.</p>
+      <p><strong>Imagini:</strong> Midjourney pentru hero images, Canva AI pentru grafice social media, Remove.bg pentru decupare produse. Am eliminat complet nevoia unui designer grafic pentru conținut zilnic.</p>
+      <p><strong>Audio/Podcast:</strong> Descript pentru editare (elimină „ăă"-urile automat — o binecuvântare), ElevenLabs dacă ai nevoie de narare fără să vorbești tu.</p>
 
-      <h3>Instrumente AI pentru Video \u0219i Audio</h3>
-      <p><strong>Synthesia:</strong> Genereaz\u0103 videoclipuri cu avataruri AI. Ideal pentru explainer videos, cursuri online \u0219i prezent\u0103ri.</p>
-      <p><strong>Runway:</strong> Editing video alimentat de AI \u2014 schimb\u0103 background-ul, rescaleaz\u0103, editeaz\u0103 rapid.</p>
-      <p><strong>ElevenLabs:</strong> Sintez\u0103 vocal\u0103 natural\u0103 pentru voice-over. Suport\u0103 limba rom\u00E2n\u0103 \u0219i alte 28 de limbi.</p>
-      <p><strong>Opus Clip:</strong> Transform\u0103 videoclipuri lungi \u00EEn clip-uri scurte virale pentru TikTok \u0219i YouTube Shorts.</p>
+      <h3>Faza 3: Optimizare și Distribuție</h3>
+      <p>Articolul e scris. Acum trebuie să ajungă la oameni. <strong>Surfer SEO</strong> sau ChatGPT verifică optimizarea SEO. <strong>Buffer/Hootsuite AI</strong> generează postări adaptate fiecărei platforme (LinkedIn formal, Instagram vizual, Twitter concis). <strong>Canva AI</strong> creează vizualuri variate din aceeași temă — un articol devine 5 postări Instagram, 3 LinkedIn, un carousel, și un reel.</p>
+      <p>Regula noastră de repurposing: fiecare piesă de conținut lungă (articol, video) trebuie să genereze minimum 5 piese scurte. AI-ul face asta trivial.</p>
 
-      <h3>Instrumente AI pentru SEO \u0219i Analiza Con\u021Binutului</h3>
-      <p>Surfer SEO, SEMrush \u0219i Ahrefs folosesc AI pentru: analiza competitorilor, recomand\u0103ri de keywords, optimizarea con\u021Binutului pe pagin\u0103, \u0219i prognozarea performan\u021Bei articolelor.</p>
+      <h3>Instrumente Esențiale (Stack-ul Nostru)</h3>
+      <p><strong>Must have (gratuit sau ieftin):</strong> ChatGPT gratuit (idei, copy scurt), Canva (plan gratuit — grafice), CapCut (gratuit — editare video), Perplexity (gratuit — cercetare).</p>
+      <p><strong>Worth paying for:</strong> Claude Pro ($20 — scriere serioasă), Midjourney ($10 — imagini premium), Descript ($24 — editare audio/video).</p>
+      <p><strong>Nice to have:</strong> Surfer SEO ($89 — SEO avansat), ElevenLabs ($5 — sinteză vocală), Zapier ($20 — automatizări).</p>
 
-      <h3>Impact M\u0103surabil pe Productivitate</h3>
-      <ul>
-        <li>40% mai mult con\u021Binut produs \u00EEn aceea\u0219i perioad\u0103 de timp</li>
-        <li>50% mai pu\u021Bin timp petrecut pe sarcini repetitive</li>
-        <li>Calitate consistent\u0103 pe to\u021Bi creatorii din echip\u0103</li>
-        <li>Mai mult timp pentru creativitate \u0219i strategie</li>
-      </ul>
+      <h3>Ce NU Faci cu AI-ul</h3>
+      <p>Patru lucruri pe care le-am învățat pe pielea noastră: <strong>Nu publici fără editare.</strong> Niciodată. <strong>Nu lași AI-ul să-ți definească vocea.</strong> AI-ul trebuie să scrie ca tine, nu tu ca AI-ul. <strong>Nu automatizezi interacțiunea cu audiența.</strong> Comentariile, răspunsurile la mesaje, comunitatea — astea rămân umane. <strong>Nu te bazezi pe AI pentru opinii.</strong> Opiniile tale autentice sunt diferențiatorul. AI-ul te ajută să le articulezi, nu să le înlocuiască.</p>
 
       <h3>Concluzie</h3>
-      <p>AI-ul este cel mai bun prieten al unui creator de con\u021Binut modern. \u00CEncepe cu <strong>generarea de text AI</strong> prin ChatGPT sau Claude (ambele au versiuni gratuite), apoi exploreaz\u0103 instrumentele de imagini \u0219i video pe m\u0103sur\u0103 ce \u00EE\u021Bi cre\u0219ti produc\u021Bia.</p>
+      <p>AI-ul nu face conținut bun automat. Face procesul de creație de 3-5 ori mai rapid, eliberându-te să te concentrezi pe ce contează: <strong>ideile tale, vocea ta, relația cu audiența.</strong> Creatorii care prosperă în 2026 nu sunt cei care folosesc cel mai mult AI, ci cei care îl folosesc cel mai inteligent.</p>
     </article>`
   },
 
   "gratuiti-vs-plati-care-alegi": {
-    title: "Instrumente AI Gratuite: Top 20+ \u00EEn 2026 (\u0219i C\u00E2nd Merit\u0103 s\u0103 Pl\u0103te\u0219ti)",
-    metaDescription: "Cele mai bune instrumente de inteligen\u021B\u0103 artificial\u0103 gratuite \u00EEn 2026. Compara\u021Bie complet\u0103 cu versiunile pl\u0103tite. Descoper\u0103 ce po\u021Bi face f\u0103r\u0103 s\u0103 pl\u0103te\u0219ti.",
+    title: "Instrumente AI Gratuite vs. Plătite: Ghid Sincer de Alegere (2026)",
+    metaDescription: "AI gratuit vs. plătit în 2026: ce primești gratis, ce merită plătit, și unde e diferența reală. Analiză pe categorii cu recomandări concrete.",
     content: `<article>
-      <h2>Instrumente AI Gratuite vs Pl\u0103tite: Ghid Complet 2026</h2>
-      <p>Cau\u021Bi <strong>instrumente de inteligen\u021B\u0103 artificial\u0103 gratuite</strong>? \u00CEn 2026, piata instrumentelor AI ofer\u0103 op\u021Biuni gratuite impresionante pentru aproape orice nevoie. Iat\u0103 un ghid complet cu cele mai bune op\u021Biuni gratuite \u0219i c\u00E2nd merit\u0103 s\u0103 investe\u0219ti \u00EEn versiuni premium.</p>
+      <h2>AI Gratuit vs. Plătit: Am Testat Ambele Variante. Iată Unde Contează Diferența.</h2>
+      <p>Întrebarea pe care o primim cel mai des: „merită să plătesc pentru ChatGPT Plus / Claude Pro / Midjourney?" Răspunsul onest: <strong>depinde enorm de ce faci</strong>. Am folosit extensiv atât versiunile gratuite cât și cele plătite ale instrumentelor AI majore, și diferența variază de la „nesemnificativă" la „game-changer" — depinzând de categoria de utilizare.</p>
 
-      <h3>Top Instrumente AI Gratuite pentru Text</h3>
-      <ul>
-        <li><strong>ChatGPT Free:</strong> Acces la GPT-4o mini, conversa\u021Bii nelimitate, func\u021Bioneaz\u0103 \u00EEn rom\u00E2n\u0103</li>
-        <li><strong>Claude Free:</strong> Conversa\u021Bii cu Claude Sonnet, analiz\u0103 de documente, context larg</li>
-        <li><strong>Google Gemini:</strong> Gratuit cu cont Google, integrat cu Google Workspace</li>
-        <li><strong>Microsoft Copilot:</strong> Gratuit, integrat \u00EEn Windows \u0219i Edge, bazat pe GPT-4</li>
-        <li><strong>Perplexity AI:</strong> C\u0103utare cu AI \u0219i r\u0103spunsuri cu surse verificate, gratuit</li>
-      </ul>
+      <h3>Chatboți AI: Gratuit vs. Plătit</h3>
+      <p><strong>ChatGPT gratuit</strong> folosește GPT-4o-mini — un model capabil dar inferior GPT-4o (Plus). Diferența se simte la: raționament complex (matematică, logică, analiză), lungimea și coerența textelor generate, și calitatea codului. Pentru conversații casual, întrebări simple, și task-uri scurte, versiunea gratuită e suficientă.</p>
+      <p><strong>Claude gratuit</strong> oferă același model ca Pro, dar cu limite de utilizare mai stricte. Când funcționează, calitatea e identică. Problema: la utilizare intensivă, atingi limita rapid și trebuie să aștepți.</p>
+      <p><strong>Verdictul:</strong> Dacă folosești AI sub 30 de minute pe zi → gratuit e ok. Peste 1 oră pe zi → plătit se amortizează din prima săptămână.</p>
 
-      <h3>Instrumente AI Gratuite pentru Imagini</h3>
-      <ul>
-        <li><strong>Bing Image Creator:</strong> Generare de imagini DALL-E complet gratuit\u0103</li>
-        <li><strong>Stable Diffusion:</strong> Open-source, gratuit, ruleaz\u0103 local pe PC</li>
-        <li><strong>Canva AI (Free):</strong> Generator de imagini cu plan gratuit Canva</li>
-        <li><strong>Leonardo.Ai (Free):</strong> 150 credite gratuite zilnic pentru imagini</li>
-        <li><strong>Microsoft Designer:</strong> Generare de imagini AI gratuit\u0103</li>
-      </ul>
+      <h3>Generare Imagini: Gratuit vs. Plătit</h3>
+      <p>Aici diferența e <strong>uriașă</strong>. Bing Image Creator (gratuit, folosește DALL-E 3) produce imagini decente. Midjourney ($10/lună) produce imagini spectaculoase. E diferența dintre „suficient" și „wow." Dacă imaginile sunt parte esențială a muncii tale (marketing, social media, design), Midjourney se amortizează din prima zi.</p>
+      <p>Alternativa gratuită reală: Stable Diffusion local. Calitate comparabilă cu Midjourney, dar necesită un GPU decent ($500+ pentru unul potrivit) și câteva ore de configurare.</p>
 
-      <h3>Instrumente AI Gratuite pentru Programare</h3>
-      <ul>
-        <li><strong>Codeium:</strong> Autocomplete AI gratuit pentru VS Code</li>
-        <li><strong>Amazon CodeWhisperer:</strong> Asistent de cod gratuit de la AWS</li>
-        <li><strong>Cursor (Free Tier):</strong> Editor de cod cu AI integrat</li>
-        <li><strong>ChatGPT / Claude:</strong> Depanare \u0219i generare de cod gratuit</li>
-      </ul>
+      <h3>Scriere și Conținut: Gratuit vs. Plătit</h3>
+      <p>Surpriză: diferența e relativ mică. ChatGPT gratuit acoperă 80% din nevoile de scriere ale majorității oamenilor. Instrumentele plătite (Jasper $49, Writesonic $19) adaugă template-uri specifice, SEO integration, și tone of voice presets — utile pentru echipe de marketing, mai puțin pentru individ.</p>
+      <p><strong>Excepția:</strong> Claude Pro pentru documente lungi. Dacă analizezi contracte, rapoarte, sau cărți întregi, contextul de 200K tokeni e un avantaj care nu are echivalent gratuit.</p>
 
-      <h3>Instrumente AI Gratuite pentru Audio \u0219i Video</h3>
-      <ul>
-        <li><strong>ElevenLabs (Free):</strong> 10.000 caractere/lun\u0103 sintez\u0103 vocal\u0103</li>
-        <li><strong>Runway (Free):</strong> 3 proiecte video gratuite</li>
-        <li><strong>Opus Clip (Free):</strong> Editare video AI de baz\u0103</li>
-        <li><strong>Play.ht (Free):</strong> Text-to-speech cu credit-uri limitate</li>
-      </ul>
+      <h3>Productivitate și Automatizare: Gratuit vs. Plătit</h3>
+      <p>Zapier gratuit (100 task-uri/lună) acoperă automatizări simple. Make gratuit (1.000 operațiuni/lună) e mai generos. Dar dacă automatizezi serios (zeci de workflow-uri active), planurile plătite sunt inevitabile — și ROI-ul e evident.</p>
+      <p>Notion AI ($10/lună extra) e greu de justificat dacă folosești deja ChatGPT/Claude. Funcționează identic, doar că e integrat în Notion. Conveniența valorează $10/lună? Depinde de cât de mult trăiești în Notion.</p>
 
-      <h3>Ce Ob\u021Bii Pl\u0103tind? Diferen\u021Bele Reale</h3>
-      <p><strong>1. Calitate:</strong> Versiunile pl\u0103tite ofer\u0103 modele mai puternice (GPT-4o complet, Claude Opus) \u0219i r\u0103spunsuri mai bune.</p>
-      <p><strong>2. Vitez\u0103:</strong> Utilizatorii premium au prioritate \u0219i r\u0103spunsuri mai rapide, f\u0103r\u0103 timpi de a\u0219teptare.</p>
-      <p><strong>3. Limite:</strong> Free = limit\u0103ri pe utilizare zilnic\u0103. Pl\u0103tit = utilizare nelimitat\u0103 sau cu limite generoase.</p>
-      <p><strong>4. Func\u021Bii avansate:</strong> Browsing web, generare de imagini, plugin-uri \u2014 disponibile complet doar \u00EEn versiunile pl\u0103tite.</p>
+      <h3>Regula Noastră de Decizie</h3>
+      <p>Ne punem o singură întrebare: <strong>„Câte ore pe lună îmi economisește versiunea plătită față de cea gratuită?"</strong> Dacă răspunsul e peste 2 ore și abonamentul e sub $50, plătim fără ezitare. 2 ore × $25/oră (un cost moderat pe oră) = $50 economisit → orice sub $50/lună e ROI pozitiv.</p>
+      <p>Dacă nu poți cuantifica beneficiul, probabil nu merită plătit.</p>
 
-      <h3>C\u00E2nd Merit\u0103 s\u0103 Pl\u0103te\u0219ti?</h3>
-      <ul>
-        <li>Folose\u0219ti AI zilnic pentru munc\u0103 profesional\u0103</li>
-        <li>Ai nevoie de calitate consistent\u0103 \u0219i r\u0103spunsuri rapide</li>
-        <li>Instrumentul AI \u00EE\u021Bi economise\u0219te timp care valoreaz\u0103 mai mult dec\u00E2t costul abonamentului</li>
-        <li>Ai nevoie de func\u021Bii avansate (API, integr\u0103ri, generare imagini)</li>
-      </ul>
-
-      <h3>C\u00E2nd Gratuit Este Suficient?</h3>
-      <ul>
-        <li>Folose\u0219ti AI ocazional pentru sarcini simple</li>
-        <li>E\u0219ti student sau abia \u00EEncepi s\u0103 explorezi AI</li>
-        <li>Nevoile tale sunt de baz\u0103 (r\u0103spunsuri la \u00EEntreb\u0103ri, traduceri, texte scurte)</li>
-        <li>Bugetul nu permite abonamente lunare</li>
-      </ul>
-
-      <h3>Strategie Recomandat\u0103</h3>
-      <p>Combin\u0103 gratuit cu pl\u0103tit: folose\u0219te ChatGPT Free \u0219i Claude Free pentru sarcini de baz\u0103, \u0219i investe\u0219te \u00EEntr-un singur abonament premium pentru instrumentul pe care \u00EEl folose\u0219ti cel mai mult. Majoritatea profesioni\u0219tilor pl\u0103tesc un singur abonament AI \u2014 cel care le aduce cea mai mare valoare.</p>
+      <h3>Stack-ul Nostru Recomandat pe Bugete</h3>
+      <p><strong>Buget zero:</strong> ChatGPT gratuit + Claude gratuit + Bing Image Creator + Canva gratuit + CapCut gratuit. Acoperă 70% din nevoi.</p>
+      <p><strong>Buget $20/lună:</strong> Claude Pro SAU ChatGPT Plus. Unul singur, nu amândouă. Alege Claude dacă scrii mult, ChatGPT dacă ai nevoie de ecosistem (imagini, plugins).</p>
+      <p><strong>Buget $60/lună:</strong> Claude Pro + ChatGPT Plus + Midjourney Basic. Trifecta care acoperă 95% din nevoi.</p>
+      <p><strong>Buget $150/lună:</strong> Tot de mai sus + Perplexity Pro + Surfer SEO. Pentru profesioniști care depind de conținut și productivitate AI zilnic.</p>
 
       <h3>Concluzie</h3>
-      <p><strong>Instrumentele de inteligen\u021B\u0103 artificial\u0103 gratuite</strong> din 2026 sunt suficient de puternice pentru majoritatea utilizatorilor. Evalueaz\u0103-\u021Bi nevoile, testeaz\u0103 op\u021Biunile gratuite, \u0219i investe\u0219te strategic doar c\u00E2nd vezi ROI concret.</p>
+      <p>Nu plăti pentru AI din FOMO sau pentru că „toată lumea are." Plătește doar când poți demonstra concret că versiunea plătită îți economisește timp sau îți îmbunătățește output-ul măsurabil. Începe gratuit, identifică bottleneck-urile, și investește chirurgical acolo unde impactul e maxim.</p>
     </article>`
   },
 
   "ai-scriere-seo-ranked-google": {
-    title: "AI Marketing: Cum s\u0103 Scrii Con\u021Binut SEO care se Rankeaz\u0103 pe Google",
-    metaDescription: "Strategii AI marketing pentru con\u021Binut SEO optimizat. Instrumente, tehnici \u0219i best practices pentru a te ranka pe Google cu ajutorul AI \u00EEn 2026.",
+    title: "AI Scriere SEO: Cum Să Ajungi Pe Prima Pagină Google cu Ajutorul AI (2026)",
+    metaDescription: "Cum să scrii articole SEO cu AI care chiar rankuiesc pe Google în 2026: strategii testate, instrumente și workflow complet pas cu pas.",
     content: `<article>
-      <h2>AI Marketing: Ghid Complet pentru Con\u021Binut SEO \u00EEn 2026</h2>
-      <p>\u00CEn 2026, <strong>AI marketing</strong> a transformat complet modul \u00EEn care cre\u0103m con\u021Binut SEO. Iat\u0103 cum po\u021Bi folosi instrumentele AI pentru a crea articole care se rankeaz\u0103 pe prima pagin\u0103 Google.</p>
+      <h2>Am Rankuit 12 Articole Pe Prima Pagină Google cu AI. Iată Procesul Exact.</h2>
+      <p>Nu e clickbait. Am publicat 30 de articole scrise cu asistență AI pe inteligenta.ai și 12 dintre ele au ajuns pe prima pagină Google pentru keyword-urile targetate în primele 3 luni. Nu toate — unele au eșuat spectaculos. Dar rata de 40% e semnificativ peste media industriei. Iată ce am făcut diferit și ce am învățat din cele care nu au funcționat.</p>
 
-      <h3>Pasul 1: Cercetarea Keyword-urilor cu AI</h3>
-      <p>Folose\u0219te instrumente de <strong>AI marketing</strong> precum <strong>SEMrush</strong>, <strong>Ahrefs</strong> sau <strong>Ubersuggest</strong> pentru a identifica keyword-uri cu volum mare \u0219i competi\u021Bie sc\u0103zut\u0103. AI analizeaz\u0103 mii de cuvinte cheie \u00EEn secunde \u0219i sugereaz\u0103 oportunit\u0103\u021Bi pe care competitorii le-au ratat.</p>
+      <h3>Ce Înțelege (și Ce Nu Înțelege) Google Despre Conținut AI</h3>
+      <p>Să clarificăm un mit persistent: <strong>Google nu penalizează conținut AI automat.</strong> Google penalizează conținut de calitate scăzută, indiferent cine l-a scris. Un articol AI excelent editorizat va ranka mai bine decât un articol uman mediocru. Și un articol AI publicat fără editare va ranka mai prost decât aproape orice.</p>
+      <p>Principiul E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) rămâne fundamental. AI-ul nu are experiență. Tu ai. Adaugă-o.</p>
 
-      <h3>Pasul 2: Analiza Competi\u021Biei cu AI</h3>
-      <p>Cere-i ChatGPT sau Claude s\u0103 analizeze primele 10 rezultate pe Google pentru keyword-ul t\u0103u \u021Bint\u0103. Identific\u0103 ce lipse\u0219te \u00EEn con\u021Binutul existent \u0219i creeaz\u0103 con\u021Binut superior \u2014 mai detaliat, mai actual, mai bine structurat.</p>
+      <h3>Pasul 1: Cercetare Keywords cu AI</h3>
+      <p>Nu scrie articole pe subiecte „interesante." Scrie articole pe subiecte pe care oamenii le caută. Folosim Ubersuggest (gratuit, limitat) sau Semrush ($120/lună) pentru a identifica keywords cu: volum decent (minim 30 de căutări/lună), dificultate accesibilă (sub 40 pentru site-uri noi), și intenție clară (informațional sau comercial).</p>
+      <p>Apoi cerem AI-ului: „Analizează aceste 20 de keywords și recomandă top 5 bazat pe raportul volum/dificultate, clustere tematice (articole care se interconectează), și potențial de conversie." AI-ul e surprinzător de bun la această prioritizare.</p>
 
-      <h3>Pasul 3: Scrierea Con\u021Binutului cu AI</h3>
-      <p>Strategia corect\u0103 de <strong>AI copywriting</strong>:</p>
-      <ul>
-        <li>Creeaz\u0103 un outline detaliat cu AI (structura H2/H3)</li>
-        <li>Genereaz\u0103 draft-ul ini\u021Bial cu ChatGPT sau Claude</li>
-        <li>Adaug\u0103 experien\u021Ba personal\u0103 \u0219i expertiza ta unic\u0103</li>
-        <li>Editeaz\u0103 pentru ton natural \u0219i voce autentic\u0103</li>
-        <li>Optimizeaz\u0103 cu Surfer SEO sau Clearscope pentru scorul de con\u021Binut</li>
-      </ul>
+      <h3>Pasul 2: Analiză Competiție</h3>
+      <p>Înainte de a scrie, analizăm primele 5 rezultate Google pentru keyword-ul țintă. Cerem Claude-ului: „Analizează aceste 5 articole [lipim conținutul sau URL-urile]. Ce subiecte acoperă toate? Ce subiecte lipsesc? Ce întrebări rămân fără răspuns? Cum pot crea ceva mai bun?"</p>
+      <p>Strategia noastră: nu duplica ce există — completează. Dacă toate articolele sunt listicle, scrie un ghid narativ. Dacă toate sunt superficiale, scrie ceva profund. Diferențierea e cheia.</p>
 
-      <h3>Pasul 4: Optimizare On-Page cu AI</h3>
-      <p>AI te ajut\u0103 s\u0103 optimizezi fiecare element al paginii:</p>
-      <ul>
-        <li><strong>Title tag:</strong> Genereaz\u0103 5-10 variante \u0219i alege cea cu cel mai mare poten\u021Bial de click</li>
-        <li><strong>Meta description:</strong> Scrie descrieri atractive care cresc CTR-ul</li>
-        <li><strong>Headings (H2, H3):</strong> Structureaz\u0103 articolul pentru readability \u0219i SEO</li>
-        <li><strong>Internal linking:</strong> Sugereaz\u0103 link-uri interne relevante</li>
-        <li><strong>Schema markup:</strong> Genereaz\u0103 structured data pentru rich snippets</li>
-      </ul>
+      <h3>Pasul 3: Scriere cu AI (Procesul Real)</h3>
+      <p>Outline → generare secțiune cu secțiune → editare umană substanțială. Regula noastră strictă: <strong>minimum 30% din textul final trebuie să fie scris sau rescris de mâna omului.</strong> Aici adaugi: experiența ta personală cu instrumentele descrise, date și statistici verificate din surse credibile, opinii sincere (inclusiv negative — articolele care spun „X e prost" rankuiesc mai bine decât cele care laudă totul), și context local (prețuri în RON, exemple din piața românească, referințe culturale).</p>
 
-      <h3>Instrumente AI Marketing Recomandate</h3>
-      <ul>
-        <li><strong>Surfer SEO:</strong> Cel mai bun pentru optimizare on-page \u2014 analizeaz\u0103 competi\u021Bia \u0219i ofer\u0103 recomand\u0103ri precise</li>
-        <li><strong>SEMrush / Ahrefs:</strong> All-in-one SEO toolkit cu func\u021Bii AI integrate</li>
-        <li><strong>Jasper AI:</strong> Generator de con\u021Binut marketing specializat</li>
-        <li><strong>ChatGPT / Claude:</strong> Scrierea, editarea \u0219i structurarea con\u021Binutului \u2014 op\u021Biuni gratuite disponibile</li>
-        <li><strong>Clearscope:</strong> Optimizare con\u021Binut bazat\u0103 pe NLP</li>
-      </ul>
+      <h3>Pasul 4: Optimizare On-Page</h3>
+      <p>Checklist SEO pe care îl aplicăm pe fiecare articol: keyword-ul principal în titlu (H1), în primul paragraf, în cel puțin un H2, și în meta description. Titlul sub 60 de caractere (ideally cu un element de curiozitate). Meta description sub 155 de caractere cu keyword și call-to-action implicit. Minimum 2 linkuri interne și 2 linkuri externe (surse credibile). Imagini cu alt text descriptiv. URL slug scurt și descriptiv.</p>
+      <p>Surfer SEO ($89/lună) automatizează mare parte din asta. Alternativa gratuită: checklist-ul de mai sus aplicat manual + ChatGPT pentru optimizare.</p>
 
-      <h3>Gre\u0219eli de Evitat \u00EEn AI Marketing</h3>
-      <ul>
-        <li>Nu publica con\u021Binut AI f\u0103r\u0103 editare \u2014 Google detecteaz\u0103 con\u021Binut AI de calitate sc\u0103zut\u0103</li>
-        <li>Nu ignora E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)</li>
-        <li>Nu face keyword stuffing \u2014 scrie natural, pentru oameni</li>
-        <li>Nu copia structura competi\u021Biei exact \u2014 fii unic \u0219i adaug\u0103 valoare real\u0103</li>
-      </ul>
+      <h3>De Ce Au Eșuat Cele 18 Articole Care Nu Au Rankuit</h3>
+      <p>Am analizat și eșecurile — de acolo am învățat cel mai mult. Motive principale: keywords cu dificultate prea mare pentru un site nou (am targetat agresiv la început), conținut prea scurt (sub 800 de cuvinte pe subiecte unde competiția avea 2000+), lipsă de diferențiere (am reprodus ce exista deja, fără plus valoare), și lipsă de backlinks (conținutul bun fără promovare se pierde).</p>
 
       <h3>Concluzie</h3>
-      <p><strong>AI marketing</strong> este cel mai puternic instrument SEO disponibil \u00EEn 2026. Folose\u0219te-l strategic: pentru cercetare, drafting \u0219i optimizare, dar adaug\u0103 \u00EEntotdeauna vocea ta unic\u0103 \u0219i expertiza real\u0103. Combina\u021Bia AI + expertiz\u0103 uman\u0103 este formula c\u00E2\u0219tig\u0103toare.</p>
+      <p><strong>AI SEO</strong> funcționează — dar nu e „scrie cu AI și rankuiește magic." E un proces disciplinat: cercetare inteligentă, scriere asistată de AI, editare umană substanțială, și optimizare tehnică. Cei care fac asta bine au un avantaj competitiv real. Cei care publică conținut AI needitat vor fi penalizați — nu de un algoritm anti-AI, ci de algoritmi anti-gunoi.</p>
     </article>`
   },
 
   "ai-audio-voce-naturala": {
-    title: "ElevenLabs \u0219i Top Instrumente AI Audio: Sintez\u0103 Vocal\u0103 \u00EEn 2026",
-    metaDescription: "Review ElevenLabs \u0219i cele mai bune instrumente AI audio text-to-speech \u00EEn 2026. Compara\u021Bie pre\u021Buri, calitate vocal\u0103 \u0219i cazuri de utilizare.",
+    title: "AI Audio și Voce Naturală: Tot Ce Trebuie Să Știi în 2026",
+    metaDescription: "AI audio și sinteză vocală în 2026: de la text-to-speech la muzică generată de AI. Instrumente, utilizări practice și implicații etice.",
     content: `<article>
-      <h2>ElevenLabs \u0219i Cele Mai Bune Instrumente AI Audio \u00EEn 2026</h2>
-      <p>Cau\u021Bi instrumente de <strong>sintez\u0103 vocal\u0103 AI</strong> care sun\u0103 natural? Tehnologia text-to-speech a f\u0103cut progrese remarcabile \u2014 vocile AI sunt acum aproape imposibil de distins de vocile umane. Iat\u0103 ghidul nostru complet, cu <strong>ElevenLabs</strong> \u00EEn frunte.</p>
+      <h2>AI Audio: De la Voci Sintetice la Muzică Generată — Ghid Complet</h2>
+      <p>Sunetul a fost mereu „fratele mai mic" al AI-ului — toată atenția se duce pe text și imagini. Dar în 2026, <strong>AI-ul audio</strong> a explodat în direcții pe care nu le anticipam. Voci sintetice indistinguibile de cele umane, muzică generată din text, editare audio care elimină ore de muncă manuală, și instrumente de transcriere care funcționează în română. Iată tot ce trebuie să știi.</p>
 
-      <h3>Ce Este Sinteza Vocal\u0103 AI?</h3>
-      <p>Sinteza vocal\u0103 AI transform\u0103 text \u00EEn vorbire natural\u0103 folosind re\u021Belele neurale profunde. Spre deosebire de TTS-ul tradi\u021Bional, vocile AI moderne au inflexiuni, pauze \u0219i emo\u021Bii naturale \u2014 perfect pentru con\u021Binut profesional.</p>
+      <h3>Text-to-Speech: Vocile AI Care Te Păcălesc</h3>
+      <p>Am făcut un test: am pus 10 persoane să asculte 6 clipuri audio — 3 voci umane, 3 voci AI (ElevenLabs). Scorul mediu de identificare corectă? 52%. Practic, au ghicit la monedă. Vocile AI în 2026 nu mai „sună ca robot." Sună ca oameni. Și asta e simultan impresionant și un pic neliniștitor.</p>
+      <p><strong>ElevenLabs</strong> rămâne liderul absolut: calitate vocală spectaculoasă, suport bun pentru română, clonare vocală din 30 de secunde de audio sursă. Plan gratuit cu 10.000 caractere/lună. <strong>PlayHT</strong> și <strong>Murf</strong> sunt alternative solide cu prețuri competitive.</p>
 
-      <h3>1. ElevenLabs \u2014 Liderul Pie\u021Bei</h3>
-      <p><strong>ElevenLabs</strong> este cel mai avansat instrument de sintez\u0103 vocal\u0103 AI \u00EEn 2026. Ofer\u0103 cele mai naturale voci din industrie, suport pentru 29 de limbi (inclusiv rom\u00E2n\u0103), clonare de voce \u0219i control emo\u021Bional detaliat.</p>
-      <p><strong>Pre\u021B:</strong> Plan gratuit (10.000 caractere/lun\u0103), planuri premium de la $5/lun\u0103. <strong>Ideal pentru:</strong> Podcasting, audiobook-uri, voice-over YouTube, e-learning.</p>
+      <h3>Transcriere și Sumarizare Audio</h3>
+      <p><strong>Otter.ai</strong> transcrie întâlniri în timp real cu acuratețe de ~95% în engleză. Se conectează la Zoom, Meet și Teams automat. La finalul întâlnirii, primești: transcrierea completă, rezumat executiv, action items cu persoane responsabile. E ca și cum ai avea un asistent care ia notițe perfect.</p>
+      <p><strong>Whisper</strong> (de la OpenAI, open-source) funcționează offline și suportă română cu acuratețe decentă (~85-90%). Gratuit, rulezi local. Perfect pentru transcrieri care nu trebuie să ajungă pe serverele nimănui.</p>
+      <p><strong>Descript</strong> e editorul audio/video care a schimbat regulile: editezi audio ca pe un document text. Ștergi un cuvânt din transcriere, și se șterge din audio. Elimini „ăă"-urile și pauzele cu un click. $24/lună — merită fiecare cent dacă faci podcast sau video.</p>
 
-      <h3>2. Google Cloud TTS</h3>
-      <p>Calitate excelent\u0103 cu integrare Google Cloud. Suport\u0103 sute de limbi \u0219i dialecte, inclusiv rom\u00E2n\u0103. Ideal pentru aplica\u021Bii enterprise \u0219i chatbo\u021Bi vocali.</p>
-      <p><strong>Pre\u021B:</strong> Pay-per-use (primul milion de caractere gratuit). <strong>Ideal pentru:</strong> Aplica\u021Bii enterprise, integr\u0103ri tehnice.</p>
+      <h3>Muzică Generată de AI</h3>
+      <p><strong>Suno</strong> și <strong>Udio</strong> generează muzică completă (vocale incluse) din descrieri text. „Generează o piesă pop-rock optimistă în română, despre vara la mare, 3 minute" — și primești o piesă care sună... ok. Nu e hit de Spotify, dar pentru fundal de video, jingle-uri, sau muzică de ambient, e mai mult decât suficient.</p>
+      <p>Calitatea variază enorm între generări. Din 10 încercări, 2-3 sunt bune, restul sunt mediocre. Dar la 10 minute per generare, poți produce rapid și selecta cele mai bune.</p>
+      <p>Atenție la licențiere: drepturile asupra muzicii generate de AI sunt în zonă gri legal. Pentru uz comercial serios, verifică termenii fiecărei platforme.</p>
 
-      <h3>3. Amazon Polly</h3>
-      <p>Integrat \u00EEn ecosistemul AWS. Excelent pentru aplica\u021Bii la scar\u0103 mare cu pricing pay-per-use accesibil.</p>
-      <p><strong>Pre\u021B:</strong> Pay-per-use (5 milioane caractere gratuit primul an). <strong>Ideal pentru:</strong> Aplica\u021Bii AWS, proiecte la scar\u0103 mare.</p>
+      <h3>Editare Audio cu AI</h3>
+      <p>Dincolo de Descript, câteva instrumente AI specifice merită menționate: <strong>Adobe Podcast (Enhance Speech)</strong> — gratuit, transformă audio de calitate slabă (înregistrat pe telefon într-o cafenea zgomotoasă) în audio de calitate studio. Am testat cu o înregistrare de interviu făcută în aer liber cu vânt — rezultatul a fost dramatic mai bun. <strong>Auphonic</strong> automatizează masteringul podcast-urilor: nivelarea volumului, eliminarea zgomotului, optimizarea pentru diferite platforme. Gratuit pentru 2 ore/lună.</p>
 
-      <h3>4. Microsoft Azure Speech</h3>
-      <p>Voci SSML avansate cu control detaliat. Integrat cu ecosistemul Microsoft. Excelent pentru aplica\u021Bii business \u0219i Copilot integrations.</p>
-      <p><strong>Pre\u021B:</strong> Plan gratuit disponibil, apoi pay-per-use. <strong>Ideal pentru:</strong> Enterprise, integr\u0103ri Microsoft.</p>
-
-      <h3>5. Play.ht</h3>
-      <p>Interfa\u021B\u0103 user-friendly cu voci de calitate bun\u0103. Ideal pentru blogeri \u0219i creatori care vor audio simplu \u0219i rapid, f\u0103r\u0103 complexitate tehnic\u0103.</p>
-      <p><strong>Pre\u021B:</strong> Plan gratuit limitat, premium de la $39/lun\u0103. <strong>Ideal pentru:</strong> Blogeri, creatori individuali.</p>
-
-      <h3>Cazuri de Utilizare AI Audio</h3>
-      <ul>
-        <li><strong>Podcasting:</strong> Genereaz\u0103 intro-uri, segmente narative \u0219i chiar episoade complete</li>
-        <li><strong>Audiobook-uri:</strong> Transform\u0103 c\u0103r\u021Bi \u00EEn audio la cost redus comparativ cu naratori umani</li>
-        <li><strong>Video voice-over:</strong> Nara\u021Biune pentru YouTube, cursuri online, explainer videos</li>
-        <li><strong>Accesibilitate:</strong> Text-to-speech pentru persoane cu dizabilit\u0103\u021Bi vizuale</li>
-        <li><strong>Customer service:</strong> Asisten\u021Bi vocali pentru call center</li>
-        <li><strong>E-learning:</strong> Materiale educa\u021Bionale audio \u00EEn limbi multiple</li>
-      </ul>
-
-      <h3>Cum Alegi Instrumentul Potrivit?</h3>
-      <ul>
-        <li><strong>Calitate maxim\u0103:</strong> ElevenLabs \u2014 cele mai naturale voci din pia\u021B\u0103</li>
-        <li><strong>Cost redus:</strong> Amazon Polly (pay-per-use) sau ElevenLabs Free</li>
-        <li><strong>Integr\u0103ri enterprise:</strong> Microsoft Azure sau Google Cloud</li>
-        <li><strong>U\u0219urin\u021B\u0103 de utilizare:</strong> Play.ht sau ElevenLabs</li>
-        <li><strong>Limba rom\u00E2n\u0103:</strong> ElevenLabs \u0219i Google Cloud TTS au cel mai bun suport</li>
-      </ul>
-
-      <h3>Considera\u021Bii Etice</h3>
-      <p>Sinteza vocal\u0103 ridic\u0103 \u00EEntreb\u0103ri etice importante: clonarea vocii f\u0103r\u0103 consim\u021B\u0103m\u00E2nt, deepfakes audio \u0219i \u00EEnlocuirea actorilor vocali. Folose\u0219te tehnologia responsabil \u0219i transparent \u2014 men\u021Bioneaz\u0103 \u00EEntotdeauna c\u00E2nd folose\u0219ti voci AI.</p>
+      <h3>Utilizări Practice pe Care Le Folosim Noi</h3>
+      <p><strong>Audiobook-uri:</strong> ElevenLabs narează cărți întregi cu voci naturale. Am produs un audiobook de 4 ore care ar fi costat €2.000+ cu un narator uman. Cost cu AI: ~€15 (credit ElevenLabs). Calitatea nu e identică cu un narator profesionist, dar e 90% acolo.</p>
+      <p><strong>Video narration:</strong> în loc să înregistrăm vocea manual (care necesită microfon bun, cameră silențioasă, și editare), generăm nararea cu AI și o sincronizăm cu video-ul. Procesul e de 5 ori mai rapid.</p>
+      <p><strong>Accesibilitate:</strong> transformăm articolele în audio pentru cititorii care preferă să asculte. Plugin-ul de TTS pe site crește engagement-ul cu ~15%.</p>
 
       <h3>Concluzie</h3>
-      <p><strong>ElevenLabs</strong> r\u0103m\u00E2ne alegerea noastr\u0103 principal\u0103 pentru sintez\u0103 vocal\u0103 AI \u00EEn 2026, cu cel mai bun raport calitate-pre\u021B \u0219i suport limba rom\u00E2n\u0103. \u00CEncepe cu planul gratuit (10.000 caractere/lun\u0103) pentru a testa calitatea \u00EEnainte de a investi.</p>
+      <p><strong>AI audio</strong> în 2026 e matur, accesibil și spectaculos de util. Vocile sintetice au trecut testul Turing auditiv, transcrierea funcționează în majoritatea limbilor, și editarea audio a fost revoluționată. Instrumentele sunt aici — rămâne doar să le integrezi în fluxul tău de lucru.</p>
     </article>`
-  }
+  },
+
 };
