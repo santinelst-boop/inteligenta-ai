@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ToolIcon from "@/components/ToolIcon";
 import { comparisons } from "@/data/comparisons";
 import type { Metadata } from "next";
 
