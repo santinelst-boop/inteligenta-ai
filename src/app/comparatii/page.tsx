@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ToolIcon from "@/components/ToolIcon";
 import { comparisons } from "@/data/comparisons";
 import type { Metadata } from "next";
 
@@ -37,9 +38,13 @@ export default function ComparatiiPage() {
               href={`/comparatii/${comp.slug}`}
               className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
             >
-              <div className={`w-14 h-14 rounded-xl ${comp.left.color} flex items-center justify-center text-2xl shrink-0`}>
-                {comp.left.emoji}
-              </div>
+              {comp.left.toolId ? (
+                <ToolIcon name={comp.left.name} toolId={comp.left.toolId} size="lg" />
+              ) : (
+                <div className={`w-14 h-14 rounded-xl ${comp.left.color} flex items-center justify-center text-2xl shrink-0`}>
+                  {comp.left.emoji}
+                </div>
+              )}
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">
@@ -51,9 +56,13 @@ export default function ComparatiiPage() {
                 </h3>
                 <p className="text-sm text-text-light">{comp.description}</p>
               </div>
-              <div className={`w-14 h-14 rounded-xl ${comp.right.color} flex items-center justify-center text-2xl shrink-0`}>
-                {comp.right.emoji}
-              </div>
+              {comp.right.toolId ? (
+                <ToolIcon name={comp.right.name} toolId={comp.right.toolId} size="lg" />
+              ) : (
+                <div className={`w-14 h-14 rounded-xl ${comp.right.color} flex items-center justify-center text-2xl shrink-0`}>
+                  {comp.right.emoji}
+                </div>
+              )}
             </Link>
           ))}
         </div>
