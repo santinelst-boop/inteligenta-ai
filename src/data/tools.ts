@@ -627,4 +627,59 @@ export const latestArticles: Article[] = [
     imageUrl: "/articles/openai-vs-anthropic.png",
     featured: true,
   },
+  {
+    slug: "ai-design-grafic-instrumente-vizuale",
+    title: "AI Design Grafic: 10 Instrumente care Schimbă Regulile Jocului (2026)",
+    excerpt:
+      "Am încercat să înlocuim un designer cu AI. N-a mers complet — dar aproape. Teste reale cu Canva AI, Firefly, Figma.",
+    category: "ai-imagine",
+    date: "2026-02-08",
+    readTime: "10 min",
+    imageUrl: "/articles/ai-design.png",
+    featured: false,
+  },
+  {
+    slug: "ai-excel-formule-analiza-automata",
+    title: "AI Excel: Formule, Analiză și Automatizare cu Inteligență Artificială",
+    excerpt:
+      "Cum am înlocuit 3 ore de VLOOKUP cu 10 secunde. Copilot, Gemini, ChatGPT pentru spreadsheet-uri.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-excel.png",
+    featured: false,
+  },
+  {
+    slug: "ai-email-scrie-emailuri-rapid",
+    title: "AI Email: Scrie Emailuri Profesionale în Secunde (2026)",
+    excerpt:
+      "Am lăsat AI-ul să răspundă la 50 de emailuri de business. Nimeni nu a observat diferența.",
+    category: "ai-productivitate",
+    date: "2026-02-08",
+    readTime: "9 min",
+    imageUrl: "/articles/ai-email.png",
+    featured: false,
+  },
+  {
+    slug: "ai-logo-generator-creare-logo",
+    title: "AI Logo Generator: Merită sau E Doar O Iluzie? (Test Sincer 2026)",
+    excerpt:
+      "Am generat 50 de logo-uri cu AI. Câte am folosit? Două. Test brutal de sincer al generatoarelor de logo.",
+    category: "ai-imagine",
+    date: "2026-02-08",
+    readTime: "8 min",
+    imageUrl: "/articles/ai-logo.png",
+    featured: false,
+  },
+  {
+    slug: "prompt-engineering-ghid-complet-romana",
+    title: "Prompt Engineering: Ghid Complet în Română (2026)",
+    excerpt:
+      "Arta de a pune întrebări bune unui AI: 5 principii, tehnici avansate, template-uri și greșeli de evitat.",
+    category: "ai-educatie",
+    date: "2026-02-08",
+    readTime: "11 min",
+    imageUrl: "/articles/prompt-engineering.png",
+    featured: true,
+  },
 ];
