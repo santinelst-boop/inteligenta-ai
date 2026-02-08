@@ -1,53 +1,4 @@
 export const articlesPart4: Record<string, { title: string; metaDescription: string; content: string }> = {
-  "chatgpt-romania-ghid-complet": {
-    title: "ChatGPT Romania: Tot ce Trebuie sa Stii in 2026 (Ghid Actualizat)",
-    metaDescription: "ChatGPT Romania 2026: cum il folosesti in limba romana, versiunea gratuita vs Plus, sfaturi practice si trucuri. Ghid complet pentru utilizatorii din Romania.",
-    content: `<article>
-      <h2>ChatGPT Romania: Ghid Complet pentru Utilizatorii Romani in 2026</h2>
-      <p><strong>ChatGPT</strong> a devenit instrumentul AI numarul 1 in Romania, cu milioane de utilizatori activi lunar. Dar cum il folosesti eficient in limba romana? Ce poti face cu versiunea gratuita? Si merita sa platesti pentru Plus? In acest ghid complet, raspundem la toate intrebarile pe care le au utilizatorii de <strong>ChatGPT din Romania</strong>.</p>
-
-      <h3>Ce este ChatGPT si de ce e atat de popular in Romania?</h3>
-      <p>ChatGPT este un chatbot AI dezvoltat de OpenAI care intelege si genereaza text in limba romana. Lansat initial in noiembrie 2022, a ajuns rapid cel mai folosit instrument de inteligenta artificiala din Romania. In 2026, GPT-4o ofera o calitate remarcabila a limbii romane — raspunsurile sunt naturale, coerente si detaliate.</p>
-      <p>Popularitatea in Romania se datoreaza mai multor factori: suportul excelent pentru limba romana, versatilitatea (de la scriere la programare), si faptul ca versiunea de baza este complet gratuita. Estimarile arata ca peste 2 milioane de romani folosesc ChatGPT cel putin o data pe luna.</p>
-
-      <h3>Cum sa Folosesti ChatGPT in Limba Romana</h3>
-      <p>ChatGPT functioneaza nativ in limba romana — nu trebuie sa schimbi nicio setare. Pur si simplu scrie-i in romana si va raspunde in romana. Cateva sfaturi pentru rezultate optime:</p>
-      <p>Fii specific in cereri. In loc de „scrie un text despre marketing", incearca „scrie un articol de blog de 500 de cuvinte despre strategii de marketing digital pentru afaceri mici din Romania, cu exemple concrete si sfaturi practice". Cu cat esti mai detaliat in prompt, cu atat rezultatul va fi mai bun.</p>
-      <p>Foloseste contextul. Poti sa-i spui lui ChatGPT care e publicul tau tinta, ce ton vrei (formal, informal, tehnic), si ce lungime doresti. De exemplu: „Raspunde ca un consultant de marketing cu 10 ani experienta, pentru un antreprenor roman care abia incepe".</p>
-      <p>Itereaza raspunsurile. Primul raspuns nu e intotdeauna perfect. Cere-i sa reformuleze, sa adauge detalii, sau sa schimbe tonul. ChatGPT retine contextul conversatiei, deci fiecare cerere ulterioara e mai precisa.</p>
-
-      <h3>ChatGPT Gratuit vs ChatGPT Plus: Ce Alegi?</h3>
-      <p>Versiunea gratuita de ChatGPT ofera acces la modelul GPT-4o mini, care este suficient pentru majoritatea utilizarilor zilnice: conversatii, generare de text, rezumate, traduceri si ajutor la programare. Nu ai limita de mesaje, dar in perioadele aglomerate poti avea timpi de asteptare mai lungi.</p>
-      <p>ChatGPT Plus costa $20 pe luna (aproximativ 90 RON) si ofera acces la modelul GPT-4o complet, generare de imagini cu DALL-E, analiza de fisiere, navegare web in timp real, si acces prioritar fara timpi de asteptare. Merita daca folosesti ChatGPT intensiv pentru munca sau afaceri.</p>
-      <p>Recomandarea noastra: incepe cu versiunea gratuita. Daca dupa 2-3 saptamani simti ca ai nevoie de mai multa putere sau de functii avansate, treci pe Plus. Majoritatea utilizatorilor romani folosesc cu succes varianta gratuita.</p>
-
-      <h3>10 Utilizari Practice ale ChatGPT pentru Romani</h3>
-      <p>Iata cele mai populare moduri in care romanii folosesc ChatGPT in viata de zi cu zi si la locul de munca:</p>
-      <p><strong>1. Scriere de emailuri profesionale.</strong> Fie ca e vorba de o cerere catre o institutie publica sau un email catre un client, ChatGPT poate genera texte formale, corecte gramatical, in cateva secunde.</p>
-      <p><strong>2. Traduceri contextuale.</strong> Spre deosebire de Google Translate, ChatGPT intelege contextul si nuantele. Poti traduce documente pastrand tonul si sensul original.</p>
-      <p><strong>3. Ajutor pentru teme si proiecte.</strong> Studentii romani folosesc ChatGPT ca tutor personal — explica concepte complexe in termeni simpli si ajuta la structurarea proiectelor.</p>
-      <p><strong>4. Generare de continut pentru social media.</strong> De la postari pe Facebook si Instagram la scripturi pentru TikTok, ChatGPT poate crea continut adaptat publicului roman.</p>
-      <p><strong>5. Programare si debugging.</strong> Chiar si dezvoltatorii cu experienta folosesc ChatGPT ca asistent de cod — scrie functii, gaseste buguri si explica concepte tehnice.</p>
-      <p><strong>6. Planificare de afaceri.</strong> Antreprenorii romani folosesc ChatGPT pentru brainstorming, planuri de marketing, analize SWOT si strategii de business adaptate pietei locale.</p>
-      <p><strong>7. Invatarea limbilor straine.</strong> ChatGPT poate fi tutorul tau de engleza, franceza sau orice alta limba — cu exercitii personalizate si corectari in timp real.</p>
-      <p><strong>8. Crearea de CV-uri si scrisori de intentie.</strong> Genereaza CV-uri profesionale adaptate standardelor romanesti si europene, personalizate pentru fiecare job.</p>
-      <p><strong>9. Rezumate de documente lungi.</strong> Ai un raport de 50 de pagini? ChatGPT il poate rezuma in cateva paragrafe, pastrand informatiile esentiale.</p>
-      <p><strong>10. Retete si sfaturi culinare.</strong> Da, multi romani folosesc ChatGPT pentru retete — poti descrie ce ingrediente ai si primesti retete personalizate.</p>
-
-      <h3>Limitari ale ChatGPT pe care Trebuie sa le Stii</h3>
-      <p>ChatGPT nu este perfect si e important sa fii constient de limitarile sale. Nu verifica intotdeauna acuratetea informatiilor — poate genera date false care suna credibil (fenomen cunoscut drept „halucinatie AI"). Verifica intotdeauna informatiile critice din surse independente.</p>
-      <p>De asemenea, ChatGPT nu are acces la informatii in timp real in versiunea gratuita. Daca ai nevoie de date actuale (stiri, preturi, evenimente recente), foloseste versiunea Plus cu functia de navigare web.</p>
-      <p>In limba romana, calitatea este excelenta dar nu perfecta — pot aparea ocazional exprimari nefiresti sau greseli subtile de nuanta. Reciteste intotdeauna textele generate inainte de a le folosi intr-un context profesional.</p>
-
-      <h3>Alternative la ChatGPT Disponibile in Romania</h3>
-      <p>ChatGPT nu este singurul chatbot AI care functioneaza in romana. <strong>Claude</strong> de la Anthropic ofera raspunsuri detaliate si un context extins de 200K tokeni. <strong>Google Gemini</strong> (fostul Bard) este integrat in ecosistemul Google. <strong>Perplexity AI</strong> combina AI-ul cu cautarea web in timp real.</p>
-      <p>Fiecare are puncte forte diferite, iar multi utilizatori experimentati le folosesc complementar. Recomandarea noastra este sa testezi cel putin 2-3 instrumente inainte de a te decide pe care sa-l folosesti zilnic.</p>
-
-      <h3>Concluzie: ChatGPT in Romania in 2026</h3>
-      <p>ChatGPT ramane cel mai accesibil si versatil instrument AI pentru romanii care vor sa profite de inteligenta artificiala. Cu o versiune gratuita generoasa, suport excelent pentru limba romana si imbunatatiri constante, este punctul de start ideal pentru oricine vrea sa exploreze lumea AI.</p>
-    </article>`
-  },
-
   "chatgpt-gratuit-ce-poti-face": {
     title: "ChatGPT Gratuit: Ce Poti Face Fara sa Platesti in 2026?",
     metaDescription: "ChatGPT gratuit in 2026: toate functiile disponibile fara abonament, limitari, trucuri pentru utilizare maxima si cand merita sa treci pe Plus.",
@@ -139,62 +90,6 @@ export const articlesPart4: Record<string, { title: string; metaDescription: str
 
       <h3>Concluzie</h3>
       <p>2026 este cel mai bun moment sa explorezi <strong>inteligenta artificiala gratuita</strong>. Instrumentele de mai sus acopera tot spectrul — de la chatboti la generare de imagini, de la productivitate la creativitate. Incepe cu cele care rezolva o problema concreta pe care o ai si extinde treptat folosirea AI in viata ta de zi cu zi.</p>
-    </article>`
-  },
-
-  "editare-foto-ai-top-aplicatii": {
-    title: "Editare Foto cu AI: Top 10 Aplicatii in 2026 (Gratuite si Platite)",
-    metaDescription: "Cele mai bune aplicatii de editare foto cu AI in 2026: elimina fundal, imbunatateste calitatea, retusare automata. Comparatie cu preturi si exemple.",
-    content: `<article>
-      <h2>Top 10 Aplicatii de Editare Foto cu AI in 2026</h2>
-      <p>Editarea foto nu mai necesita ore de munca in Photoshop. In 2026, instrumentele de <strong>editare foto cu AI</strong> pot elimina fundaluri, imbunatati calitatea imaginilor, retusa portrete si chiar genera elemente noi — totul in cateva secunde. Am testat cele mai populare <strong>AI foto editoare</strong> si iata clasamentul nostru.</p>
-
-      <h3>1. Adobe Photoshop cu Generative Fill — Standardul Industriei</h3>
-      <p>Adobe a integrat AI direct in Photoshop prin Generative Fill si Generative Expand. Selectezi o zona din imagine, descrii ce vrei (in engleza sau romana), si AI-ul genereaza continut nou care se integreaza perfect. Rezultatele sunt impresionante si consistente.</p>
-      <p><strong>Pret:</strong> Inclus in Adobe Photography Plan (~50 RON/luna). <strong>Ideal pentru:</strong> Fotografi profesionisti, designeri, agentii creative. <strong>Nota noastra:</strong> 9.5/10.</p>
-
-      <h3>2. Remove.bg — Cel Mai Rapid pentru Eliminare Fundal</h3>
-      <p>Daca ai nevoie doar sa elimini fundalul dintr-o fotografie, Remove.bg este imbatabil. Upload-ezi imaginea, AI-ul detecteaza subiectul si elimina fundalul in sub 5 secunde. Functioneaza surprinzator de bine chiar si pe imagini complexe.</p>
-      <p><strong>Pret:</strong> Gratuit pentru rezolutie mica, de la $9/luna pentru HD. <strong>Ideal pentru:</strong> E-commerce, social media, prezentari. <strong>Nota noastra:</strong> 9/10.</p>
-
-      <h3>3. Canva AI (Magic Edit) — Editare AI pentru Toata Lumea</h3>
-      <p>Canva a integrat functii AI puternice direct in editorul sau: Magic Eraser (sterge obiecte), Magic Edit (modifica elemente), si Magic Expand (extinde imaginea). Interfata este atat de simpla incat oricine o poate folosi.</p>
-      <p><strong>Pret:</strong> Functii de baza gratuite, Canva Pro de la ~50 RON/luna. <strong>Ideal pentru:</strong> Social media managers, antreprenori, non-designeri. <strong>Nota noastra:</strong> 8.5/10.</p>
-
-      <h3>4. Luminar Neo — Editare Foto AI Dedicata</h3>
-      <p>Luminar Neo este un editor foto construit de la zero in jurul AI-ului: imbunatatire automata a cerului, retusare portrete, eliminare obiecte, si ajustare de lumina — totul cu un singur click. Rezultatele arata profesional fara efort.</p>
-      <p><strong>Pret:</strong> De la ~$80/an. <strong>Ideal pentru:</strong> Fotografi amatori care vor rezultate profesionale. <strong>Nota noastra:</strong> 8.5/10.</p>
-
-      <h3>5. Fotor — Editor AI Online Gratuit</h3>
-      <p>Fotor ofera un pachet complet de editare AI in browser: imbunatatire foto automata, eliminare fundal, retusare portret, si efecte artistice AI. Versiunea gratuita este generoasa si nu necesita instalare.</p>
-      <p><strong>Pret:</strong> Gratuit cu limitari, Pro de la $4/luna. <strong>Ideal pentru:</strong> Editare rapida fara software instalat. <strong>Nota noastra:</strong> 8/10.</p>
-
-      <h3>6. Pixlr — Photoshop Gratuit cu AI</h3>
-      <p>Pixlr combina un editor foto avansat (similar Photoshop) cu functii AI: generare de imagini, eliminare fundal, si imbunatatire automata. Ruleaza complet in browser si este gratuit.</p>
-      <p><strong>Pret:</strong> Gratuit, Plus de la $2/luna. <strong>Ideal pentru:</strong> Utilizatori care vor un editor complet gratuit. <strong>Nota noastra:</strong> 7.5/10.</p>
-
-      <h3>7. Remini — Imbunatatire Calitate Foto</h3>
-      <p>Remini este specializat in imbunatatirea calitatii imaginilor vechi sau de rezolutie mica. AI-ul adauga detalii, clarifica fetele si elimina artefactele — transformand fotografii blur in imagini clare.</p>
-      <p><strong>Pret:</strong> Gratuit (cu reclame), Pro de la $5/luna. <strong>Ideal pentru:</strong> Restaurare fotografii vechi, imbunatatire selfie-uri. <strong>Nota noastra:</strong> 8/10.</p>
-
-      <h3>8. Photoroom — Fotografii de Produs Profesionale</h3>
-      <p>Photoroom este creat special pentru e-commerce: elimina fundalul, genereaza fundaluri profesionale pentru produse, si creaza imagini de catalog — totul automat cu AI.</p>
-      <p><strong>Pret:</strong> Gratuit cu filigran, Pro de la $10/luna. <strong>Ideal pentru:</strong> Magazine online, OLX, marketplace-uri. <strong>Nota noastra:</strong> 8.5/10.</p>
-
-      <h3>9. Snapseed — Editare AI pe Telefon</h3>
-      <p>Aplicatia gratuita de la Google pentru editare foto pe mobil. Include functii AI ca Portrait, Healing (elimina obiecte), si HDR Scape. Calitate profesionala, complet gratuita, fara reclame.</p>
-      <p><strong>Pret:</strong> Complet gratuit. <strong>Ideal pentru:</strong> Editare foto pe mobil. <strong>Nota noastra:</strong> 8/10.</p>
-
-      <h3>10. Topaz Photo AI — Cel Mai Bun pentru Upscaling</h3>
-      <p>Topaz Photo AI transforma imagini de rezolutie mica in fotografii de calitate inalta. AI-ul adauga detalii reale (nu doar blur smooth) — rezultatele sunt cele mai bune din industrie pentru upscaling.</p>
-      <p><strong>Pret:</strong> $199 (plata unica). <strong>Ideal pentru:</strong> Fotografi care lucreaza cu imagini din diverse surse. <strong>Nota noastra:</strong> 9/10.</p>
-
-      <h3>Cum Alegi AI Foto Editorul Potrivit?</h3>
-      <p>Alegerea depinde de nevoile tale specifice. Pentru editare rapida fara software, Canva AI sau Fotor sunt excelente. Pentru eliminare fundal, Remove.bg sau Photoroom. Pentru imbunatatirea calitatii, Remini sau Topaz Photo AI. Pentru editare profesionala completa, Adobe Photoshop ramane standardul.</p>
-      <p>Recomandarea noastra: incepe cu instrumentele gratuite (Canva AI, Pixlr, Snapseed), iar cand simti ca ai nevoie de mai mult control sau calitate, investeste intr-un plan platit.</p>
-
-      <h3>Concluzie</h3>
-      <p>Editarea foto cu AI a devenit accesibila oricui in 2026. Nu mai ai nevoie de ani de experienta in Photoshop — instrumentele de mai sus fac munca grea pentru tine. Testeaza-le, gaseste-le pe cele care se potrivesc nevoilor tale, si transforma-ti fotografiile in imagini profesionale in cateva secunde.</p>
     </article>`
   },
 
