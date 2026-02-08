@@ -20,39 +20,37 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <svg width="32" height="32" viewBox="0 0 200 190" fill="none" className="flex-shrink-0">
+            <svg width="36" height="36" viewBox="0 0 180 180" fill="none" className="flex-shrink-0" style={{overflow: "visible"}}>
               <defs>
-                <linearGradient id="logoGrad" x1="30" y1="0" x2="170" y2="190" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stopColor="#0077FF"/>
-                  <stop offset="100%" stopColor="#0055DD"/>
+                <linearGradient id="hbg" x1="26" y1="26" x2="154" y2="154" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stopColor="#0070FF"/>
+                  <stop offset="100%" stopColor="#0042CC"/>
                 </linearGradient>
+                <filter id="hglow" x="-60%" y="-60%" width="220%" height="220%">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
               </defs>
-              {/* A outer chevron */}
-              <path d="M100 10 L190 170 L170 170 L100 42 L30 170 L10 170 Z" fill="url(#logoGrad)"/>
-              {/* A middle chevron */}
-              <path d="M100 58 L155 170 L135 170 L100 90 L65 170 L45 170 Z" fill="url(#logoGrad)"/>
-              {/* I central pillar */}
-              <rect x="94" y="100" width="12" height="70" rx="3" fill="url(#logoGrad)"/>
-              {/* I dot */}
-              <circle cx="100" cy="92" r="6" fill="#00CCFF"/>
-              {/* Data pulse particles */}
-              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
-                <animate attributeName="cy" values="160;90" dur="2s" repeatCount="indefinite"/>
-                <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite"/>
+              {/* Pulse ring 1 */}
+              <circle cx="90" cy="90" r="66" fill="none" stroke="#0088FF" strokeWidth="1.5">
+                <animate attributeName="r" values="66;80;66;76;66" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.15;0.3;0.45;1" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                <animate attributeName="opacity" values="0.3;0.15;0.3;0.2;0.3" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.15;0.3;0.45;1"/>
               </circle>
-              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
-                <animate attributeName="cy" values="160;90" dur="2s" begin="0.5s" repeatCount="indefinite"/>
-                <animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+              {/* Pulse ring 2 */}
+              <circle cx="90" cy="90" r="66" fill="none" stroke="#00AAFF" strokeWidth="0.8">
+                <animate attributeName="r" values="66;86;66;82;66" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.18;0.33;0.48;1" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                <animate attributeName="opacity" values="0.2;0.08;0.2;0.1;0.2" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.18;0.33;0.48;1"/>
               </circle>
-              <circle cx="100" cy="160" r="3" fill="#00EEFF" opacity="0">
-                <animate attributeName="cy" values="160;90" dur="2s" begin="1s" repeatCount="indefinite"/>
-                <animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+              {/* Soft aura */}
+              <circle cx="90" cy="90" r="68" fill="#0066FF" opacity="0.04">
+                <animate attributeName="r" values="68;74;68;72;68" dur="1.2s" repeatCount="indefinite" keyTimes="0;0.15;0.3;0.45;1"/>
               </circle>
-              {/* Top glow pulse */}
-              <circle cx="100" cy="92" r="8" fill="none" stroke="#00CCFF" strokeWidth="2" opacity="0.3">
-                <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
-                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
-              </circle>
+              {/* Main container */}
+              <rect x="26" y="26" width="128" height="128" rx="30" fill="url(#hbg)"/>
+              {/* Glass highlight */}
+              <rect x="32" y="32" width="116" height="58" rx="24" fill="white" opacity="0.04"/>
+              {/* iA text with glow */}
+              <text x="90" y="108" textAnchor="middle" fontFamily="DM Sans, sans-serif" fontWeight="700" fontSize="66" fill="white" letterSpacing="-2" filter="url(#hglow)">iA</text>
             </svg>
             <span className="text-xl font-bold text-text">
               inteligenta<span className="text-primary">.ai</span>
