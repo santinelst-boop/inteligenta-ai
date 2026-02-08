@@ -1,10 +1,19 @@
 import ToolCard from "@/components/ToolCard";
 import { categories, featuredTools } from "@/data/tools";
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Instrumente AI — Director complet | inteligenta.ai",
-  description: "Explorează cele mai bune instrumente de inteligență artificială. Filtrează pe categorii: text, imagine, video, cod, audio.",
+export const metadata: Metadata = {
+  title: "Instrumente AI — Director complet de tool-uri",
+  description:
+    "Directorul complet al instrumentelor de inteligență artificială. Peste 200 de tool-uri clasificate pe categorii cu rating-uri și prețuri.",
+  alternates: { canonical: "https://inteligenta.ai/instrumente" },
+  openGraph: {
+    title: "Instrumente AI — inteligenta.ai",
+    description:
+      "Director complet cu peste 200 de instrumente AI clasificate pe categorii.",
+    url: "https://inteligenta.ai/instrumente",
+  },
 };
 
 export default function InstrumentePage() {

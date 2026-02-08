@@ -1,9 +1,18 @@
 import ArticleCard from "@/components/ArticleCard";
 import { latestArticles } from "@/data/tools";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Recenzii AI — Analize detaliate | inteligenta.ai",
-  description: "Recenzii oneste și detaliate ale celor mai populare instrumente de inteligență artificială.",
+export const metadata: Metadata = {
+  title: "Recenzii AI — Analize detaliate ale celor mai bune instrumente",
+  description:
+    "Recenzii complete și obiective ale instrumentelor de inteligență artificială. Teste practice, comparații și recomandări pentru utilizatori din România.",
+  alternates: { canonical: "https://inteligenta.ai/recenzii" },
+  openGraph: {
+    title: "Recenzii AI — inteligenta.ai",
+    description:
+      "Recenzii complete ale instrumentelor AI. Teste practice și recomandări.",
+    url: "https://inteligenta.ai/recenzii",
+  },
 };
 
 export default function RecenziiPage() {

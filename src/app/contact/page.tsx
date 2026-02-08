@@ -47,8 +47,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-text mb-1">Email</h3>
-                  <a href="mailto:contact@inteligenta-ai.ro" className="text-text-light hover:text-primary transition-colors">
-                    contact@inteligenta-ai.ro
+                  {/* TODO: înlocuiește cu contact@inteligenta.ai după configurare email hosting */}
+                  <a href="mailto:santinel.st@gmail.com" className="text-text-light hover:text-primary transition-colors">
+                    santinel.st@gmail.com
                   </a>
                 </div>
               </div>

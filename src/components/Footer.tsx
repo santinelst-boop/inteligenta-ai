@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "./NewsletterForm";
 
 const footerLinks = {
   instrumente: [
@@ -35,19 +36,7 @@ export default function Footer() {
           <p className="text-white/80 mb-6 max-w-md mx-auto">
             Primești săptămânal cele mai importante noutăți, recenzii și ghiduri AI direct în inbox.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="adresa@email.com"
-              className="flex-1 px-4 py-3 rounded-full text-text bg-white focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
-            <button
-              type="submit"
-              className="px-6 py-3 rounded-full bg-white text-primary font-semibold hover:bg-white/90 transition-colors"
-            >
-              Abonează-te
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="text-white/60 text-xs mt-3">
             Fără spam. Te poți dezabona oricând.
           </p>
@@ -136,6 +125,32 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+
+        {/* Publicitate & Contact */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-white/60">
+            <div>
+              <h4 className="font-semibold text-white mb-2">Publicitate</h4>
+              <p>
+                Pentru colaborări și publicitate:{" "}
+                {/* TODO: înlocuiește cu publicitate@inteligenta.ai după configurare email hosting */}
+                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
+                  santinel.st@gmail.com
+                </a>
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-white mb-2">Redacție</h4>
+              <p>
+                Propuneri articole sau corectări:{" "}
+                {/* TODO: înlocuiește cu redactie@inteligenta.ai după configurare email hosting */}
+                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
+                  santinel.st@gmail.com
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
