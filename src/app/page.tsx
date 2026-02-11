@@ -3,7 +3,6 @@ import Image from "next/image";
 import ToolCard from "@/components/ToolCard";
 import ArticleCard from "@/components/ArticleCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
-import ComparisonTable from "@/components/ComparisonTable";
 import { getAllCategories, getFeaturedTools } from "@/lib/sanity";
 import { latestArticles } from "@/data/tools";
 import type { SanityTool, SanityCategory } from "@/lib/types";

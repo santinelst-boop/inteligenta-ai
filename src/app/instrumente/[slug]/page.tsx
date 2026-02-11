@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import { getToolBySlug, getAllToolSlugs } from "@/lib/sanity";
 import { getPricingLabel, toStarRating } from "@/lib/types";
 import type { SanityTool } from "@/lib/types";
-import AffiliateCTA from "@/components/AffiliateCTA";
 
 export const revalidate = 3600;
 
