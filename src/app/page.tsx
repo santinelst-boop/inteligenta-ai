@@ -1,14 +1,25 @@
 import Link from "next/link";
+import Image from "next/image";
 import ToolCard from "@/components/ToolCard";
 import ArticleCard from "@/components/ArticleCard";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import ComparisonTable from "@/components/ComparisonTable";
-import { categories, featuredTools, latestArticles } from "@/data/tools";
+import { getAllCategories, getFeaturedTools } from "@/lib/sanity";
+import { latestArticles } from "@/data/tools";
+import type { SanityTool, SanityCategory } from "@/lib/types";
+import { toStarRating, getPricingLabel } from "@/lib/types";
 
-export default function Home() {
+export const revalidate = 3600;
+
+export default async function Home() {
+  const [sanityTools, sanityCategories]: [SanityTool[], SanityCategory[]] = await Promise.all([
+    getFeaturedTools(),
+    getAllCategories(),
+  ]);
+
   const featuredArticles = latestArticles.filter((a) => a.featured);
   const recentArticles = latestArticles.slice(0, 4);
-  const top10Tools = featuredTools.sort((a, b) => b.rating - a.rating).slice(0, 10);
+  const top10Tools = sanityTools.slice(0, 10);
 
   return (
     <>
@@ -66,10 +77,10 @@ export default function Home() {
 
           {/* Category Pills */}
           <div className="flex flex-wrap justify-center gap-3">
-            {categories.map((cat) => (
+            {sanityCategories.map((cat) => (
               <Link
-                key={cat.id}
-                href={`/instrumente?cat=${cat.id}`}
+                key={cat._id}
+                href={`/instrumente?cat=${cat.slug}`}
                 className="pill px-5 py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-sm font-medium border border-white/20"
               >
                 {cat.name}
@@ -99,8 +110,8 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredTools.slice(0, 6).map((tool) => (
-            <ToolCard key={tool.id} tool={tool} />
+          {sanityTools.slice(0, 6).map((tool) => (
+            <ToolCard key={tool._id} tool={tool} />
           ))}
         </div>
 
@@ -114,233 +125,116 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== COMPARISON TABLE SECTION ===== */}
+      {/* ===== TOP 10 TABLE ===== */}
       <section className="bg-white border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex items-end justify-between mb-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-text">
-                Tabel Comparativ Prețuri
+                Top 10 Instrumente AI 2026
               </h2>
               <p className="text-text-light mt-1">
-                Compară top 10 instrumente AI pe baza rating-ului, prețului și funcționalități
+                Clasamentul nostru bazat pe performanță, preț și funcționalități
               </p>
             </div>
           </div>
 
-          <ComparisonTable tools={top10Tools} maxTools={10} />
+          <div className="overflow-x-auto">
+            <table className="w-full text-left">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase">#</th>
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase">Instrument</th>
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase">Categorie</th>
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase">Rating</th>
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase">Preț</th>
+                  <th className="py-3 px-4 text-xs font-semibold text-text-light uppercase"></th>
+                </tr>
+              </thead>
+              <tbody>
+                {top10Tools.map((tool, idx) => (
+                  <tr key={tool._id} className="border-b border-border/50 hover:bg-surface/50 transition-colors">
+                    <td className="py-3 px-4 font-bold text-primary">{idx + 1}</td>
+                    <td className="py-3 px-4">
+                      <div className="flex items-center gap-3">
+                        {tool.logoUrl ? (
+                          <Image src={tool.logoUrl} alt={tool.name} width={32} height={32} className="w-8 h-8 rounded-lg object-contain" />
+                        ) : (
+                          <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
+                            {tool.name[0]}
+                          </div>
+                        )}
+                        <span className="font-medium text-text">{tool.name}</span>
+                      </div>
+                    </td>
+                    <td className="py-3 px-4 text-sm text-text-light">{tool.category?.name}</td>
+                    <td className="py-3 px-4">
+                      <span className="font-semibold text-text">{toStarRating(tool.rating).toFixed(1)}</span>
+                      <span className="text-text-light text-xs">/5</span>
+                    </td>
+                    <td className="py-3 px-4 text-sm text-text-light">{getPricingLabel(tool.pricing)}</td>
+                    <td className="py-3 px-4">
+                      <Link
+                        href={`/instrumente/${tool.slug}`}
+                        className="text-sm text-primary font-medium hover:text-primary-dark"
+                      >
+                        Recenzie →
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
-      {/* ===== LATEST REVIEWS ===== */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {/* ===== ARTICLES SECTION (still from static data) ===== */}
+      {recentArticles.length > 0 && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex items-end justify-between mb-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-text">
-                Recenzii recente
+                Ultimele articole
               </h2>
               <p className="text-text-light mt-1">
-                Analize detaliate ale celor mai noi instrumente AI
+                Ghiduri, tutoriale și noutăți din lumea AI
               </p>
             </div>
             <Link
-              href="/recenzii"
-              className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
+              href="/blog"
+              className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
             >
-              Toate recenziile →
+              Vezi toate →
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Featured Articles */}
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {featuredArticles.map((article) => (
-                <ArticleCard
-                  key={article.slug}
-                  article={article}
-                  variant="featured"
-                />
-              ))}
-            </div>
-
-            {/* Sidebar - Popular */}
-            <div className="bg-surface rounded-2xl p-5">
-              <h3 className="font-bold text-text mb-4 flex items-center gap-2">
-                <span className="text-lg">🔥</span> Populare
-              </h3>
-              <div className="space-y-4">
-                {recentArticles.map((article) => (
-                  <ArticleCard
-                    key={article.slug}
-                    article={article}
-                    variant="compact"
-                  />
-                ))}
-              </div>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {recentArticles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* ===== CATEGORIES SHOWCASE ===== */}
-      <section className="hero-gradient">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-3">
-            Explorează pe categorii
+      {/* ===== NEWSLETTER CTA ===== */}
+      <section className="bg-primary/5 border-y border-primary/10">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-text mb-3">
+            Rămâi la curent cu AI
           </h2>
-          <p className="text-white/70 text-center mb-10 max-w-lg mx-auto">
-            De la generatoare de text la editoare video — găsește instrumentul AI perfect pentru tine
+          <p className="text-text-light mb-6">
+            Primește săptămânal cele mai noi instrumente AI, recenzii și ghiduri practice. Gratis, fără spam.
           </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {categories.map((cat) => (
-              <Link
-                key={cat.id}
-                href={`/instrumente?cat=${cat.id}`}
-                className="group bg-white/10 backdrop-blur-sm rounded-2xl p-5 text-center border border-white/10 hover:bg-white/20 transition-all"
-              >
-                <div
-                  className="w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center text-2xl"
-                  style={{ backgroundColor: `${cat.color}30` }}
-                >
-                  {cat.id === "ai-text" && "✏️"}
-                  {cat.id === "ai-imagine" && "🎨"}
-                  {cat.id === "ai-video" && "🎬"}
-                  {cat.id === "ai-cod" && "💻"}
-                  {cat.id === "ai-audio" && "🎵"}
-                  {cat.id === "ai-productivitate" && "⚡"}
-                  {cat.id === "ai-cautare" && "🔍"}
-                  {cat.id === "ai-email" && "✉️"}
-                </div>
-                <h3 className="font-semibold text-white text-sm">
-                  {cat.name}
-                </h3>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== NEWSLETTER SECTION ===== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Primește recenzii și ghiduri în inbox
-            </h2>
-            <p className="text-white/80 mb-6">
-              Abonează-te la newsletter-ul nostru și fii printre primii care află despre noile instrumente AI și analysele noastre detaliate.
-            </p>
-
-            <form className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Introdu adresa de email..."
-                required
-                className="flex-1 px-5 py-3 rounded-lg bg-white text-text placeholder-text-light focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 rounded-lg bg-white text-primary font-bold hover:bg-white/90 transition-colors whitespace-nowrap"
-              >
-                Abonează-te
-              </button>
-            </form>
-
-            <p className="text-xs text-white/60 mt-4">
-              Nu trimitem spam. Te poți dezabona oricând.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== COMPARISON TEASEP ===== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-text">
-              Comparații
-            </h2>
-            <p className="text-text-light mt-1">
-              Analize cap la cap pentru a face alegerea corectă
-            </p>
-          </div>
-          <Link
-            href="/comparatii"
-            className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark"
-          >
-            Toate comparațiile →
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {/* Comparison Card 1 */}
-          <Link
-            href="/comparatii/chatgpt-vs-claude"
-            className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
-          >
-            <div className="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center text-2xl shrink-0">
-              🟡
-            </div>
-            <div className="flex-1">
-              <span className="text-xs font-bold text-primary uppercase tracking-wide">
-                VS
-              </span>
-              <h3 className="font-bold text-text">ChatGPT vs Claude</h3>
-              <p className="text-sm text-text-light">
-                Cine câștigă bătălia chatbot-ilor AI în 2026?
-              </p>
-            </div>
-            <div className="w-14 h-14 rounded-xl bg-orange-100 flex items-center justify-center text-2xl shrink-0">
-              🟠
-            </div>
-          </Link>
-
-          {/* Comparison Card 2 */}
-          <Link
-            href="/comparatii/midjourney-vs-dalle"
-            className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
-          >
-            <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-2xl shrink-0">
-              🔵
-            </div>
-            <div className="flex-1">
-              <span className="text-xs font-bold text-primary uppercase tracking-wide">
-                VS
-              </span>
-              <h3 className="font-bold text-text">Midjourney vs DALL-E 3</h3>
-              <p className="text-sm text-text-light">
-                Care generator de imagini merită banii?
-              </p>
-            </div>
-            <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-2xl shrink-0">
-              🟣
-            </div>
-          </Link>
-        </div>
-      </section>
-
-      {/* ===== TRUST BANNER ===== */}
-      <section className="bg-white border-y border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
-          <p className="text-sm text-text-light uppercase tracking-wide font-medium mb-6">
-            De ce ne citesc mii de români
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "200+", label: "Instrumente analizate" },
-              { number: "50+", label: "Recenzii detaliate" },
-              { number: "Zilnic", label: "Conținut actualizat" },
-              { number: "100%", label: "Opinii oneste" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <p className="text-3xl font-extrabold text-primary">
-                  {stat.number}
-                </p>
-                <p className="text-sm text-text-light mt-1">{stat.label}</p>
-              </div>
-            ))}
+          <div className="flex gap-3 max-w-md mx-auto">
+            <input
+              type="email"
+              placeholder="Email-ul tău"
+              className="flex-1 px-4 py-3 rounded-xl border border-border bg-white text-text focus:outline-none focus:ring-2 focus:ring-primary/30"
+            />
+            <button className="px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary-dark transition-colors">
+              Abonează-te
+            </button>
           </div>
         </div>
       </section>
