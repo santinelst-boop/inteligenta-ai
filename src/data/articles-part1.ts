@@ -187,6 +187,6 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
       <h3>Avantaje Majore</h3>
       <p><strong>Viteză de Codare:</strong> Sugestiile pot completa 35-50% din codul tău. Economii de 2-3 ore zilnic pentru proiecte repetitive.</p>
       <p><strong>Învățare Rapidă:</strong> Cu un asistent AI, curba de învățare a unui limbaj nou scade semnificativ.</p>
-    \`,
+    `,
   },
 };

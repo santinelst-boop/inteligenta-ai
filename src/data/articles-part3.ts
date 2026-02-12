@@ -227,6 +227,6 @@ export const articlesPart3: Record<
         <li><strong>Funcții AI</strong>: Magic Eraser, Background Remover, Magic Edit</li>
         <li><strong>Ideal pentru</strong>: Începători, social media, marketing</li>
       </ul>
-    \`,
+    `,
   },
 };

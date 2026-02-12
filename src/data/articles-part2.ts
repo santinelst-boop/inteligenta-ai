@@ -202,6 +202,6 @@ export const articlesPart2: Record<string, { title: string; metaDescription: str
         <li><strong>Podcasting:</strong> Generează intro-uri, segmente narative și chiar episoade complete</li>
         <li><strong>Narrare audiobook:</strong> Transformă manuscrise în audiobook-uri cu voci naturale</li>
       </ul>
-    \`,
+    `,
   },
 };
