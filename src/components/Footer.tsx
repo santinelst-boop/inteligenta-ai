@@ -164,9 +164,8 @@ export default function Footer() {
               <h4 className="font-semibold text-white mb-2">Redacție</h4>
               <p>
                 Propuneri articole sau corectări:{" "}
-                {/* TODO: înlocuiește cu redactie@inteligenta.ai după configurare email hosting */}
-                <a href="mailto:contact@inteligenta.ai" className="text-primary-light hover:text-white transition-colors">
-                  contact@inteligenta.ai
+                <a href="mailto:redactie@inteligenta.ai" className="text-primary-light hover:text-white transition-colors">
+                  redactie@inteligenta.ai
                 </a>
               </p>
             </div>
