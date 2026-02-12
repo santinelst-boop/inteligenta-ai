@@ -17,7 +17,7 @@ export async function getAllTools() {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, name, "slug": slug.current, color, icon},
+      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
       website,
       pricing,
       pricingDetails,
@@ -44,7 +44,7 @@ export async function getFeaturedTools() {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, name, "slug": slug.current, color, icon},
+      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
       website,
       pricing,
       pricingDetails,
@@ -71,7 +71,7 @@ export async function getToolBySlug(slug: string) {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, name, "slug": slug.current, color, icon},
+      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
       website,
       pricing,
       pricingDetails,
@@ -108,9 +108,9 @@ export async function getAllToolSlugs() {
 // Fetch all categories
 export async function getAllCategories() {
   return client.fetch(`
-    *[_type == "category"] | order(name asc) {
+    *[_type == "category"] | order(title asc) {
       _id,
-      name,
+      "name": title,
       "slug": slug.current,
       description,
       color,
@@ -130,7 +130,7 @@ export async function getToolsByCategory(categorySlug: string) {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, name, "slug": slug.current, color, icon},
+      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
       website,
       pricing,
       pricingDetails,
