@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { SanityTool } from "@/lib/types";
-import { getPricingLabel, toStarRating } from "@/lib/types";
+import { getPricingLabel, toStarRating, getLogoUrl } from "@/lib/types";
 
 function StarRating({ rating }: { rating: number }) {
   const stars = toStarRating(rating);
@@ -45,8 +45,8 @@ export default function ToolCard({ tool }: { tool: SanityTool }) {
       {/* Header */}
       <div className="flex items-start gap-3 mb-3">
         <div className="w-12 h-12 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center text-primary font-bold text-lg shrink-0">
-          {tool.logoUrl ? (
-            <Image src={tool.logoUrl} alt={tool.name} width={48} height={48} className="w-full h-full object-contain" />
+          {getLogoUrl(tool) ? (
+            <Image src={getLogoUrl(tool)!} alt={tool.name} width={48} height={48} className="w-full h-full object-contain" />
           ) : (
             tool.name[0]
           )}

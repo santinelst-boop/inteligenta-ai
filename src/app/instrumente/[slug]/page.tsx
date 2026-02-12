@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { getToolBySlug, getAllToolSlugs } from "@/lib/sanity";
-import { getPricingLabel, toStarRating } from "@/lib/types";
+import { getPricingLabel, toStarRating , getLogoUrl } from "@/lib/types";
 import type { SanityTool } from "@/lib/types";
 
 export const revalidate = 3600;
@@ -266,8 +266,8 @@ export default async function InstrumentPage({ params }: Props) {
                 href={`/instrumente/${alt.slug}`}
                 className="bg-card rounded-xl border border-border p-4 hover:shadow-md transition-shadow"
               >
-                {alt.logoUrl ? (
-                  <Image src={alt.logoUrl} alt={alt.name} width={32} height={32} className="w-8 h-8 object-contain mb-2" />
+                {getLogoUrl(alt) ? (
+                  <Image src={getLogoUrl(alt)!} alt={alt.name} width={32} height={32} className="w-8 h-8 object-contain mb-2" />
                 ) : (
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm mb-2">
                     {alt.name[0]}

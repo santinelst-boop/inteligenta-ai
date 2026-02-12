@@ -6,7 +6,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import { getAllCategories, getFeaturedTools } from "@/lib/sanity";
 import { latestArticles } from "@/data/tools";
 import type { SanityTool, SanityCategory } from "@/lib/types";
-import { toStarRating, getPricingLabel } from "@/lib/types";
+import { toStarRating, getPricingLabel , getLogoUrl } from "@/lib/types";
 
 export const revalidate = 3600;
 
