@@ -22,6 +22,7 @@ export interface Article {
   imageUrl: string;
   featured: boolean;
   logoUrl?: string;
+  contentType: "review" | "blog";
 }
 
 export const categories = [
@@ -33,6 +34,10 @@ export const categories = [
   { id: "ai-productivitate", name: "Productivitate", icon: "zap", color: "#dc2626" },
   { id: "ai-cautare", name: "Căutare AI", icon: "search", color: "#0891b2" },
   { id: "ai-email", name: "Email Marketing", icon: "mail", color: "#7c2d12" },
+  { id: "ai-educatie", name: "Educație AI", icon: "book", color: "#0d9488" },
+  { id: "ai-business", name: "AI Business", icon: "briefcase", color: "#64748b" },
+  { id: "ai-opinie", name: "Opinii & Analize", icon: "eye", color: "#be123c" },
+  { id: "ai-marketing", name: "AI Marketing", icon: "megaphone", color: "#c026d3" },
 ];
 
 export const featuredTools: AITool[] = [
@@ -329,6 +334,7 @@ export const latestArticles: Article[] = [
     readTime: "8 min",
     imageUrl: "/articles/chatgpt-vs-claude.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "top-10-generatoare-imagini-ai",
@@ -340,6 +346,7 @@ export const latestArticles: Article[] = [
     readTime: "12 min",
     imageUrl: "/articles/top-generatoare.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "cum-sa-folosesti-ai-productivitate",
@@ -351,6 +358,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/productivitate.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ghid-complet-github-copilot",
@@ -362,6 +370,7 @@ export const latestArticles: Article[] = [
     readTime: "15 min",
     imageUrl: "/articles/copilot-review.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-pentru-content-creators",
@@ -373,6 +382,7 @@ export const latestArticles: Article[] = [
     readTime: "11 min",
     imageUrl: "/articles/content-creators.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "gratuiti-vs-plati-care-alegi",
@@ -384,6 +394,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/gratuit-vs-platit.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-scriere-seo-ranked-google",
@@ -395,6 +406,7 @@ export const latestArticles: Article[] = [
     readTime: "13 min",
     imageUrl: "/articles/seo-ai.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-audio-voce-naturala",
@@ -406,6 +418,7 @@ export const latestArticles: Article[] = [
     readTime: "7 min",
     imageUrl: "/articles/tts-ai.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "chatgpt-romana-ghid-complet",
@@ -417,6 +430,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/chatgpt-romana.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "cele-mai-bune-chatbot-uri-ai",
@@ -428,6 +442,7 @@ export const latestArticles: Article[] = [
     readTime: "12 min",
     imageUrl: "/articles/chatbot-ai.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "ai-detector-verificare-text",
@@ -439,6 +454,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-detector.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-foto-editor-editare-imagini",
@@ -450,6 +466,7 @@ export const latestArticles: Article[] = [
     readTime: "11 min",
     imageUrl: "/articles/ai-foto-editor.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "chatgpt-gratuit-ce-poti-face",
@@ -461,6 +478,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/chatgpt-gratuit.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "inteligenta-artificiala-gratuita-instrumente",
@@ -472,6 +490,7 @@ export const latestArticles: Article[] = [
     readTime: "8 min",
     imageUrl: "/articles/ai-gratuit.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "aplicatii-inteligenta-artificiala-top-2026",
@@ -483,6 +502,7 @@ export const latestArticles: Article[] = [
     readTime: "12 min",
     imageUrl: "/articles/aplicatii-ai.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-muzica-generatoare-instrumente",
@@ -494,6 +514,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-muzica.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-prezentari-slide-uri-automate",
@@ -505,6 +526,7 @@ export const latestArticles: Article[] = [
     readTime: "8 min",
     imageUrl: "/articles/ai-prezentari.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-pentru-studenti-ghid-complet",
@@ -516,6 +538,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-studenti.png",
     featured: true,
+    contentType: "blog",
   },
   {
     slug: "cele-mai-bune-instrumente-ai-2026",
@@ -527,6 +550,7 @@ export const latestArticles: Article[] = [
     readTime: "14 min",
     imageUrl: "/articles/top-ai-2026.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "ai-parafrazare-top-instrumente",
@@ -538,6 +562,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-parafrazare.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-marketing-strategii-instrumente",
@@ -549,6 +574,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-marketing.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-traducere-top-instrumente-2026",
@@ -560,6 +586,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-traducere.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-rezumate-sumarizare-automata",
@@ -571,6 +598,7 @@ export const latestArticles: Article[] = [
     readTime: "8 min",
     imageUrl: "/articles/ai-rezumate.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-chatbot-business-ghid-implementare",
@@ -582,6 +610,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-chatbot.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-scris-articole-generare-continut",
@@ -593,6 +622,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-scris.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "cum-functioneaza-inteligenta-artificiala",
@@ -604,6 +634,7 @@ export const latestArticles: Article[] = [
     readTime: "12 min",
     imageUrl: "/articles/cum-functioneaza-ai.png",
     featured: true,
+    contentType: "blog",
   },
   {
     slug: "ai-video-generator-creare-clipuri",
@@ -615,6 +646,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-video.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-programare-asistent-cod-2026",
@@ -626,6 +658,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-programare.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-voce-sinteza-vocala-clonare",
@@ -637,6 +670,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-voce.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "openai-vs-anthropic-doua-viziuni-ai",
@@ -648,6 +682,7 @@ export const latestArticles: Article[] = [
     readTime: "12 min",
     imageUrl: "/articles/openai-vs-anthropic.png",
     featured: true,
+    contentType: "review",
   },
   {
     slug: "ai-design-grafic-instrumente-vizuale",
@@ -659,6 +694,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-design.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-excel-formule-analiza-automata",
@@ -670,6 +706,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-excel.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-email-scrie-emailuri-rapid",
@@ -681,6 +718,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-email.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-logo-generator-creare-logo",
@@ -692,6 +730,7 @@ export const latestArticles: Article[] = [
     readTime: "8 min",
     imageUrl: "/articles/ai-logo.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "prompt-engineering-ghid-complet-romana",
@@ -703,6 +742,7 @@ export const latestArticles: Article[] = [
     readTime: "11 min",
     imageUrl: "/articles/prompt-engineering.png",
     featured: true,
+    contentType: "blog",
   },
   {
     slug: "ai-detector-text-verificare-continut",
@@ -714,6 +754,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-detector.png",
     featured: false,
+    contentType: "review",
   },
   {
     slug: "ai-automatizare-workflow-fara-cod",
@@ -725,6 +766,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-automatizare.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-fotografie-editare-imbunatatire",
@@ -736,6 +778,7 @@ export const latestArticles: Article[] = [
     readTime: "9 min",
     imageUrl: "/articles/ai-fotografie.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-invatare-limbi-straine-aplicatii",
@@ -747,6 +790,7 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-limbi.png",
     featured: false,
+    contentType: "blog",
   },
   {
     slug: "ai-business-plan-antreprenori",
@@ -758,5 +802,6 @@ export const latestArticles: Article[] = [
     readTime: "10 min",
     imageUrl: "/articles/ai-business.png",
     featured: false,
+    contentType: "blog",
   },
 ];

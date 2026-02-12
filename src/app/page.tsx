@@ -16,8 +16,9 @@ export default async function Home() {
     getAllCategories(),
   ]);
 
-  const featuredArticles = latestArticles.filter((a) => a.featured);
-  const recentArticles = latestArticles.slice(0, 4);
+  const recentReviews = latestArticles.filter((a) => a.contentType === "review").slice(0, 2);
+  const recentBlog = latestArticles.filter((a) => a.contentType === "blog").slice(0, 2);
+  const recentArticles = [...recentReviews, ...recentBlog];
   const top10Tools = sanityTools.slice(0, 10);
 
   return (

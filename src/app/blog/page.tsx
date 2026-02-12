@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const blogArticles = latestArticles.filter((a) => a.contentType === "blog");
+
   return (
     <>
       <section className="hero-gradient py-14">
@@ -31,7 +33,7 @@ export default function BlogPage() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="space-y-5">
-          {latestArticles.map((article) => (
+          {blogArticles.map((article) => (
             <ArticleCard key={article.slug} article={article} variant="default" />
           ))}
         </div>

@@ -16,6 +16,8 @@ export const metadata: Metadata = {
 };
 
 export default function RecenziiPage() {
+  const reviewArticles = latestArticles.filter((a) => a.contentType === "review");
+
   return (
     <>
       <section className="hero-gradient py-14">
@@ -24,15 +26,15 @@ export default function RecenziiPage() {
             Recenzii AI
           </h1>
           <p className="text-white/80 max-w-xl mx-auto">
-            Analize detaliate, oneste și actualizate ale instrumentelor de inteligență artificială
+            Recenzii detaliate, comparații cap la cap și teste reale ale instrumentelor AI
           </p>
         </div>
       </section>
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {latestArticles.map((article) => (
-            <ArticleCard key={article.slug} article={article} variant="featured" />
+        <div className="space-y-5">
+          {reviewArticles.map((article) => (
+            <ArticleCard key={article.slug} article={article} variant="default" />
           ))}
         </div>
       </section>
