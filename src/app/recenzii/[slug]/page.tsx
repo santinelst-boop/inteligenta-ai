@@ -186,8 +186,20 @@ export default async function ArticlePage({ params }: Props) {
                   rel="nofollow sponsored"
                   className="flex items-center gap-3 bg-white rounded-xl p-4 border border-border hover:shadow-md transition-shadow"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
-                    {tool.name.charAt(0)}
+                  <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center overflow-hidden">
+                    {tool.logoUrl ? (
+                      <Image
+                        src={tool.logoUrl}
+                        alt={tool.name}
+                        width={28}
+                        height={28}
+                        className="object-contain"
+                      />
+                    ) : (
+                      <span className="text-primary font-bold text-sm">
+                        {tool.name.charAt(0)}
+                      </span>
+                    )}
                   </div>
                   <div>
                     <p className="font-semibold text-text text-sm">
