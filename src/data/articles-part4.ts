@@ -1,7 +1,7 @@
 export const articlesPart4: Record<string, { title: string; metaDescription: string; content: string }> = {
   "chatgpt-gratuit-ce-poti-face": {
     title: "ChatGPT Gratuit: Tot Ce Poți Face Fără Să Plătești (Ghid 2026)",
-    metaDescription: "Ce poți face cu ChatGPT gratuit în 2026: funcții disponibile, limite, trucuri și când merită upgrade la Plus. Ghid complet actualizat.",
+    metaDescription: "ChatGPT gratuit în 2026: tot ce poți face fără să plătești. Funcții disponibile, limite reale, 10 trucuri avansate și când merită upgrade la Plus. Ghid complet actualizat.",
     content: `<article>
       <h2>ChatGPT Gratuit: Surprinzător de Capabil (Dacă Știi Să-l Folosești)</h2>
       <p>Mitul persistent: „trebuie să plătești pentru Plus ca să fie bun." Am folosit <strong>ChatGPT gratuit</strong> intensiv și verdictul e clar: versiunea gratuită acoperă 70-80% din nevoile majorității utilizatorilor. Iată exact ce poți face fără să scoți portofelul.</p>
@@ -33,7 +33,7 @@ export const articlesPart4: Record<string, { title: string; metaDescription: str
 
   "inteligenta-artificiala-gratuita-instrumente": {
     title: "Inteligență Artificială Gratuită: Top 15 Instrumente Fără Cost (2026)",
-    metaDescription: "Cele mai bune instrumente AI gratuite în 2026: chatboți, imagini, video, audio, productivitate. 15 instrumente testate, fără cost ascuns.",
+    metaDescription: "Inteligență artificială gratuită: top 15 instrumente AI gratuit în 2026. Chatboți, generatoare imagini, video, audio — toate testate, fără costuri ascunse.",
     content: `<article>
       <h2>15 Instrumente AI Complet Gratuite Care Merită Instalate Azi</h2>
       <p>„Gratuit" în tech înseamnă adesea „gratuit dar îți vinde datele" sau „gratuit dar inutilizabil fără upgrade." Am filtrat zgomotul și am selectat 15 instrumente de <strong>inteligență artificială gratuită</strong> care sunt cu adevărat gratuite, cu adevărat utile, și fără capcane ascunse. Le folosim pe toate activ.</p>
@@ -66,7 +66,7 @@ export const articlesPart4: Record<string, { title: string; metaDescription: str
 
   "aplicatii-inteligenta-artificiala-top-2026": {
     title: "Aplicații cu Inteligență Artificială: Top 20 Esențiale pentru 2026",
-    metaDescription: "Top 20 aplicații AI esențiale în 2026: productivitate, creativitate, business și uz personal. Clasament bazat pe teste reale cu recomandări pe categorii.",
+    metaDescription: "Top 20 aplicații cu inteligență artificială esențiale în 2026. Cele mai bune aplicații AI pentru productivitate, creativitate, business — clasament bazat pe teste reale.",
     content: `<article>
       <h2>20 de Aplicații AI Pe Care Le Folosim Zilnic (și De Ce)</h2>
       <p>Există mii de <strong>aplicații cu inteligență artificială</strong> în 2026. Majoritatea sunt inutile. Am filtrat zgomotul și am selectat cele 20 pe care le folosim efectiv — nu cele care arată bine în demo-uri, ci cele care rezolvă probleme reale. Iată lista, organizată pe categorii, cu explicații scurte despre de ce fiecare e în top.</p>

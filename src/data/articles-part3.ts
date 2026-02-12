@@ -1,7 +1,7 @@
 export const articlesPart3: Record<string, { title: string; metaDescription: string; content: string }> = {
   "chatgpt-romana-ghid-complet": {
     title: "ChatGPT în Română: Ghid Complet — Funcționează Bine sau Nu? (2026)",
-    metaDescription: "ChatGPT în limba română în 2026: cât de bine funcționează, ce poate face, limite, sfaturi practice și comparație cu alternativele pentru utilizatori din România.",
+    metaDescription: "ChatGPT română 2026: cât de bine funcționează ChatGPT în limba română. Ghid complet cu teste practice, limite, sfaturi și comparație cu alternativele. ChatGPT România.",
     content: `<article>
       <h2>ChatGPT în Română: Am Testat 50 de Scenarii. Iată Verdictul Sincer.</h2>
       <p>Întrebarea pe care o primim constant: „funcționează ChatGPT bine în română?" Am decis să răspundem științific — am testat 50 de scenarii diferite în limba română și am evaluat calitatea pe o scară de la 1 la 10. Verdictul: <strong>surprinzător de bine, cu excepții notabile.</strong> Hai să intrăm în detalii.</p>
@@ -32,7 +32,7 @@ export const articlesPart3: Record<string, { title: string; metaDescription: str
 
   "cele-mai-bune-chatbot-uri-ai": {
     title: "Cele Mai Bune Chatbot-uri AI în 2026: Clasament Actualizat",
-    metaDescription: "Top chatbot-uri AI în 2026: ChatGPT, Claude, Gemini, Perplexity, Copilot. Comparație detaliată cu note, prețuri și recomandări pe categorii.",
+    metaDescription: "Cele mai bune chatbot AI în 2026: ChatGPT, Claude, Gemini, Perplexity, Copilot. Comparație completă cu note, prețuri și recomandări. Cel mai bun chatbot AI pentru tine.",
     content: `<article>
       <h2>Top Chatbot-uri AI 2026: Clasament Bazat Pe 6 Luni de Teste Zilnice</h2>
       <p>Nu e un clasament bazat pe specificații tehnice sau pe press releases. Am folosit <strong>fiecare chatbot AI major</strong> zilnic timp de 6 luni, pe task-uri reale de muncă, și le-am notat pe categorii. Iată clasamentul complet — cu motivări sincere.</p>
@@ -65,7 +65,7 @@ export const articlesPart3: Record<string, { title: string; metaDescription: str
 
   "ai-detector-verificare-text": {
     title: "Cum Să Verifici Un Text AI: Ghid Practic de Detectare Pas cu Pas (2026)",
-    metaDescription: "Ghid practic: cum verifici dacă un text e scris de AI, pas cu pas. Metode manuale și automate, cu exemple concrete și sfaturi pentru profesori și editori.",
+    metaDescription: "AI detector text: cum verifici dacă un text e scris de AI. Ghid practic 2026 cu cele mai bune instrumente AI checker, metode de detectare și sfaturi pentru profesori și editori.",
     content: `<article>
       <h2>Verificare Text AI: Ghid Practic în 5 Pași (Nu Doar „Bagă-l Într-un Detector")</h2>
       <p>Primești un text și suspectezi că e scris de AI. Ce faci? Majoritatea oamenilor îl trec printr-un detector și acceptă verdictul. Greșeală. Detectoarele au o acuratețe de 85-92% în cel mai bun caz — adică una din 10 verificări e greșită. Iată o abordare mai inteligentă, în 5 pași, pe care o folosim noi pentru verificare editorială.</p>
@@ -90,7 +90,7 @@ export const articlesPart3: Record<string, { title: string; metaDescription: str
       <p>Dacă ai acces la texte anterioare ale autorului, compară stilul. O schimbare bruscă în calitatea scrierii, vocabular, sau structura argumentelor e suspectă. Un student care scrie de obicei propoziții scurte și directe și brusc produce paragrafe elaborate cu vocabular sofisticat... merită o conversație.</p>
 
       <h3>Concluzie</h3>
-      <p>Verificarea textului AI nu e un proces binar — e un continuum de probabilitate. Folosește metode multiple (citire atentă + detector + verificare fapte + analiză stil), și nu lua decizii importante bazat pe un singur instrument. AI-ul devine din ce în ce mai greu de detectat, iar cea mai bună apărare nu e un detector mai bun — ci o cultură a originalității și transparenței.</p>
+      <p>Verificarea textului AI nu e un proces binar — e un continuum de probabilitate. Folosește metode multiple (citire atentă + detector + verificare fapte + analiză stil), și nu lua decizii importante bazat pe un singur instrument. AI-ul e tot mai greu de detectat, iar cea mai bună apărare nu e un detector mai bun — ci o cultură a originalității și transparenței.</p>
     </article>`
   },
 

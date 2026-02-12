@@ -1,7 +1,7 @@
 export const articlesPart1: Record<string, { title: string; metaDescription: string; content: string }> = {
   "chatgpt-vs-claude-comparatie-2026": {
     title: "ChatGPT vs Claude: Comparație Sinceră După Un An de Utilizare (2026)",
-    metaDescription: "ChatGPT vs Claude în 2026: comparație detaliată după un an de utilizare zilnică. Scriere, cod, analiză, creativitate — care e mai bun și pentru ce.",
+    metaDescription: "ChatGPT vs Claude în 2026: comparație detaliată după un an de utilizare zilnică în România. Scriere, cod, analiză, creativitate — care e mai bun și pentru ce.",
     content: `<article>
       <h2>ChatGPT vs Claude: Le Folosim Pe Amândouă Zilnic. Iată Ce Am Învățat.</h2>
       <p>Nu asta e încă un articol generic „ChatGPT e mai bun la X, Claude e mai bun la Y." Am folosit ambele modele zilnic timp de un an — pentru scriere, cod, analiză de documente, brainstorming și cercetare — și verdictul nostru e mai nuanțat decât o permite un tabel comparativ. Ambele sunt excelente. Dar excelează la lucruri diferite, în moduri pe care nu le anticipezi.</p>
@@ -38,7 +38,7 @@ export const articlesPart1: Record<string, { title: string; metaDescription: str
 
   "top-10-generatoare-imagini-ai": {
     title: "Top 10 Generatoare de Imagini AI în 2026: Teste Reale și Clasament",
-    metaDescription: "Cele mai bune generatoare de imagini AI în 2026: Midjourney, DALL-E 3, Stable Diffusion, Flux. Teste pe aceleași prompt-uri, comparație vizuală și prețuri.",
+    metaDescription: "Cele mai bune generatoare de imagini AI în 2026: Midjourney, DALL-E 3, Stable Diffusion, Flux. Teste reale pe aceleași prompt-uri, comparație vizuală, prețuri și generare imagini AI gratuită.",
     content: `<article>
       <h2>Am Dat Același Prompt la 10 Generatoare de Imagini AI. Diferențele Sunt Uriașe.</h2>
       <p>Experimentul: un singur prompt — „fotografie editorială a unei femei care citește într-o cafenea în ploaie, lumină naturală, tonuri calde, stil cinematografic" — trimis la 10 <strong>generatoare de imagini AI</strong>. Rezultatele variază de la spectaculos la comic de prost. Iată clasamentul complet.</p>
