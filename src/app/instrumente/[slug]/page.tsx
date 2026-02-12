@@ -178,10 +178,10 @@ export default async function InstrumentPage({ params }: Props) {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Pros & Cons */}
         {(tool.pros?.length || tool.cons?.length) && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
             {tool.pros && tool.pros.length > 0 && (
               <div className="bg-green-50 rounded-xl p-4">
-                <h3 className="text-lg font-bold text-green-800 mb-3">✅ Avantaje</h3>
+                <h3 className="text-base font-bold text-green-800 mb-2">✅ Avantaje</h3>
                 <ul className="space-y-1">
                   {tool.pros.map((pro, i) => (
                     <li key={i} className="text-green-700 text-sm">{pro}</li>
@@ -191,7 +191,7 @@ export default async function InstrumentPage({ params }: Props) {
             )}
             {tool.cons && tool.cons.length > 0 && (
               <div className="bg-red-50 rounded-xl p-4">
-                <h3 className="text-lg font-bold text-red-800 mb-3">❌ Dezavantaje</h3>
+                <h3 className="text-base font-bold text-red-800 mb-2">❌ Dezavantaje</h3>
                 <ul className="space-y-1">
                   {tool.cons.map((con, i) => (
                     <li key={i} className="text-red-700 text-sm">{con}</li>
@@ -204,11 +204,11 @@ export default async function InstrumentPage({ params }: Props) {
 
         {/* Key Features */}
         {tool.features && tool.features.length > 0 && (
-          <div className="mb-8">
-            <h2 className="text-xl font-bold text-text mb-4">Funcționalități cheie</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="mb-5">
+            <h2 className="text-lg font-bold text-text mb-2">Funcționalități cheie</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
               {tool.features.map((feature, i) => (
-                <div key={i} className="flex items-start gap-2 bg-surface rounded-lg p-2.5">
+                <div key={i} className="flex items-center gap-2 py-1.5">
                   <span className="text-primary mt-0.5">⚡</span>
                   <span className="text-sm text-text">{feature}</span>
                 </div>
@@ -219,8 +219,8 @@ export default async function InstrumentPage({ params }: Props) {
 
         {/* Use Cases */}
         {tool.useCases && tool.useCases.length > 0 && (
-          <div className="mb-8">
-            <h2 className="text-xl font-bold text-text mb-4">Ideal pentru</h2>
+          <div className="mb-5">
+            <h2 className="text-lg font-bold text-text mb-2">Ideal pentru</h2>
             <div className="flex flex-wrap gap-2">
               {tool.useCases.map((useCase, i) => (
                 <span key={i} className="text-sm text-primary bg-primary/5 px-3 py-1.5 rounded-full">
@@ -233,7 +233,7 @@ export default async function InstrumentPage({ params }: Props) {
 
         {/* Pricing Details */}
         {tool.pricingDetails && (
-          <div className="mb-8 bg-surface rounded-xl p-6">
+          <div className="mb-5 bg-surface rounded-xl p-4">
             <h2 className="text-xl font-bold text-text mb-3">💰 Prețuri</h2>
             <p className="text-text-light text-sm whitespace-pre-line">{tool.pricingDetails}</p>
           </div>
