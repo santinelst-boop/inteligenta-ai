@@ -424,7 +424,7 @@ export const latestArticles: Article[] = [
     slug: "chatgpt-romana-ghid-complet",
     title: "ChatGPT în Română: Ghid Complet 2026 (+ Versiunea Gratuită)",
     excerpt:
-      "Ghid complet ChatGPT în română: cum să-l foloşeşti, sfaturi practice, versiunea gratuită vs Plus şi alternative pentru utilizatorii din România.",
+      "Ghid complet ChatGPT în română: cum să-l folosești, sfaturi practice, versiunea gratuită vs Plus și alternative pentru utilizatorii din România.",
     category: "ai-text",
     date: "2026-02-06",
     readTime: "10 min",
@@ -436,7 +436,7 @@ export const latestArticles: Article[] = [
     slug: "cele-mai-bune-chatbot-uri-ai",
     title: "Top 10 Chatbot AI în 2026: Cele Mai Bune Alternative ChatGPT",
     excerpt:
-      "Comparație detaliată între cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity şi altele. Prețuri, funcții şi recomandări.",
+      "Comparație detaliată între cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity și altele. Prețuri, funcții și recomandări.",
     category: "ai-text",
     date: "2026-02-05",
     readTime: "12 min",
@@ -628,7 +628,7 @@ export const latestArticles: Article[] = [
     slug: "cum-functioneaza-inteligenta-artificiala",
     title: "Cum Funcționează Inteligența Artificială? Explicat Pe Înțelesul Tuturor",
     excerpt:
-      "Cum funcționează AI-ul: rețele neuronale, machine learning și GPT explicat simplu, fără jargon, cu exemple din viața reală.",
+      "Cum funcționează AI-ul: rețelele neuronale, machine learning și GPT explicat simplu, fără jargon, cu exemple din viața reală.",
     category: "ai-educatie",
     date: "2026-02-08",
     readTime: "12 min",
@@ -796,7 +796,7 @@ export const latestArticles: Article[] = [
     slug: "ai-business-plan-antreprenori",
     title: "AI Business Plan: Strategii pentru Antreprenori (2026)",
     excerpt:
-      "Cum să construiești un business plan solid cu AI în 2-3 zile. Ghid practic pentru antreprenori din România.",
+      "Cum să construiți un business plan solid cu AI în 2-3 zile. Ghid practic pentru antreprenori din România.",
     category: "ai-business",
     date: "2026-02-08",
     readTime: "10 min",
@@ -805,3 +805,6 @@ export const latestArticles: Article[] = [
     contentType: "blog",
   },
 ];
+
+// Re-export for SearchModal compatibility
+export const articles = latestArticles;
