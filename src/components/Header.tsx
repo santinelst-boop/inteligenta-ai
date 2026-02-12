@@ -8,7 +8,6 @@ const navLinks = [
   { href: "/instrumente", label: "Instrumente AI" },
   { href: "/recenzii", label: "Recenzii" },
   { href: "/comparatii", label: "Comparații" },
-  { href: "/blog", label: "Blog" },
   { href: "/despre", label: "Despre" },
 ];
 

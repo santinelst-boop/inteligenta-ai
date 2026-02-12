@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function RecenziiPage() {
-  const reviewArticles = latestArticles.filter((a) => a.contentType === "review");
+  const reviewArticles = latestArticles;
 
   return (
     <>

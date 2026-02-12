@@ -50,7 +50,7 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
         art.excerpt.toLowerCase().includes(lower) ||
         art.slug.toLowerCase().includes(lower)
       ) {
-        const basePath = art.contentType === "review" ? "/recenzii" : "/blog";
+        const basePath = "/recenzii";
         matched.push({
           type: "article",
           title: art.title,

@@ -18,7 +18,7 @@ export default async function Home() {
   ]);
 
   const recentReviews = latestArticles.filter((a) => a.contentType === "review").slice(0, 2);
-  const recentBlog = latestArticles.filter((a) => a.contentType === "blog").slice(0, 2);
+  const recentBlog = latestArticles.filter((a) => a.contentType === "review").slice(0, 2);
   const recentArticles = [...recentReviews, ...recentBlog];
   const top10Tools = sanityTools.slice(0, 10);
 
@@ -182,7 +182,7 @@ export default async function Home() {
               </p>
             </div>
             <Link
-              href="/blog"
+              href="/recenzii"
               className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-primary-dark transition-colors"
             >
               Vezi toate →

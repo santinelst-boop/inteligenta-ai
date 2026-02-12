@@ -47,7 +47,7 @@ export default function NotFound() {
               Comparații
             </Link>
             <Link
-              href="/blog"
+              href="/recenzii"
               className="px-4 py-2 rounded-full bg-surface text-sm text-text-light hover:text-primary transition-colors"
             >
               Blog

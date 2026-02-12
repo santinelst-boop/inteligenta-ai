@@ -43,9 +43,7 @@ export default function ArticleCard({
   const category = categories.find((c) => c.id === article.category);
   const gradient = categoryGradients[article.category] || "from-gray-500 to-gray-600";
   const icon = categoryIcons[article.category] || "📝";
-  const href = article.contentType === "review"
-    ? `/recenzii/${article.slug}`
-    : `/blog/${article.slug}`;
+  const href = `/recenzii/${article.slug}`;
 
   if (variant === "compact") {
     return (
