@@ -163,7 +163,7 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-white mb-2">Redacție</h4>
               <p>
-                Propuneri articole sau corectări:{" "}
+                Propuneri articole sau corecturi:{" "}
                 <a href="mailto:redactie@inteligenta.ai" className="text-primary-light hover:text-white transition-colors">
                   redactie@inteligenta.ai
                 </a>
