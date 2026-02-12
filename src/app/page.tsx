@@ -35,24 +35,24 @@ export default async function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-sm mb-3">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
             Actualizat zilnic cu cele mai noi instrumente AI
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-3">
             Descoperă cele mai bune
             <br />
             <span className="text-white/90">instrumente AI</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-8">
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-4">
             Recenzii oneste, comparații detaliate și ghiduri practice.
             Primul portal de inteligență artificială din România.
           </p>
 
           {/* Search Bar */}
-          <div className="max-w-xl mx-auto mb-8">
+          <div className="max-w-xl mx-auto mb-4">
             <div className="relative">
               <svg
                 className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-text-light"
@@ -92,7 +92,7 @@ export default async function Home() {
 
       {/* ===== FEATURED TOOLS ===== */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex items-end justify-between mb-8">
+        <div className="flex items-end justify-between mb-4">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-text">
               Instrumente populare
@@ -109,7 +109,7 @@ export default async function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {sanityTools.slice(0, 6).map((tool) => (
             <ToolCard key={tool._id} tool={tool} />
           ))}
@@ -128,7 +128,7 @@ export default async function Home() {
       {/* ===== TOP 10 TABLE ===== */}
       <section className="bg-white border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="flex items-end justify-between mb-8">
+          <div className="flex items-end justify-between mb-4">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-text">
                 Top 10 Instrumente AI 2026
@@ -192,7 +192,7 @@ export default async function Home() {
       {/* ===== ARTICLES SECTION (still from static data) ===== */}
       {recentArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="flex items-end justify-between mb-8">
+          <div className="flex items-end justify-between mb-4">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-text">
                 Ultimele articole
@@ -209,7 +209,7 @@ export default async function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {recentArticles.map((article) => (
               <ArticleCard key={article.slug} article={article} variant="featured" />
             ))}
@@ -223,7 +223,7 @@ export default async function Home() {
           <h2 className="text-2xl md:text-3xl font-bold text-text mb-3">
             Rămâi la curent cu AI
           </h2>
-          <p className="text-text-light mb-6">
+          <p className="text-text-light mb-3">
             Primește săptămânal cele mai noi instrumente AI, recenzii și ghiduri practice. Gratis, fără spam.
           </p>
           <div className="flex gap-3 max-w-md mx-auto">

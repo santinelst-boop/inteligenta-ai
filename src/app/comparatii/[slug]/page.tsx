@@ -105,8 +105,8 @@ export default async function ComparatiePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
           <div className="bg-card rounded-2xl border border-border p-6">
             <div className="flex items-center gap-4 mb-4">
               {toolLeft ? (
@@ -157,7 +157,7 @@ export default async function ComparatiePage({ params }: Props) {
         </div>
 
         {toolLeft && toolRight && (
-          <div className="bg-card rounded-2xl border border-border overflow-hidden mb-10">
+          <div className="bg-card rounded-2xl border border-border overflow-hidden mb-5">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-surface">
@@ -211,7 +211,7 @@ export default async function ComparatiePage({ params }: Props) {
 
       {comparisons.filter((c) => c.slug !== slug).length > 0 && (
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
-          <h2 className="text-xl font-bold text-text mb-6">Alte comparatii</h2>
+          <h2 className="text-xl font-bold text-text mb-3">Alte comparatii</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {comparisons.filter((c) => c.slug !== slug).slice(0, 4).map((c) => (
               <Link key={c.slug} href={`/comparatii/${c.slug}`} className="card-hover flex items-center gap-4 bg-card rounded-xl border border-border p-4">

@@ -30,13 +30,13 @@ export default function ComparatiiPage() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {comparisons.map((comp) => (
             <Link
               key={comp.slug}
               href={`/comparatii/${comp.slug}`}
-              className="card-hover flex items-center gap-5 bg-card rounded-2xl border border-border p-6"
+              className="card-hover flex items-center gap-3 bg-card rounded-2xl border border-border p-6"
             >
               {comp.left.toolId ? (
                 <ToolIcon name={comp.left.name} toolId={comp.left.toolId} size="lg" />

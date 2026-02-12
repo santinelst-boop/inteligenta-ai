@@ -53,9 +53,9 @@ export default async function InstrumentePage({ searchParams }: Props) {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         {/* Category Filters */}
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-wrap gap-2 mb-4">
           <Link
             href="/instrumente"
             className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
@@ -91,7 +91,7 @@ export default async function InstrumentePage({ searchParams }: Props) {
         </div>
 
         {/* Results count */}
-        <p className="text-sm text-text-light mb-6">
+        <p className="text-sm text-text-light mb-3">
           Se afișează <strong className="text-text">{tools.length}</strong>{" "}
           instrumente
           {activeCategory && (
@@ -106,7 +106,7 @@ export default async function InstrumentePage({ searchParams }: Props) {
         </p>
 
         {/* Tools Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {tools.map((tool) => (
             <ToolCard key={tool._id} tool={tool} />
           ))}

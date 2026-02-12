@@ -118,7 +118,7 @@ export default async function ArticlePage({ params }: Props) {
         <ArticleHeroImage category={article.category} size="lg" className="w-full rounded-2xl" />
       </div>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <header className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase">
@@ -196,10 +196,10 @@ export default async function ArticlePage({ params }: Props) {
 
         {relatedArticles.length > 0 && (
           <div className="mt-12">
-            <h3 className="text-xl font-bold text-text mb-6">
+            <h3 className="text-xl font-bold text-text mb-3">
               Articole similare
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {relatedArticles.map((a) => (
                 <Link
                   key={a.slug}
