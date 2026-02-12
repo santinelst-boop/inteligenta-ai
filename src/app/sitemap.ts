@@ -6,6 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://inteligenta.ai";
   const now = new Date().toISOString();
 
+  // Note: /afiliere, /termeni, /confidentialitate, /cookies are excluded
+  // because they have noindex meta tags — including them here sends
+  // contradictory signals to Google (GSC alert WNC-20237597)
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/recenzii`, lastModified: now, changeFrequency: "daily", priority: 0.9 },
@@ -13,10 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/comparatii`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/despre`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.4 },
-    { url: `${baseUrl}/afiliere`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },
-    { url: `${baseUrl}/termeni`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
-    { url: `${baseUrl}/confidentialitate`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
-    { url: `${baseUrl}/cookies`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
   ];
 
   const articlePages: MetadataRoute.Sitemap = latestArticles.map((article) => ({
