@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { latestArticles, featuredTools, categories } from "@/data/tools";
 import { articleContent } from "@/data/article-content";
@@ -115,7 +116,19 @@ export default async function ArticlePage({ params }: Props) {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        <ArticleHeroImage category={article.category} size="lg" className="w-full rounded-2xl" />
+        {article.imageUrl ? (
+          <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden">
+            <Image
+              src={article.imageUrl}
+              alt={article.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        ) : (
+          <ArticleHeroImage category={article.category} size="lg" className="w-full rounded-2xl" />
+        )}
       </div>
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
