@@ -434,9 +434,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "cele-mai-bune-chatbot-uri-ai",
-    title: "Top 10 Chatbot AI în 2026: Cele Mai Bune Alternative ChatGPT",
+    title: "Top 10 Chatbot AI pentru România în 2026: Cele Mai Bune Soluții",
     excerpt:
-      "Comparație detaliată între cele mai bune chatbot-uri AI: ChatGPT, Claude, Gemini, Perplexity și altele. Prețuri, funcții și recomandări.",
+      "Cele mai bune soluții chatbot AI disponibile în România: ChatGPT, Claude, Gemini, Perplexity comparate. Prețuri, funcții și recomandări.",
     category: "ai-text",
     date: "2026-02-05",
     readTime: "12 min",
@@ -470,9 +470,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "chatgpt-gratuit-ce-poti-face",
-    title: "ChatGPT Gratuit: Ce Poți Face Fără să Plătești în 2026?",
+    title: "ChatGPT Gratuit în România: Ce Poți Face Fără să Plătești în 2026",
     excerpt:
-      "Tot ce poți face cu ChatGPT gratuit: funcții disponibile, limitări, trucuri pentru utilizare maximă și când merită să treci pe Plus.",
+      "Cum accesezi ChatGPT gratuit din România: funcții disponibile, limitări, trucuri pentru utilizare maximă și când merită upgrade la Plus.",
     category: "ai-text",
     date: "2026-02-08",
     readTime: "10 min",
@@ -626,9 +626,9 @@ export const latestArticles: Article[] = [
   },
   {
     slug: "cum-functioneaza-inteligenta-artificiala",
-    title: "Cum Funcționează Inteligența Artificială? Explicat Pe Înțelesul Tuturor",
+    title: "Cum Funcționează Inteligența Artificială: Ghid pentru Începători (2026)",
     excerpt:
-      "Cum funcționează AI-ul: rețelele neuronale, machine learning și GPT explicat simplu, fără jargon, cu exemple din viața reală.",
+      "Ghid complet de inteligență artificială pentru începători: rețele neuronale, machine learning și GPT explicate simplu, cu exemple din viața reală.",
     category: "ai-educatie",
     date: "2026-02-08",
     readTime: "12 min",
