@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import SearchModal from "./SearchModal";
 
 const navLinks = [
   { href: "/", label: "Acasă" },
@@ -13,8 +14,10 @@ const navLinks = [
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
+    <>
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -72,7 +75,11 @@ export default function Header() {
 
           {/* Search + CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <button className="p-2 rounded-lg text-text-light hover:text-primary hover:bg-primary/5 transition-colors">
+            <button
+              onClick={() => setIsSearchOpen(true)}
+              className="p-2 rounded-lg text-text-light hover:text-primary hover:bg-primary/5 transition-colors"
+              aria-label="Caută"
+            >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -117,6 +124,12 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={() => { setIsMenuOpen(false); setIsSearchOpen(true); }}
+              className="block w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-text-light hover:text-primary hover:bg-primary/5"
+            >
+              🔍 Caută
+            </button>
             <Link
               href="/instrumente"
               className="block mt-2 px-4 py-2 rounded-full bg-primary text-white text-sm font-medium text-center"
@@ -128,5 +141,7 @@ export default function Header() {
         </div>
       )}
     </header>
+    <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+    </>
   );
 }
