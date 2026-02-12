@@ -8,15 +8,15 @@ import FacebookPixel from "@/components/FacebookPixel";
 export const metadata: Metadata = {
   metadataBase: new URL("https://inteligenta.ai"),
   title: {
-    default: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    default: "inteligenta.ai — Instrumente AI, Recenzii și Ghiduri | Inteligență Artificială România",
     template: "%s | inteligenta.ai",
   },
   description:
-    "Recenzii, comparatii si ghiduri complete despre cele mai bune instrumente de inteligenta artificiala. Primul portal AI din Romania.",
+    "Recenzii, comparații și ghiduri despre cele mai bune instrumente de inteligență artificială. Descoperă AI gratuit și plătit — chatbot AI, generatoare imagini, productivitate. Primul portal AI din România.",
   keywords:
-    "inteligenta artificiala, instrumente AI, recenzii AI, comparatii AI, ChatGPT, Claude, Midjourney, Romania",
+    "inteligență artificială, instrumente AI, AI gratuit, chatbot AI, generator imagini AI, ChatGPT română, aplicații inteligență artificială, recenzii AI, software AI, AI România",
   openGraph: {
-    title: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    title: "inteligenta.ai — Instrumente AI, Recenzii și Ghiduri | Inteligență Artificială România",
     description: "Primul portal de inteligenta artificiala din Romania. Recenzii, comparatii si ghiduri.",
     url: "https://inteligenta.ai",
     siteName: "inteligenta.ai",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "inteligenta.ai \u2014 Descopera cele mai bune instrumente AI din Romania",
+    title: "inteligenta.ai — Instrumente AI, Recenzii și Ghiduri | Inteligență Artificială România",
     description: "Primul portal de inteligenta artificiala din Romania.",
   },
   alternates: {
@@ -57,7 +57,7 @@ export default function RootLayout({
       "@type": "ContactPoint",
       contactType: "Customer Support",
       // TODO: \u00eenlocuie\u0219te cu contact@inteligenta.ai dup\u0103 configurare email hosting
-      email: "santinel.st@gmail.com",
+      email: "contact@inteligenta.ai",
     },
   };
   const websiteData = {

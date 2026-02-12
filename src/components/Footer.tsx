@@ -155,8 +155,8 @@ export default function Footer() {
               <p>
                 Pentru colaborări și publicitate:{" "}
                 {/* TODO: înlocuiește cu publicitate@inteligenta.ai după configurare email hosting */}
-                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
-                  santinel.st@gmail.com
+                <a href="mailto:contact@inteligenta.ai" className="text-primary-light hover:text-white transition-colors">
+                  contact@inteligenta.ai
                 </a>
               </p>
             </div>
@@ -165,8 +165,8 @@ export default function Footer() {
               <p>
                 Propuneri articole sau corectări:{" "}
                 {/* TODO: înlocuiește cu redactie@inteligenta.ai după configurare email hosting */}
-                <a href="mailto:santinel.st@gmail.com" className="text-primary-light hover:text-white transition-colors">
-                  santinel.st@gmail.com
+                <a href="mailto:contact@inteligenta.ai" className="text-primary-light hover:text-white transition-colors">
+                  contact@inteligenta.ai
                 </a>
               </p>
             </div>

@@ -10,8 +10,7 @@ export const metadata: Metadata = {
 };
 
 // TODO: înlocuiește cu legal@inteligenta.ai după configurare email hosting
-// Emails planificate: contact@, publicitate@, redactie@, legal@, newsletter@, afiliere@
-const DPO_EMAIL = "santinel.st@gmail.com";
+const DPO_EMAIL = "contact@inteligenta.ai";
 
 export default function ConfidentialitatePage() {
   return (

@@ -3,9 +3,9 @@ import { latestArticles } from "@/data/tools";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog AI — Ghiduri, tutoriale și noutăți",
+  title: "Blog AI — Ghiduri Practice, Tutoriale și Noutăți despre Inteligență Artificială",
   description:
-    "Ghiduri practice, tutoriale pas cu pas și cele mai recente noutăți din lumea inteligenței artificiale.",
+    "Ghiduri practice despre inteligență artificială: cum să folosești ChatGPT, AI pentru productivitate, AI pentru studenți, marketing cu AI și multe altele. Totul în română.",
   alternates: { canonical: "https://inteligenta.ai/blog" },
   openGraph: {
     title: "Blog AI — inteligenta.ai",

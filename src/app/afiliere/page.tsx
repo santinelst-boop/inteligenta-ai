@@ -10,8 +10,7 @@ export const metadata: Metadata = {
 };
 
 // TODO: înlocuiește cu afiliere@inteligenta.ai după configurare email hosting
-// Emails planificate: contact@, publicitate@, redactie@, legal@, newsletter@, afiliere@
-const AFFILIATE_EMAIL = "santinel.st@gmail.com";
+const AFFILIATE_EMAIL = "contact@inteligenta.ai";
 
 const affiliatePrograms = [
   {

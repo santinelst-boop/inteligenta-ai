@@ -8,9 +8,9 @@ import { getCategoryName } from "@/lib/types";
 export const revalidate = 3600; // ISR: revalidate every hour
 
 export const metadata: Metadata = {
-  title: "Instrumente AI — Director complet de tool-uri",
+  title: "Instrumente AI — Director Complet de Aplicații cu Inteligență Artificială (2026)",
   description:
-    "Directorul complet al instrumentelor de inteligență artificială. Peste 200 de tool-uri clasificate pe categorii cu rating-uri și prețuri.",
+    "Director complet de instrumente AI și aplicații cu inteligență artificială. Chatbot AI, generatoare imagini, AI video, AI audio, AI programare — clasificate pe categorii cu prețuri și rating-uri.",
   alternates: { canonical: "https://inteligenta.ai/instrumente" },
   openGraph: {
     title: "Instrumente AI — inteligenta.ai",

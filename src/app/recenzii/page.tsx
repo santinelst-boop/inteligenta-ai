@@ -3,9 +3,9 @@ import { latestArticles } from "@/data/tools";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Recenzii AI — Analize detaliate ale celor mai bune instrumente",
+  title: "Recenzii AI — Teste Reale ale Celor Mai Bune Instrumente de Inteligență Artificială",
   description:
-    "Recenzii complete și obiective ale instrumentelor de inteligență artificială. Teste practice, comparații și recomandări pentru utilizatori din România.",
+    "Recenzii detaliate ale instrumentelor AI: ChatGPT, Midjourney, Claude, Copilot și altele. Teste practice, prețuri, avantaje și dezavantaje. Ghidul tău pentru software AI în România.",
   alternates: { canonical: "https://inteligenta.ai/recenzii" },
   openGraph: {
     title: "Recenzii AI — inteligenta.ai",

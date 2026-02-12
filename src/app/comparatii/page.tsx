@@ -4,9 +4,9 @@ import { comparisons } from "@/data/comparisons";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Comparații AI — Tool vs Tool, cine câștigă?",
+  title: "Comparații AI — ChatGPT vs Claude, Midjourney vs DALL-E și Altele (2026)",
   description:
-    "Comparații directe între instrumentele AI populare. ChatGPT vs Claude, Midjourney vs DALL-E și multe altele.",
+    "Comparații directe între cele mai bune instrumente AI: ChatGPT vs Claude, Midjourney vs DALL-E, Copilot vs Cursor. Teste practice cap la cap, prețuri și recomandări.",
   alternates: { canonical: "https://inteligenta.ai/comparatii" },
   openGraph: {
     title: "Comparații AI — inteligenta.ai",

@@ -7,11 +7,7 @@ export const metadata: Metadata = {
     "Termenii și condițiile de utilizare ale portalului inteligenta.ai — recenzii, comparații și ghiduri AI.",
   alternates: { canonical: "https://inteligenta.ai/termeni" },
   robots: { index: false, follow: true },
-};
-
-// TODO: înlocuiește cu contact@inteligenta.ai după configurare email hosting
-// Emails planificate: contact@, publicitate@, redactie@, legal@, newsletter@, afiliere@
-const CONTACT_EMAIL = "santinel.st@gmail.com";
+};const CONTACT_EMAIL = "contact@inteligenta.ai";
 
 export default function TermeniPage() {
   return (

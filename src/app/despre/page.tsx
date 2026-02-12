@@ -6,10 +6,7 @@ export const metadata: Metadata = {
   description:
     "Echipa din spatele inteligenta.ai — primul portal de inteligență artificială din România. Misiune, valori și cum ne poți contacta.",
   alternates: { canonical: "https://inteligenta.ai/despre" },
-};
-
-// TODO: înlocuiește cu publicitate@inteligenta.ai după configurare email hosting
-const COLLAB_EMAIL = "santinel.st@gmail.com";
+};const COLLAB_EMAIL = "contact@inteligenta.ai";
 
 const stats = [
   { value: "200+", label: "Instrumente AI" },
@@ -133,7 +130,7 @@ export default function DesprePage() {
                 },
                 {
                   title: "Director de instrumente",
-                  desc: "Peste 200 de tool-uri AI clasificate și evaluate",
+                  desc: "Instrumente AI clasificate și evaluate clasificate și evaluate",
                 },
               ].map((item) => (
                 <div key={item.title} className="p-4 bg-surface rounded-xl">

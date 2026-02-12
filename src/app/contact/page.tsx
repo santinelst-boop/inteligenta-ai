@@ -48,8 +48,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-text mb-1">Email</h3>
                   {/* TODO: înlocuiește cu contact@inteligenta.ai după configurare email hosting */}
-                  <a href="mailto:santinel.st@gmail.com" className="text-text-light hover:text-primary transition-colors">
-                    santinel.st@gmail.com
+                  <a href="mailto:contact@inteligenta.ai" className="text-text-light hover:text-primary transition-colors">
+                    contact@inteligenta.ai
                   </a>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-text mb-1">Locație</h3>
-                  <p className="text-text-light">București, România</p>
+                  <p className="text-text-light">Alba Iulia, România</p>
                 </div>
               </div>
             </div>
