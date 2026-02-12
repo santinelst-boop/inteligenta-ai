@@ -137,8 +137,8 @@ export default async function Home() {
                     <td className="py-3 px-4 font-bold text-primary">{idx + 1}</td>
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-3">
-                        {tool.logoUrl ? (
-                          <Image src={tool.logoUrl} alt={tool.name} width={32} height={32} className="w-8 h-8 rounded-lg object-contain" />
+                        {getLogoUrl(tool) ? (
+                          <Image src={getLogoUrl(tool)!} alt={tool.name} width={32} height={32} className="w-8 h-8 rounded-lg object-contain" />
                         ) : (
                           <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
                             {tool.name[0]}
