@@ -1,7 +1,10 @@
 import ToolCard from "@/components/ToolCard";
-import { categories, featuredTools } from "@/data/tools";
+import { getAllTools, getAllCategories } from "@/lib/sanity";
 import Link from "next/link";
 import type { Metadata } from "next";
+import type { SanityTool, SanityCategory } from "@/lib/types";
+
+export const revalidate = 3600; // ISR: revalidate every hour
 
 export const metadata: Metadata = {
   title: "Instrumente AI — Director complet de tool-uri",
@@ -16,7 +19,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function InstrumentePage() {
+export default async function InstrumentePage() {
+  const [tools, categories]: [SanityTool[], SanityCategory[]] = await Promise.all([
+    getAllTools(),
+    getAllCategories(),
+  ]);
+
   return (
     <>
       {/* Page Header */}
@@ -34,13 +42,16 @@ export default function InstrumentePage() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Category Filters */}
         <div className="flex flex-wrap gap-2 mb-8">
-          <button className="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium">
+          <Link
+            href="/instrumente"
+            className="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium"
+          >
             Toate
-          </button>
+          </Link>
           {categories.map((cat) => (
             <Link
-              key={cat.id}
-              href={`/instrumente?cat=${cat.id}`}
+              key={cat._id}
+              href={`/instrumente?cat=${cat.slug}`}
               className="pill px-4 py-2 rounded-full bg-white text-text-light text-sm font-medium border border-border"
             >
               {cat.name}
@@ -48,27 +59,15 @@ export default function InstrumentePage() {
           ))}
         </div>
 
-        {/* Pricing Filters */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          {["Gratuit", "Freemium", "Plătit", "Open Source"].map((p) => (
-            <button
-              key={p}
-              className="px-3 py-1.5 rounded-full text-xs font-medium border border-border text-text-light hover:border-primary hover:text-primary transition-colors"
-            >
-              {p}
-            </button>
-          ))}
-        </div>
-
         {/* Results count */}
         <p className="text-sm text-text-light mb-6">
-          Se afișează <strong className="text-text">{featuredTools.length}</strong> din {featuredTools.length} instrumente
+          Se afișează <strong className="text-text">{tools.length}</strong> instrumente
         </p>
 
         {/* Tools Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {featuredTools.map((tool) => (
-            <ToolCard key={tool.id} tool={tool} />
+          {tools.map((tool) => (
+            <ToolCard key={tool._id} tool={tool} />
           ))}
         </div>
       </section>
