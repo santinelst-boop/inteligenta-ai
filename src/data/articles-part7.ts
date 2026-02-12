@@ -164,7 +164,7 @@ export const articlesPart7: Record<string, { title: string; metaDescription: str
       <p>Ce poți face concret: generare text-to-speech în zeci de limbi (inclusiv română), clonare vocală din câteva secunde de audio, schimbare de voce în timp real, dubbing video cu sincronizare labială, și audiobook narration completă.</p>
 
       <h3>1. ElevenLabs — Calitatea Supremă</h3>
-      <p><strong>ElevenLabs</strong> este, fără discuție, cel mai bun instrument de sinteză vocală AI din lume. Vocile pre-generate sunt impresionante, dar clonarea vocală e cea care te lasă cu gura căscată. Din 30 de secunde de audio sursă, produce o clonă care captează nu doar timbrul, ci și manierismele subtile ale vorbitorului.</p>
+      <p><strong>ElevenLabs</strong> este, fără discuție, cel mai bun instrument de sinteză vocală AI din lume. Vocile pre-generate sunt impresionante, dar clonarea vocală e cea care te lasă cu gura căscată. Din 30 de secunde de audio sursă, produce o clonă care captează și timbrul, și manierismele subtile ale vorbitorului.</p>
       <p>Suportul pentru limba română există și funcționează — nu perfect, dar suficient de bine pentru conținut profesional. Accentul e natural, diacriticele sunt pronunțate corect, și ritmul frazei sună românește. E cel mai bun TTS în română pe care l-am testat, punct.</p>
       <p>Plan gratuit: 10.000 de caractere/lună (suficient pentru un clip de ~10 minute). Starter $5/lună, Pro $22/lună cu clonare vocală.</p>
       <p><strong>Verdictul nostru: 9.5/10.</strong> Dacă ai nevoie de sinteză vocală, aici începi și probabil aici rămâi.</p>
