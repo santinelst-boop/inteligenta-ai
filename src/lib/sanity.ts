@@ -7,6 +7,8 @@ export const client = createClient({
   useCdn: true,
 });
 
+const categoryProjection = `{_id, "name": title, "nameRo": titleRo, "slug": slug.current, color, icon}`;
+
 // Fetch all published AI tools
 export async function getAllTools() {
   return client.fetch(`
@@ -17,7 +19,7 @@ export async function getAllTools() {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
+      "category": category->${categoryProjection},
       website,
       pricing,
       pricingDetails,
@@ -44,7 +46,7 @@ export async function getFeaturedTools() {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
+      "category": category->${categoryProjection},
       website,
       pricing,
       pricingDetails,
@@ -71,7 +73,7 @@ export async function getToolBySlug(slug: string) {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
+      "category": category->${categoryProjection},
       website,
       pricing,
       pricingDetails,
@@ -111,6 +113,7 @@ export async function getAllCategories() {
     *[_type == "category"] | order(title asc) {
       _id,
       "name": title,
+      "nameRo": titleRo,
       "slug": slug.current,
       description,
       color,
@@ -130,7 +133,7 @@ export async function getToolsByCategory(categorySlug: string) {
       tagline,
       description,
       "logoUrl": logo.asset->url,
-      "category": category->{_id, "name": title, "slug": slug.current, color, icon},
+      "category": category->${categoryProjection},
       website,
       pricing,
       pricingDetails,

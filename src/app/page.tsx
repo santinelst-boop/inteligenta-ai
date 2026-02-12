@@ -6,7 +6,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import { getAllCategories, getFeaturedTools } from "@/lib/sanity";
 import { latestArticles } from "@/data/tools";
 import type { SanityTool, SanityCategory } from "@/lib/types";
-import { toStarRating, getPricingLabel , getLogoUrl } from "@/lib/types";
+import { toStarRating, getPricingLabel, getLogoUrl, getCategoryName } from "@/lib/types";
 
 export const revalidate = 3600;
 
@@ -82,7 +82,7 @@ export default async function Home() {
                 href={`/instrumente?cat=${cat.slug}`}
                 className="pill px-5 py-2 rounded-full bg-white/15 backdrop-blur-sm text-white text-sm font-medium border border-white/20"
               >
-                {cat.name}
+                {cat.icon && <span className="mr-1">{cat.icon}</span>}{getCategoryName(cat)}
               </Link>
             ))}
           </div>
@@ -166,7 +166,7 @@ export default async function Home() {
                         <span className="font-medium text-text">{tool.name}</span>
                       </div>
                     </td>
-                    <td className="py-3 px-4 text-sm text-text-light">{tool.category?.name}</td>
+                    <td className="py-3 px-4 text-sm text-text-light">{tool.category ? getCategoryName(tool.category) : "—"}</td>
                     <td className="py-3 px-4">
                       <span className="font-semibold text-text">{toStarRating(tool.rating).toFixed(1)}</span>
                       <span className="text-text-light text-xs">/5</span>

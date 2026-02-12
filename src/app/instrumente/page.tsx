@@ -1,8 +1,9 @@
 import ToolCard from "@/components/ToolCard";
-import { getAllTools, getAllCategories } from "@/lib/sanity";
+import { getAllTools, getAllCategories, getToolsByCategory } from "@/lib/sanity";
 import Link from "next/link";
 import type { Metadata } from "next";
 import type { SanityTool, SanityCategory } from "@/lib/types";
+import { getCategoryName } from "@/lib/types";
 
 export const revalidate = 3600; // ISR: revalidate every hour
 
@@ -19,11 +20,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function InstrumentePage() {
-  const [tools, categories]: [SanityTool[], SanityCategory[]] = await Promise.all([
-    getAllTools(),
-    getAllCategories(),
-  ]);
+type Props = {
+  searchParams: Promise<{ cat?: string }>;
+};
+
+export default async function InstrumentePage({ searchParams }: Props) {
+  const { cat: activeCat } = await searchParams;
+
+  const [allTools, categories]: [SanityTool[], SanityCategory[]] =
+    await Promise.all([getAllTools(), getAllCategories()]);
+
+  // Filter tools server-side if category selected
+  const tools = activeCat
+    ? allTools.filter((t) => t.category?.slug === activeCat)
+    : allTools;
+
+  const activeCategory = activeCat
+    ? categories.find((c) => c.slug === activeCat)
+    : null;
 
   return (
     <>
@@ -44,24 +58,51 @@ export default async function InstrumentePage() {
         <div className="flex flex-wrap gap-2 mb-8">
           <Link
             href="/instrumente"
-            className="px-4 py-2 rounded-full bg-primary text-white text-sm font-medium"
+            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              !activeCat
+                ? "bg-primary text-white shadow-md"
+                : "bg-white text-text-light border border-border hover:bg-primary hover:text-white hover:scale-105"
+            }`}
           >
             Toate
           </Link>
-          {categories.map((cat) => (
-            <Link
-              key={cat._id}
-              href={`/instrumente?cat=${cat.slug}`}
-              className="pill px-4 py-2 rounded-full bg-white text-text-light text-sm font-medium border border-border"
-            >
-              {cat.name}
-            </Link>
-          ))}
+          {categories.map((cat) => {
+            const isActive = activeCat === cat.slug;
+            return (
+              <Link
+                key={cat._id}
+                href={`/instrumente?cat=${cat.slug}`}
+                className={`pill px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  isActive
+                    ? "text-white shadow-md"
+                    : "bg-white text-text-light border border-border"
+                }`}
+                style={
+                  isActive && cat.color
+                    ? { backgroundColor: cat.color }
+                    : undefined
+                }
+              >
+                {cat.icon && <span className="mr-1">{cat.icon}</span>}
+                {getCategoryName(cat)}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Results count */}
         <p className="text-sm text-text-light mb-6">
-          Se afișează <strong className="text-text">{tools.length}</strong> instrumente
+          Se afișează <strong className="text-text">{tools.length}</strong>{" "}
+          instrumente
+          {activeCategory && (
+            <>
+              {" "}
+              în categoria{" "}
+              <strong className="text-text">
+                {getCategoryName(activeCategory)}
+              </strong>
+            </>
+          )}
         </p>
 
         {/* Tools Grid */}
@@ -70,6 +111,21 @@ export default async function InstrumentePage() {
             <ToolCard key={tool._id} tool={tool} />
           ))}
         </div>
+
+        {/* Empty state */}
+        {tools.length === 0 && (
+          <div className="text-center py-16">
+            <p className="text-text-light text-lg mb-4">
+              Nu am găsit instrumente în această categorie.
+            </p>
+            <Link
+              href="/instrumente"
+              className="text-primary font-medium hover:underline"
+            >
+              ← Înapoi la toate instrumentele
+            </Link>
+          </div>
+        )}
       </section>
     </>
   );

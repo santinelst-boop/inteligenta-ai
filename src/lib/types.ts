@@ -1,6 +1,7 @@
 export interface SanityCategory {
   _id: string;
   name: string;
+  nameRo?: string;
   slug: string;
   description?: string;
   color?: string;
@@ -40,6 +41,11 @@ export interface SanityToolPreview {
   logoUrl?: string;
   rating: number;
   pricing: string;
+}
+
+// Get category display name (prefer Romanian)
+export function getCategoryName(cat: SanityCategory): string {
+  return cat.nameRo || cat.name;
 }
 
 // Map Sanity pricing values to Romanian display labels
