@@ -1,4 +1,3 @@
-typescript
 export const articlesPart3: Record<
   string,
   { title: string; metaDescription: string; content: string }
@@ -222,4 +221,12 @@ export const articlesPart3: Record<
         <li><strong>Ideal pentru</strong>: Profesioniști, fotografi, designeri</li>
       </ul>
 
-      <h3>2. Canva AI — Cel Mai Ușor de
+      <h3>2. Canva AI — Cel Mai Ușor de Folosit</h3>
+      <ul>
+        <li><strong>Preț</strong>: Gratuit / Pro 12.99$/lună</li>
+        <li><strong>Funcții AI</strong>: Magic Eraser, Background Remover, Magic Edit</li>
+        <li><strong>Ideal pentru</strong>: Începători, social media, marketing</li>
+      </ul>
+    \`,
+  },
+};

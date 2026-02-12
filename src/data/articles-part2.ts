@@ -1,4 +1,3 @@
-typescript
 export const articlesPart2: Record<string, { title: string; metaDescription: string; content: string }> = {
   "ai-pentru-content-creators": {
     title: "Generare Text AI: Cele Mai Bune Instrumente pentru Creatori de Conținut",
@@ -201,3 +200,8 @@ export const articlesPart2: Record<string, { title: string; metaDescription: str
       <h3>Cazuri de Utilizare AI Audio</h3>
       <ul>
         <li><strong>Podcasting:</strong> Generează intro-uri, segmente narative și chiar episoade complete</li>
+        <li><strong>Narrare audiobook:</strong> Transformă manuscrise în audiobook-uri cu voci naturale</li>
+      </ul>
+    \`,
+  },
+};

@@ -400,4 +400,11 @@ export const latestArticles: Article[] = [
     slug: "cele-mai-bune-chatbot-uri-ai",
     title: "Top 10 Chatbot AI în 2026: Cele Mai Bune Alternative ChatGPT",
     excerpt:
-      "
+      "Descoperă cele mai bune chatbot-uri AI din 2026. Comparație detaliată între ChatGPT, Claude, Gemini și alte alternative populare.",
+    date: "2026-01-20",
+    readTime: "12 min",
+    category: "Ghiduri",
+    imageUrl: "/images/chatbots-ai.jpg",
+    featured: false,
+  },
+];
