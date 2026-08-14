@@ -1,11 +1,11 @@
 {
   "name": "inteligenta.ai",
   "short_name": "inteligenta.ai",
-  "description": "Descoperă cele mai bune instrumente AI din România",
+  "description": "Restricted area. Authorized accounts only.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4f46e5",
+  "background_color": "#070B14",
+  "theme_color": "#070B14",
   "icons": [
     {
       "src": "/icon-192.png",
